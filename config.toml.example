@@ -1,0 +1,47 @@
+[evaluation_settings]
+n_samples = 2
+n_human_rating_samples = 1
+
+[model]
+model_name = "o3"
+price_per_1M_input_tokens = 1
+price_per_1M_cached_input_tokens = 0.25
+price_per_1M_output_tokens = 4
+expected_output_tokens = 1500
+
+[api_settings]
+max_retries = 3
+timeout = 900.0
+retry_delay = 2.0
+embedding_delay = 1.0
+
+[tool_settings]
+tool_name = <Replace with appropriate tool name>
+
+[file_paths]
+rag_data = "./inputs/RAG/formatted_MRBench.json"
+rag_embeddings = "./inputs/RAG/embeddings.pkl"
+
+session_data_description = <Replace with appropriate text file path>
+tool_description = <Replace with appropriate text file path>
+tool_specific_considerations = <Replace with appropriate text file path>
+
+evaluation_rubric = <Replace with rubric file path>
+
+session_data = <Replace with appropriate file path>
+human_evaluation = <Replace with appropriate file path>
+
+evaluation_guidelines_template = "./inputs/prompts/evaluation_guideline_generation.j2"
+evaluation_template = "./inputs/prompts/evaluation.j2"
+evaluation_adjudication_template = "./inputs/prompts/evaluation_adjudication.j2"
+evaluation_guidelines_aggregation_template = "./inputs/prompts/evaluation_guidelines_aggregation.j2" 
+
+[dirs]
+evaluation_guidelines = "./outputs/evaluation_guidelines"
+evaluation_results = "./outputs/evaluation_results"
+batch_processing = "./outputs/batch_processing"
+batch_processing_results = "./outputs/batch_processing_results"
+
+practice_guides = "./inputs/practice_guides"
+
+logs = "./logs"

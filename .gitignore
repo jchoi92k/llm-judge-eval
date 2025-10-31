@@ -1,0 +1,35 @@
+# Environment
+.env
+
+# Directories
+/data/
+/outputs/
+/rubrics/
+/notebooks/
+/alter/
+/inputs/session_data/
+/logs/
+/inputs/
+
+# Python
+*.pyc
+__pycache__/
+*.py[cod]
+
+# Tool-specific config files
+config_*.toml
+
+# Data preprocessing notebooks
+data_preprocessing_*.ipynb
+
+# Evaluation notebooks
+run_evaluation_*.ipynb
+
+# Tool-specific files (altermath, goblins, snorkl, stepup, thinkverse)
+*_files/prompt_components/
+*_files/rubrics/
+*_files/source_package_data/
+*_files/session_data/
+
+# Utility modules
+*_utils/*.py
