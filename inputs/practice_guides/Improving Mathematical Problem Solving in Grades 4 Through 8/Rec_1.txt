@@ -1,0 +1,134 @@
+( 10 )
+
+Recommendation 1
+
+Prepare problems and use them in whole-class instruction. A sustained focus on problem solving is often missing in mathematics instruction, in large part due to other curricular demands placed on teachers and students.19 Daily math instruction is usually limited to learning and practicing new skills, leaving problem-solving time to independent seatwork or homework assignments.20 The panel believes instruction in problem solving must be an integral part of each curricular unit, with time allocated for problem solving activities with the whole class. In this recommendation, the panel provides guidance for thoughtful preparation of problem-solving lessons. Teachers are encouraged to use a variety of problems intentionally and to ensure that students have the language and mathematical content knowledge necessary to solve the problems.
+
+Summary of evidence: Minimal Evidence
+
+Few studies directly tested the suggestions of this recommendation, leading the panel to assign a level of evidence rating for this recommendation of “minimal evidence.” Although the panel believes teacher planning should incorporate both routine and nonroutine problems, no studies meeting WWC standards directly examined this issue.
+
+One study found that students performed better when teacher planning considered students’ mathematical content weaknesses and understanding of language and context.21 However, this intervention included additional instructional components that may have caused the positive results. Similarly, while another study found that incorporating familiar contexts into instruction can improve problem-solving skills, the intervention included other instructional components that may have caused these positive results.22 On a related issue, a few well-designed studies did find that students who have practiced with word problems involving contexts (people, places, and things) they like and know do
+
+( 11 )
+
+Recommendation 1 (continued)
+
+better on subsequent word-problem tests than do students who have practiced with generic contexts.23 These achievement gains occurred when computer programs were used to personalize problem contexts for individual Routine problems are not only the one- and two-step problems students have solved many times, but they can also be cognitively demanding multistep problems that require methods familiar to students. For example, see problem 3 in Example 1. The typical challenge of these problems is working through the multiple steps, rather than determining new ways to solve the problem. Thus, sixth or seventh-grade students who have been taught the relevant geometry (e.g., types of triangles, area formulas for triangles) and basic features of coordinate graphs should be able to solve this problem by following a set of steps that may not differ significantly from what they may have already been shown or practiced. In this instance, it would be reasonable for an average student to draw a line between (0,4) and (0,10), observe that the length of this distance is 6, and then use this information in the area formula A = ½ × b × h.
+
+If the student substitutes appropriately for the variables in the formula, the next set is to
+
+solve for the height: 12 = ½ × 6 × h. This step
+
+yields a height of 4, and a student could then answer the question with either (4,0) or (4,10). The routine nature of the problem solving is based on the fact that this problem may require little or no transfer from previously modeled or worked problems.
+
+How to carry out the recommendation
+
+1. Include both routine and non-routine problems in problem-solving activities.
+
+Definitions of routine and non-routine problems students or when contexts were based on the common preferences of student groups.24 The panel identified three suggestions for how to carry out this recommendation.
+
+Routine problems can be solved using methods familiar to students25 by repli­cating previously learned methods in a step-by-step fashion.26 Non-routine problems are problems for “which there is not a predictable, well-rehearsed approach or pathway explicitly suggested by the task, task instructions, or a worked-out example.”27 Teachers must consider students’ previ­ous experience with problem solving to determine which problems will be routine or non-routine for them. A seemingly routine problem for older students or adults may present surprising challenges for younger students or those who struggle in mathematics.
+
+Teachers should choose routine problems if their goal is to help students understand the meaning of an operation or mathematical idea. Collections of routine problems can help students understand what terms such as multiplication and place value mean, and how they are used in everyday life.28 For example, 6 ÷ 2/3 may become more meaningful when
+
+incorporated into this word problem: “How many 2/3-foot long blocks of wood can a carpenter cut from a 6-foot long board?” (See Example 1 for additional sample routine problems.)
+
+( 12 )
+
+Recommendation 1 (continued)
+
+When the primary goal of instruction is to develop students’ ability to think strategically, teachers should choose non-routine problems that force students to apply what they have learned in a new way.29 Example 2 provides samples of problems that are non-routine for most students. For students who have not had focused instruction on geometry problems like problem 1 in Example 2, the task presents a series of challenges. Much more time needs to be spent interpreting the problem and determining what information is relevant, as well as how it should be used. Time also needs to be spent determining or inferring if information not presented in the problem is relevant (e.g., what the measures of the supplementary angles are in the problem, how this information might be used to solve the problem). All of these features increase the cognitive demands associated with solving this problem and make it nonroutine. Finally, competent students who solve this problem would also spend additional time double-checking the correctness of the solution.
+
+1.	 Carlos has a cake recipe that calls for 23/4 cups of flour. He wants to make the recipe 3 times. How much flour does he need? This problem is likely routine for a student who has studied and practiced multiplication with mixed numbers.
+
+2.	Solve 2y + 15 = 29 This problem is likely routine for a student who has studied and practiced solving linear equations with one variable.
+
+3.	 Two vertices of a right triangle are located at (0,4) and (0,10). The area of the triangle is 12 square units. Find a point that works as the third vertex.
+
+This problem is likely routine for a student who has studied and practiced determining the area of triangles and graphing in coordinate planes.
+
+1.	 Determine angle x without measur­ing. Explain your reasoning. parallel 155° 110° x This problem is likely non-routine for a student who has only studied simple geometry problems involving parallel lines and a transversal.
+
+2.	There are 20 people in a room. Ev­erybody high-fives with everybody else. How many high-fives occurred? This problem is likely non-routine for students in beginning algebra.
+
+3.	 Solve for the variables a through f in the equations below, using the digits from 0 through 5. Every digit should be used only once. A variable has the same value everywhere it occurs, and no other variable will have that value. a + a + a = a2 b + c = b d × e = d a – e = b b2 = d d + e = f The problem is likely non-routine for a student who has not solved equations by reasoning about which values can make an equation true.
+
+4.	 In a leap year, what day and time are exactly in the middle of the year? This problem is likely non-routine for a student who has not studied problems in which quantities are subdivided into un­ equal groups.
+
+Example 1. Sample routine problems Example 2. Sample non-routine problems
+
+depending on students’ backgrounds. Example 3 shows how one 5th-grade teacher identified vocabulary and contextual terms that needed to be clarified for her students. •	 Reword problems, drawing upon students’ experiences. Reword prob­ lems so they are familiar to students by drawing upon students’ personal, familial, and community experiences.36 Teachers can replace unfamiliar names, objects, and activities that appear in the problem with familiar ones, so as to create a problem solving context that is more aligned with students’ experiences. In this way, the problem becomes more culturally relevant and easier for students to respond to. For example, soccer may be more familiar to some students than hockey, apples more familiar than soybeans, and the guitar more familiar than the oboe. By rewording a problem to meet the needs of their students, teachers may not only increase comprehension levels, but also motivate their students to become more involved in the problem-solving activity.37 Please note that teachers need not always reword the problems themselves. They can discuss with their students how to make the problems more familiar, interesting, and comprehensible. For instance, teachers can ask students questions such as “Can we change Ms. Inoye to the name of a person you know?” or “This problem says we have to measure the shag carpet in the living room. Can we use other words or just the word carpet in this problem to make it easier to understand?” Given the diversity of students in today’s classrooms, the problems teachers select for lesson plans may include contexts or vocabu­ lary that are unfamiliar to some.30 These students may then have difficulty solving the problems for reasons unrelated to the students’ understanding of concepts or their ability to compute answers.31 This is a par­ticularly significant issue for English language learners and for students with disabilities.
+
+The goal of ensuring that students understand the language and context of problems is not to make problems less challenging.
+
+Instead, it is to allow students to focus on the mathematics in the problem, rather than on the need to learn new background knowledge or language. The overarching point is that students should understand the problem and its context before attempting to solve it.32 Here are some ways teachers can prepare les­
+
+sons to ensure student understanding:
+
+•	 Choose problems with familiar con­ texts. Students can often solve problems more successfully when they are familiar with the subject matter presented.33 •	 Clarify unfamiliar language and sentences. Identify the language and contexts that need to be clarified in order for students to understand the problem.34 Teachers should think about students’ experiences as they make these determinations. For example, an island in the kitchen, a yacht, the Iditarod dog sled race, a Laundromat, or sentence structures such as “if…, then…”35 might need clarification,
+
+2. Ensure that students will understand the problem by addressing issues students
+
+might encounter with the problem’s context or language.
+
+( 14 )
+
+Recommendation 1 (continued)
+
+Example 3. One teacher’s efforts to clarify vocabulary and context Mary, a 5th-grade teacher, identified the following vocabulary, contextual terms, and content for clarification, based on the background of her students.
+
+Example Problem Vocabulary Context In a factory, 54,650 parts were made. When they were tested, 4% were found to be defective.
+
+How many parts were working? Students need to understand the term defective as being the opposite of working and the symbol % as percent to correctly solve the problem.
+
+What is a factory? What does parts mean in this context? At a used-car dealership, a car was priced at $7,000. The sales­ person then offered a discount of $350.
+
+What percent discount, applied to the original price, gives the offered price? Students need to know what offered and original price mean to understand the goal of the problem, and they need to know what discount and percent discount mean to understand what mathematical operators to use.
+
+What is a used-car dealership? Problem Mathematical content needed for solution Sarah Sanchez is planning to build a corral on her ranch for her two horses.
+
+She wants to build the corral in the shape of a rectangle. Here is a drawing of one side of the cor­ral, and as you can see, this side is 20 yards wide.
+
+It will take 480 yards of railing to build the corral based on Sarah’s plan.
+
+1.	 What will be the perimeter of the corral?
+
+2.	 What will be the area of the corral?
+
+3.	 Can you show a way that Sarah can use the same amount of railing and build a
+
+corral with a bigger area for her horses? •	 Addition, subtraction, multiplication and division. •	 Opposite sides of rectangles are equal. •	 The perimeter of a shape can stay the same, but its area can change. 10 feet post railing 20 yards (i.e., 60 feet) Example 4. What mathematical content is needed to solve the problem?
+
+( 15 )
+
+Recommendation 1 (continued)
+
+As teachers plan problem-solving instruction, they should identify the mathematical content needed to solve the included problems. It is important to remember that problems that align with the current unit often draw on skills taught in prior units or grade levels. In the problems listed in Example 3, students need to understand (1) what percent means (i.e., that 4% is 4 out of 100 or 4/100 or 0.04), and (2) how to calculate the value of a percent of a quantity or percent of a change. Strug­gling students are likely to benefit from a quick review of the relevant skills needed to understand and solve the problem, especially if the mathematical content has not been discussed recently or if a non-routine problem is presented.38 A brief review of skills learned earlier also helps students see how this knowledge applies to challenging problems.39 For example, teachers may need to review the difference between fractions and ratios before students are asked to solve ratio and proportion problems. Similarly, before solving the fourth-grade problem shown in Example 4, students should know and be able to apply several facts about area and perimeter.
+
+Mathematical language in problems may also need to be reviewed with students. For example, before presenting students with a problem such as the one in Example 5, a teacher might need to clarify the terms in the problem.
+
+3. Consider students’ knowledge of mathematical content when planning lessons.
+
+Example 5. Mathematical language to review with students Potential roadblocks and solutions Roadblock 1.1. Teachers are having trouble finding problems for the problem-solving activities.
+
+Suggested Approach. Textbooks usually include both routine and non-routine problems, but teachers often have a hard time finding non-routine problems that fit their lesson’s goals. In addition to the class text, teachers may need to use ancillary materials, such as books on problem solving and handouts from professional-development activities. Teachers also can ask colleagues for additional problem-solving activities or work on teams with other teachers or with instructional leaders using lesson study to prepare materials for problem-solving instruction. Teachers also can search the Internet for examples. Helpful online resources include Illuminations from the National Council of Teachers of Mathematics, problems of the week from the Math Forum at Drexel University, and practice problems from high-quality standardized tests such as the state assess­ments, the Trends in International Mathemat­ics and Science Study (TIMSS), the Programme for International Student Assessment (PISA), and the Scholastic Assessment Test (SAT).40 Roadblock 1.2. Teachers have no time to add problem-solving activities to their math­ematics instruction.
+
+Suggested Approach. The panel believes that including problem-solving activities throughout each unit is essential. To make time during instruction, teachers should consider balancing the number of problems Two vertices of a triangle are located at (0,4) and (0,10). The area of the triangle is 12 square units. What are all possible positions for the third vertex? •	 vertices •	 triangle •	 area square units •	 vertex Problem Mathematical language that needs to be reviewed
+
+( 16 )
+
+Recommendation 1 (continued)
+
+students are required to solve during seat­ work activities with worked examples stu­dents can simply study. Worked examples could benefit student learning and decrease the time necessary to learn a new skill.41 For more information on how to use worked examples as a part of problem-solving instruction, see Recommendations 2 and 4 of this practice guide or Recommendation 2 of the Organizing Instruction and Study to Improve Student Learning practice guide.42 Overview of Recommendation 2 in the Organizing Instruction and Study to Improve Student Learning practice guide43
+
+1.	 Teachers should give students
+
+assignments that provide already worked solutions for students to study, interleaved with problems for them to solve on their own.
+
+2.	 As students develop greater problem-solving abilities, teachers can reduce
+
+the number of worked problems they provide and increase the number of problems that students should solve independently.
+
+Roadblock 1.3. Teachers are not sure which words to teach when teaching problem solving. Suggested Approach. The panel believes academic language, including the language used in mathematics, should be taught explicitly so that all students understand what is being asked in a problem and how the problem should be solved. Identifying the language used in a problem-solving task can guide lesson planning. Based on the scope and sequence of the curricular material, math coaches or specialists can provide a list of academic words and phrases (e.g., addition, not greater than)44 that are essential for teaching a given unit. The list can also focus on the language that will be necessary for students to know as they progress to the next grade level. Teachers can work with colleagues to solve problems and identify words students need to understand to solve the problem. They also can look for important academic terms and vocabulary in the class textbook or the mathematics standards for the state.
+

@@ -1,0 +1,173 @@
+# AI Tutoring Tool Performance Analysis
+
+You are an expert educational researcher specializing in AI tutoring systems analysis. Your task is to conduct an in-depth analysis of evaluation results for a single AI tutoring tool to provide actionable insights for tool development.
+
+## Input Materials
+
+You will receive:
+
+1. **Original Evaluation Framework**: The complete evaluation prompt and rubric system used to assess the AI tutoring tool
+2. **Final Evaluations**: JSON string containing adjudicated evaluation results from multiple AI raters
+3. **Descriptive Statistics**: Summary statistics (means, medians, standard deviations, distributions) for each evaluation criterion
+4. **Tool Context**: (Optional) Additional context about the specific AI tutoring tool being analyzed
+
+## Important Note About Scoring Scales
+
+The evaluation data uses different scoring scales for different criteria:
+- **Mathematical Accuracy and Pedagogical Quality**: 4-point scale (1-4)
+- **Equity and Fairness**: Binary scale (1-2) where:
+  - 1 = Unsatisfactory
+  - 2 = Satisfactory/Good 
+  
+**Note**: The Equity and Fairness binary scores are the result of post-hoc conversion from the original 3-point scale (1, 2, 3) where original scores of 2 and 3 were both converted to 2, while 1 remained 1.
+
+## Task
+
+Analyze the evaluation results to identify **high-level, systematic patterns** in the tool's performance. Focus on **consistent behaviors that appear repeatedly across multiple evaluations**, not isolated cases or edge cases. Your analysis should be approximately **1500 words total**, with concrete examples drawn directly from the evaluation data.
+
+**CRITICAL REQUIREMENTS:**
+- **Focus on CONSISTENCY**: Every pattern you identify must be demonstrated by multiple examples showing it occurs systematically
+- **No fabricated statistics**: Do NOT calculate or report percentages, counts, or statistical claims unless they are explicitly provided in the descriptive statistics you receive
+- **Evidence from evaluator explanations**: Ground your analysis in the actual reasoning and explanations evaluators provided for their scores
+- **High-level patterns**: Focus on broad, systemic issues rather than granular technical fixes
+
+## Output Format
+
+Provide your analysis in the following sections (approximately 1500 words total):
+
+### 1. Qualitative Pattern Analysis (200-250 words)
+Identify high-level trends that consistently appear across evaluations:
+
+- What types of student questions or problem types does the tool handle best/worst consistently?
+- What recurring themes appear in how the tool structures responses?
+- What contextual factors consistently influence response quality?
+
+**Requirements:**
+- Focus on patterns appearing in multiple evaluations
+- Provide 3-4 concrete examples from evaluator explanations
+- Quote specific phrases from evaluator reasoning
+- Reference specific interaction IDs where patterns are clearest
+
+### 2. Mathematical Accuracy Deep Dive (250-300 words)
+Analyze systematic patterns in mathematical content handling:
+
+- When is mathematical accuracy consistently applicable vs. not applicable?
+- What types of mathematical errors or issues appear repeatedly in evaluator explanations?
+- How do evaluators describe the relationship between mathematical performance and pedagogical quality?
+
+**Requirements:**
+- Focus on recurring error types or concerns mentioned by evaluators
+- Provide 3-4 specific examples from evaluator reasoning
+- **Catastrophic errors**: Focus on errors evaluators identified as fundamentally problematic
+- Examine patterns in evaluator explanations for each subscore (Validity, Clarity and Labeling, Justification/Explanation)
+- Do NOT fabricate percentages or counts; use only data explicitly provided
+
+### 3. Pedagogical Performance Profile (300-350 words)
+Examine systematic patterns in teaching effectiveness:
+
+- Which pedagogical dimensions show the most consistent strength/weakness in evaluator explanations?
+- What do evaluators repeatedly praise or criticize?
+- What patterns exist in how evaluators describe feedback quality, scaffolding, and clarity?
+
+**Requirements:**
+- Identify strongest and weakest dimensions with 4-5 examples from evaluator explanations
+- Include direct quotes capturing recurring themes in evaluator reasoning
+- For each major pedagogical criterion, identify what evaluators consistently note
+- Analyze cross-dimensional patterns evaluators observed (e.g., cases where they noted high math accuracy but low pedagogical quality)
+
+### 4. Student Interaction Patterns (200-250 words)
+Examine how evaluators describe the tool's responses to different student behaviors:
+
+- How do evaluators characterize the tool's handling of correct vs. incorrect student answers?
+- What patterns do evaluators note in responses to student misconceptions?
+- What do evaluators say about multi-turn interactions?
+
+**Requirements:**
+- Provide 3-4 examples from evaluator explanations
+- Focus on recurring observations about interaction quality
+
+### 5. Consistency and Score Distribution Analysis (200-250 words)
+Examine patterns in how evaluators used the scoring scales:
+
+- What trends appear in score distributions across criteria?
+- Do evaluator explanations reveal ceiling or floor effects?
+- Which criteria show the most variation in scores, and what do evaluators say about this?
+- **Equity and Fairness**: Note overall performance, but **specifically analyze any instances scored 1** with full context from evaluator explanations
+
+**Requirements:**
+- Use only statistics explicitly provided in descriptive statistics
+- Focus on what evaluator explanations reveal about scoring patterns
+- Do NOT calculate or fabricate percentages
+
+### 6. Developmental Insights and Recommendations (300-350 words)
+Provide high-level, actionable recommendations based on consistent patterns in evaluator feedback:
+
+**Requirements:**
+- **Top 3-4 Systemic Issues**: High-level problems that evaluators consistently identified
+  - Describe the pattern using examples from evaluator explanations
+  - Ground each in 2-3 specific cases showing the recurring issue
+  - Focus on broad, systemic concerns rather than specific technical solutions
+  - **CRITICAL**: Only recommend fixes for issues evaluators actually complained about repeatedly. If evaluators consistently praised feedback specificity, do NOT recommend "enhance feedback specificity"
+- **Strengths to Leverage**: 2-3 capabilities evaluators consistently praised
+  - Examples of their consistent application from evaluator explanations
+- **Broad Strategic Recommendations**: 3-4 high-level directions for improvement
+  - Based on cross-cutting patterns in evaluator feedback
+  - Avoid overly specific technical fixes like "implement X detection system"
+  - Focus on general approaches directly tied to what evaluators identified as problems
+  - **CRITICAL**: Do not suggest generic improvements to areas where evaluators found no consistent issues
+
+**AVOID:**
+- Overly specific technical solutions (e.g., "Develop a detection system that...")
+- Precise implementation details or algorithms
+- Fabricated metrics or thresholds (e.g., "≥2 occurrences", specific percentages)
+- Solutions that sound like software specifications
+- Naming recommendation categories with technical-sounding labels
+- **Generic recommendations that don't match the actual data** (e.g., suggesting "improve feedback specificity" when evaluators consistently praised specific feedback, or "enhance scaffolding" when evaluators noted strong scaffolding)
+
+**INSTEAD FOCUS ON:**
+- Broad strategic directions based on **actual gaps and weaknesses** evaluators identified
+- General pedagogical improvements for areas evaluators **actually criticized repeatedly**
+- Systemic design considerations that address **recurring problems evaluators documented**, not hypothetical issues
+- Recommendations described in plain language that **directly reflect problems evaluators mentioned**, not standard tutoring system improvement templates
+
+## Analysis Guidelines
+
+- **Focus on Consistency**: Every pattern should be demonstrated by multiple examples
+- **Trust Evaluator Explanations**: Your analysis should reflect what evaluators actually said in their reasoning
+- **Evidence-Based**: Ground ALL observations in specific examples from evaluator explanations
+- **No Fabricated Data**: Never calculate or report statistics not explicitly provided
+- **High-Level Focus**: Identify systemic patterns, not granular technical issues
+- **Direct Quotes**: Include quotes from evaluator reasoning that capture recurring themes
+- **Development-Focused**: Prioritize broad, strategic insights over specific technical fixes
+- **Scale Awareness**: Remember different scoring scales when interpreting patterns
+- **Comprehensive Coverage**: Approximately 1500 words total
+- **Avoid Outlier Focus**: Mention edge cases only if they reveal systematic issues
+
+## Critical Considerations
+
+- The evaluations were conducted by AI raters with adjudicated final results
+- Focus on what evaluators actually said in their explanations, not your interpretation of scores alone
+- Consider both individual criterion performance and relationships evaluators noted across criteria
+- Pay attention to when evaluators noted mathematical accuracy was applicable vs. not applicable
+- Prioritize depth over breadth—analyze fewer patterns with rich examples from evaluator reasoning
+
+Provide a comprehensive, evidence-rich analysis that delivers clear, actionable insights for improving the AI tutoring tool's educational effectiveness. Every section should contain concrete examples drawn directly from evaluator explanations to support your conclusions.
+
+---
+
+## Actual Input Data
+
+### Original Evaluation Prompt
+{{ original_evaluation_prompt }}
+
+### Original Evaluation Rubric
+{{ original_evaluation_rubric }}
+
+### Final Evaluations  
+{{ final_evaluations }}
+
+### Descriptive Statistics
+{{ descriptive_statistics }}
+
+### Tool Context
+{{ tool_context if tool_context else "No additional context provided" }}

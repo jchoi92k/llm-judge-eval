@@ -1,0 +1,48 @@
+( 41 )
+
+Recommendation 7.
+
+Monitor the progress of students receiving supplemental instruction and other students who are at risk.
+
+Assess the progress of tier 2 and tier 3 students regularly with general outcome measures and curriculum embedded measures. Also monitor regularly the progress of tier 1 students who perform just above the cutoff score for general outcome measures so they can be moved to tier 2 if they begin to fall behind.
+
+In addition, use progress monitoring data to determine when instructional changes are needed. This includes regrouping students who need continuing instructional support within tier 2 or tier 3, or moving students who have met benchmarks out of intervention groups and back to tier 1.
+
+Information about specific progress monitoring measures is available in Appendix D. A list of online resources is in the text below.
+
+Level of evidence: Low
+
+The panel judged the level of evidence supporting this recommendation to be low. No studies that met WWC standards supported this recommendation.148 In­ stead, the recommendation is based on the panel’s expert opinion as well as con­
+
+The technical adequacy studies of mathe­matics progress monitoring measures were not experimental; the researchers typically used correlation techniques to evaluate the reliability and criterion validity of the measures and regression methods to examine sensitivity to growth. sideration of the standards for measure­ment established by a joint committee of national organizations.149 Brief summary of evidence to support the recommendation Although we found no studies that ad­ dressed the use of valid measures for strug­gling students within an RtI framework, nonexperimental studies demonstrate the technical adequacy of various progress monitoring measures.150 Measures for the primary grades typically reflect aspects of number sense, including strategic counting, numeral identification, and magnitude com­ parisons.151 Studies investigating measures for the elementary grades focus mostly on the characteristics of general outcome mea­sures that represent grade-level mathemat­ics curricula in computation and in mathe­matics concepts and applications.152 Widely used, these measures are recommended by the National Center for Student Progress Monitoring.153 Less evidence is available to support progress monitoring in middle school.154 But research teams have devel­oped measures focusing on math concepts typically taught in middle school,155 basic facts,156 and estimation.157
+
+Recommendation 7. Monitor the progress of students receiving supplemental instruction
+
+How to carry out this recommendation
+
+1. Monitor the progress of tier 2, tier 3, and borderline tier 1 students at least once a month using grade-appropriate general outcome measures. General outcome measures typically take 5 to 10 minutes to administer and should be used at least monthly to monitor tier 2 and tier 3 students. General outcome measures use a sample of items from the array of concepts covered over one year to assess student progress. They provide a broad perspective on student proficiency in mathematics. They target concepts such as magnitude comparison, counting ability, and knowledge of place value for students in kindergarten and grade 1, and increasingly complex aspects of place value and proficiency with operations for students in grades 2 through 6. Examining student performance on these measures allows teachers to determine whether students are integrating and generalizing the concepts, skills, and strategies they are learning in the core curriculum and the intervention.158 In addition to monitoring the progress of tier 1 and tier 2 students, the panel recom­ mends monitoring the progress of border­ line tier 1 students with general outcome measures on a monthly basis. Since these students scored just above the cut score, they were not selected for supplemental instruction. The panel suggests using one standard error of measurement (a statistic available in the technical information for the measures) above the cut score to define the range of scores for borderline students. Using this approach, teachers can continue to monitor the progress of students whose scores fell just above the cut score and determine whether they should receive supplemental instruction.
+
+Choose progress monitoring measures with evidence supporting their reliability, validity, and ability to identify growth.
+
+This will require input from individuals with expertise in these areas, typically school psychologists or members of district research departments. Consider whether the measure produces consistent results (reliability) and provides information that correlates with other measures of mathematics achievement (criterion validity). Ability to identify growth helps interventionists ensure that students are learning and making progress toward an annual goal through the full array of services they are receiving.
+
+In some cases, general outcome measures may also be used for screening, as described in recommendation 1. Resources that teachers can turn to for identifying appropriate measures include the Na­tional Center on Student Progress Moni­toring’s review of available tools (http://www.studentprogress.org/) and the Re­search Institute on Progress Monitoring(http://www.progressmonitoring.org/).
+
+2. Use curriculum-embedded assessments
+
+in interventions to determine whether students are learning from the intervention. These measures can be used as often as every day159 or as infrequently as once every other week.160 Many tier 2 and tier 3 intervention pro­ grams (commercially developed, re­ searcher developed, or district developed) include curriculum-embedded assess­ments (sometimes called unit tests, mas­tery tests, or daily probes). The results of these assessments can be used to determine which concepts need to be reviewed, which need to be re-taught, and which have been mastered. Curriculum-embedded as­sessments are often administered daily for students in kindergarten161 and grade 1 and biweekly for students in grades 2 through 6.162 These assessments usually do not possess the same high technical characteristics of the general outcome measures. Curriculum-embedded assessments often result in very useful information for interventionists because they can detect changes in student performance in the concepts and skills being taught at the time. Interventionists need to be cautious about assuming that mastery of individual skills and concepts will translate into improvements in overall proficiency. As a result, the panel recommends using both general outcome measures and curriculum-embedded assessments for students receiving interventions.
+
+If the intervention program does not include curriculum-embedded assessments, use efficient, reliable, and valid screening measures, which can also be used as progress monitoring measures (see recommendation 1).
+
+3. Use progress monitoring data to regroup students when necessary. Since student skill levels change over time and in varying degrees, the panel
+
+For example, one tier 2 intervention pro­gram for 1st and 2nd grade students reported by Bryant, Bryant, Gersten, Scammacca, and Chavez (2008) included daily activity-level progress monitoring that consisted of four oral or written problems drawn from the content focus for that day. Teachers were instructed that a majority of the students in the group had to complete at least three of the four problems correctly to consider the daily lesson successful.
+
+A parallel example in grades 3 and beyond can be found in Jitendra’s Solving math word problems instructional materials on teaching word problems (2007). There are many other examples in available commercial programs. recommends using progress monitoring data to regroup students within tiers so that the small groups used in tier 2 interventions are as homogeneous as possible. If a student does not fit into any of the intervention groups from his or her class, consider putting the child in an intervention group from another class if the schedule permits.
+
+Roadblocks and solutions Roadblock 7.1. Students within classes are at very different levels. This can make it difficult to group students into appropriate tier 2 and tier 3 intervention groups.
+
+Suggested Approach. If students within a class are at such diverse levels that appropriate tier 2 and tier 3 intervention groups cannot be made, consider grouping students across classes. This will facilitate clustering students with similar needs. For example, teachers of upper elementary students may find that students who have not yet mastered basic concepts in a particular area (fractions) are spread across several classrooms. Putting these students in a single tier 2 intervention group would be the most efficient means of meeting their needs, rather than trying to provide one or two students in each class with services duplicated across classrooms. In such a case, a math specialist, paraprofessional, or other school personnel who have received training can conduct the intervention.
+
+Roadblock 7.2. There is insufficient time for teachers to implement progress monitoring. Suggested Approach. If teachers are too busy to assess student progress with monitoring measures, consider training paraprofessionals or other school staff to do so.
+

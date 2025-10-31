@@ -1,0 +1,87 @@
+( 21 )
+
+Recommendation 3.
+
+Instruction during the intervention should be explicit and systematic. This includes providing models of proficient problem solving, verbalization of thought processes, guided practice, corrective feedback, and frequent cumulative review.
+
+The National Mathematics Advisory Panel defines explicit instruction as
+
+follows (2008, p. 23):
+
+•“Teachers provide clear models for solving a problem type using an array of examples.” 
+• “Students receive extensive practice in use of newly learned strategies and skills.”
+• “Students are provided with opportunities to think aloud (i.e., talk through the decisions they make and the steps they take).” 
+• “Students are provided with extensive feedback.” 
+
+The NMAP notes that this does not mean that all mathematics instruction should be explicit. But it does recommend that struggling students receive some explicit instruction regularly and that some of the explicit instruction ensure that students possess the foundational skills and conceptual knowledge necessary for understanding their grade-level mathematics.49 Our panel supports this recommendation and believes that districts and schools should select materials for interventions that reflect this orientation. In addition, professional development for interventionists should contain guidance on these components of explicit instruction.
+
+Level of evidence: Strong
+
+Our panel judged the level of evidence supporting this recommendation to be strong. This recommendation is based on six randomized controlled trials that met
+
+WWC standards or met standards with reservations and that examined the effectiveness of explicit and systematic instruction in mathematics interventions.
+
+These studies have shown that explicit and systematic instruction can significantly improve proficiency in word problem solv­ing51 and operations52 across grade levels and diverse student populations.
+
+Brief summary of evidence to support the recommendation The results of six randomized controlled trials of mathematics interventions show extensive support for various combina­tions of the following components of ex­plicit and systematic instruction: teacher demonstration, student verbalization,
+
+Recommendation 3. Instruction during the intervention should be explicit and systematic ( 22 ) guided practice, and corrective feedback. All six studies examined interven­tions that included teacher demonstra­tions early in the lessons.57 For example, three studies included instruction that began with the teacher verbalizing aloud the steps to solve sample mathematics problems.58 The effects of this component of explicit instruction cannot be evaluated from these studies because the demonstra­tion procedure was used in instruction for students in both treatment and compari­son groups.
+
+Scaffolded practice, a transfer of control of problem solving from the teacher to the student, was a component in four of the six studies.59 Although it is not possible to parse the effects of scaffolded instruction from the other components of instruction, the inter­vention groups in each study demonstrated significant positive gains on word problem proficiencies or accuracy measures.
+
+Three of the six studies included opportu­nities for students to verbalize the steps to solve a problem.60 Again, although effects of the interventions were statistically significant and positive on measures of word problems, operations, or accuracy, the effects cannot be attributed to a sin­gle component of these multicomponent interventions.
+
+Similarly, four of the six studies included immediate corrective feedback,61 and the effects of these interventions were posi­tive and significant on word problems and measures of operations skills, but the ef­fects of the corrective feedback component cannot be isolated from the effects of other components in three cases.62 With only one study in the pool of six in­cluding cumulative review as part of the intervention,63 the support for this compo­nent of explicit instruction is not as strong as it is for the other components. But this study did have statistically significant positive effects in favor of the instructional group that received explicit instruction in strategies for solving word problems, including cumulative review.
+
+How to carry out this recommendation
+
+1. Ensure that instructional materials are
+
+systematic and explicit. In particular, they should include numerous clear models of easy and difficult problems, with accompanying teacher think-alouds.
+
+To be considered systematic, mathematics instruction should gradually build proficiency by introducing concepts in a logical order and by providing students with numerous applications of each concept. For example, a systematic curriculum builds student understanding of place value in an array of contexts before teaching procedures for adding and subtracting two-digit numbers with regrouping.
+
+Explicit instruction typically begins with a clear unambiguous exposition of con­cepts and step-by-step models of how
+
+Recommendation 3. Instruction during the intervention should be explicit and systematic ( 23 ) to perform operations and reasons for the procedures.64 Interventionists should think aloud (make their thinking pro­ cesses public) as they model each step of the process.65,66 They should not only tell students about the steps and procedures they are performing, but also allude to the reasoning behind them (link to the under­ lying mathematics).
+
+The panel suggests that districts select instructional materials that provide interventionists with sample think-alouds or possible scenarios for explaining concepts and working through operations. A criterion for selecting intervention curricula materials should be whether or not they provide materials that help intervention­ists model or think through difficult and easy examples.
+
+In the panel’s view, a major flaw in many instructional materials is that teachers are asked to provide only one or two models of how to approach a problem and that most of these models are for easy-to-solve problems. Ideally, the materials will also assist teachers in explaining the reason­ behind the procedures and problem solving methods.
+
+2. Provide students with opportunities to solve problems in a group and communicate problem-solving strategies. For students to become proficient in performing mathematical processes, explicit instruction should include scaffolded practice, where the teacher plays an active role and gradually transfers the work to the students.
+
+This phase of explicit instruction begins with the teacher and the students solving problems together. As this phase of instruction continues, students should gradually complete more steps of the problem with decreasing guidance from the teacher. Students should proceed to independent practice when they can solve the problem with little or no support from the teacher.
+
+During guided practice, the teacher should ask students to communicate the strate­gies they are using to complete each step of the process and provide reasons for their decisions.68 In addition, the panel recommends that teachers ask students to explain their solutions.69 Note that not only interventionists—but fellow students—can and should communicate how they think through solving problems to the inter­ventionist and the rest of the group. This can facilitate the development of a shared language for talking about mathematical problem solving.70 Teachers should give specific feedback that clarifies what students did correctly and what they need to improve.71 They should provide opportunities for students to correct their errors. For example, if a student has difficulty solving a word problem or solving an equation, the teacher should ask simple questions that guide the student to solving the problem correctly.
+
+Corrective feedback can also include reteaching or clarifying instructions when students are not able to respond to questions or their responses are incorrect.
+
+Recommendation 3. Instruction during the intervention should be explicit and systematic
+
+3. Ensure that instructional materials include
+
+cumulative review in each session. Cumulative reviews provide students with an opportunity to practice topics previously covered in depth. For example, when students are working with fractions, a cumulative review activity could provide them with an opportunity to solve some problems involving multiplication and division of whole numbers. In the panel’s opinion, this review can ensure that the knowledge is maintained over time and helps students see connections between various mathematical ideas.
+
+Potential roadblocks and solutions Roadblock 3.1. Interventionists may be unfamiliar with how to implement an intervention that uses explicit instruction, and some may underestimate the amount of practice necessary for students in tiers 2 and 3 to master the material being taught.
+
+Suggested Approach. Districts and schools should set up professional development sessions for interventionists to observe and discuss sample lessons. The panel believes that it is important for professional development participants to observe the intervention first hand. Watching a DVD or video of the intervention being used with students can give the participants a model of how the program should be implemented.
+
+Interventionists should also have hands-on experience, teaching the lessons to each other and practicing with students.
+
+Role-playing can give interventionists practice with modeling and think-alouds, since it is important for them to stop and reflect before formulating an explanation for their thinking processes. The trainers can observe these activities, provide feedback on what participants did well, and offer explicit suggestions for improving instruction.
+
+As a part of professional development, be sure to convey the benefits that extended practice (not only worksheets) and cumulative review can have for student performance. If professional development is not an option, teachers can also work with mathematics coaches to learn how to implement the intervention.
+
+Roadblock 3.2. Interventionists may not be expert with the underlying mathematics content. Suggested Approach. For intervention­ists to explain a mathematical process accurately and develop a logical think-aloud, it is important for them to understand the underlying mathematics concept and the mathematical reasoning for the process.
+
+Professional development should provide participants with in-depth knowledge of the mathematics content in the interven­tion, including the mathematical reason­ing underlying procedures, formulas, and problem-solving methods.72 The panel believes that when interventionists convey their knowledge of the content, student understanding will increase, misconceptions will decrease, and the chances that students solve problems by rote memory will be reduced.
+
+Roadblock 3.3. The intervention materials may not incorporate enough models, thinkalouds, practice, and cumulative review.
+
+Suggested Approach. Intervention pro­ grams might not incorporate enough mod­els, think-alouds, practice, or cumulative review to improve students’ mathematics performance.73 Consider using a mathematics coach or specialist to develop a template listing the essential parts of an effective lesson,
+
+Recommendation 3. Instruction during the intervention should be explicit and systematic including the number of models, accompanying think-alouds, and practice and cumulative review items students need to understand, learn, and master the content.
+
+A team of teachers, guided by the math­ematics coach/specialist, can determine the components that should be added to the program.
+

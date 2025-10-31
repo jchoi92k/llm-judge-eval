@@ -1,0 +1,58 @@
+Recommendation 6.
+
+Interventions at all grade levels should devote about 10 minutes in each session to building fluent retrieval of basic arithmetic facts.
+
+Quick retrieval of basic arithmetic facts is critical for success in mathematics.124 Yet research has found that many students with difficulties in mathematics are not fluent in such facts.125 Weak ability to retrieve arithmetic facts is likely to impede understanding of concepts students encounter with rational numbers since teachers and texts often assume automatic retrieval of facts such as 3 × 9 = and 11 – 7 = as they explain concepts such as equivalence and the commutative property.126 For that reason, we recommend that about 10 minutes be devoted to building this proficiency during each intervention session. Acknowledging that time may be short, we recommend a minimum of 5 minutes a session.
+
+Level of evidence: Moderate
+
+The panel judged the level of evidence supporting this recommendation to be moderate. This recommendation is based on seven randomized controlled trials that met WWC standards or met standards with reservations and that included fact fluency
+
+These studies reveal a series of small but positive effects on measures of fact fluency128 and procedural knowledge for diverse student populations in the elementary grades.129 In some cases, fact fluency instruction was one of several components in the interven­tion, and it is difficult to judge the impact of the fact fluency component alone.130 However, because numerous research teams independently produced similar findings, we consider this practice worthy of serious consideration. Although the research is limited to the elementary school grades, in the panel’s view, building fact fluency is also important for middle school students when used appropriately.
+
+Brief summary of evidence to support the recommendation The evidence demonstrates small positive effects on fact fluency and operations for the elementary grades and thus provides support for including fact fluency activi­ties as either stand-alone interventions or components of larger tier 2 interven­tions.131 These positive effects did not, however, consistently reach statistical significance, and the findings cannot be ex­trapolated to areas of mathematics outside of fact fluency and operations.
+
+Recommendation 6. Interventions at all grade levels should devote about 10 minutes
+
+Two studies examined the effects of being taught mathematics facts relative to the effects of being taught spelling or word identification using similar methods. In both studies, the mathematics facts group demonstrated positive gains in fact fluency relative to the comparison group, but the effects were significant in only one of the studies. Another two interventions included a facts fluency component in combination with a larger tier 2 intervention.134 For example, in the Fuchs et al. (2005) study, the final 10 minutes of a 40 minute intervention ses­sion were dedicated to practice with addi­tion and subtraction facts. In both studies, tier 2 interventions were compared against typical tier 1 classroom instruction. In each study, the effects on mathematics facts were small and not significant, though the effects were generally positive in favor of groups that received the intervention. Significant positive effects were detected in both studies in the domain of operations, and fluency component may have been a factor in improving students’ operational abilities.
+
+Many of the studies in the evidence base included one or more of a variety of com­ ponents such as teaching the relationships among facts,135 making use of a variety of materials such as flash cards and com­puter-assisted instruction,136 and teaching math facts for a minimum of 10 minutes effects on addition fluency were statistically sig­nificant and positive while there was no effect on subtraction fluency.
+
+Since these components were typically not independent variables in the studies, it is difficult to attribute any positive effects to the component itself.
+
+There is evidence, however, that strategy-based instruction for fact fluency (such as teaching the counting-on procedure) is superior to rote memorization.
+
+How to carry out this recommendation
+
+1. Provide about 10 minutes per session of instruction to build quick retrieval of basic arithmetic facts. Consider using technology, flash cards, and other materials for extensive practice to facilitate automatic retrieval.
+
+The panel recommends providing about 10 minutes each session for practice to help students become automatic in retrieving basic arithmetic facts, beginning in grade
+
+2. The goal is quick retrieval of facts using the digits 0 to 9 without any access to pen­cil and paper or manipulatives. Presenting facts in number families (such as 7 × 8 = 56, 8 × 7 = 56, 56/7 = 8, and 56/8 = 7) shows promise for improving student fluency.139 In the panel’s view, one advantage of this approach is that students simultaneously learn about the nature of inverse operations.
+
+In the opinion of the panel, cumulative review is critical if students are to maintain fluency and proficiency with mathematics facts. An efficient way to achieve this is to integrate previously learned facts into practice activities. To reduce frustration and provide enough extended practice so that retrieval becomes automatic (even for those who tend to have limited capacity to remember and retrieve abstract material), interventionists can individualize practice sets so students learn one or two new facts, practice several recently acquired facts, and review previously learned facts.140 If students are proficient in grade-level math­ematics facts, then the panel acknowledges that students might not need to practice each session, although periodic cumulative review is encouraged.
+
+2. For students in kindergarten through grade 2, explicitly teach strategies for efficient counting to improve the retrieval of mathematics facts.
+
+It is important to provide students in kindergarten through grade 2 with strategies for efficiently solving mathematics facts as a step toward automatic, fluent retrieval.
+
+The counting-up strategy has been used to increase students’ fluency in addition to facts. This is a simple, effective strategy that the majority of students teach themselves, sometimes as early as age 4. But students with difficulties in mathematics tend not to develop this strategy on their own, even by grade 2. There is evidence that systematic and explicit instruction in this strategy is effective.
+
+Students can be explicitly taught to find the smaller number in the mathematical fact, put up the corresponding number of fingers, and count up that number of fingers from the larger number. For example, to solve 3 + 5 = , the teacher identifies the smaller number (3) and puts up three fingers. The teacher simultaneously says and points to the larger number before counting three fingers, 6, 7, 8.
+
+Note that learning the counting-up strategy not only improves students’ fact fluency145 but also immerses students in the communicative property of addition. For example, students learn that when the larger number is presented second (3 + 5 =  ), they can rearrange the order and start counting up from 5. In the view of the panel, this linkage is an important part of intervention. After this type of instruction, follow-up practice with flash cards might help students make the new learning automatic.
+
+3. Teach students in grades 2 through 8 how to use their knowledge of properties, such as commutative, associative, and distributive law, to derive facts in their heads.
+
+Some researchers have argued that rather than solely relying on rote memorization and drill and practice, students should use properties of arithmetic to solve com­ plex facts involving multiplication and di­ vision.146 These researchers believe that by teaching the use of composition and decomposition, and applying the distributive property to situations involving mul­tiplication, students can increasingly learn how to quickly (if not automatically) retrieve facts. For example, to understand and quickly produce the seemingly difficult multiplication fact 13 × 7 =
+
+, students are reminded that 13 = 10 + 3, something they should have been taught consistently during their elementary career. Then, since 13 × 7 = (10 + 3) × 7 = 10 × 7 + 3 × 7, the fact is parsed into easier, known problems 10 × 7 = and 3 × 7 = by applying of the distributive property. Students can then rely on the two simpler multiplication facts (which they had already acquired) to quickly produce an answer mentally.
+
+The panel recommends serious consideration of this approach as an option for students who struggle with acquisition of facts in grades 2 through 8. When choosing an intervention curriculum, consider one that teaches this approach to students in this age range. Note, however, that the panel believes students should also spend time after instruction with extensive practice on quick retrieval of facts through the use of materials such as flash cards or technology.
+
+Roadblocks and solutions Roadblock 6.1. Students may find fluency practice tedious and boring. Suggested Approach. Games that provide students with the opportunity to practice new facts and review previously learned facts by encouraging them to beat their previous high score can help the practice be less tedious.147 Players may be motivated when their scores rise and the challenge increases. Further recommendations for motivating students are in recommendation 8.
+
+Roadblock 6.2. Curricula may not include enough fact practice or may not have materials that lend themselves to teaching strategies.
+
+Suggested Approach. Some contemporary curricula deemphasize fact practice, so this is a real concern. In this case, we recommend using a supplemental program, either flash card or technology based.
+

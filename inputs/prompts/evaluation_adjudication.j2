@@ -1,0 +1,140 @@
+# AI Tutoring Tool Evaluation - Adjudication
+
+You are an expert educational evaluator performing adjudication between two evaluations of an AI tutoring tool that show significant discrepancies.
+
+## Input Materials Overview
+
+You will receive:
+- **Tool Overview** - Description of the AI tutoring system's capabilities, features, and intended use cases
+- **Tool Description** - Brief explanation of the AI tutoring system being evaluated
+- **Evaluation Rubrics** - Structured criteria for assessment across three categories
+- **Practice Guide** - Research-backed pedagogical principles for reference
+- **Example Evaluations from Human Raters** - Human rater examples for calibration and consistency
+- **Example Tutor Conversations** - Sample AI and human tutor-student interactions with quality annotations to illustrate expected response standards
+- **Interaction Data** - The AI tutor-student interaction record from the tool to evaluate
+- **Two Previous Evaluations** - Two independent evaluations that need adjudication due to significant discrepancies
+- **Special Consideration** - (Optional) Specific aspects of the tool's design or functionality that must be considered during evaluation
+
+## Task
+
+Review the two provided evaluations and the original interaction data. Produce a final adjudicated evaluation that:
+1. Resolves discrepancies between the two evaluations
+2. Provides the most accurate assessment based on the evidence
+3. Pays special attention to areas of disagreement (scores differing by 2+ points, disagreement on mathematical accuracy applicability, or null vs non-null ratings)
+
+**CRITICAL:** If a Special Consideration is provided, this identifies key aspects of the tool's design that must be taken into account during adjudication.
+
+## Adjudication Guidelines
+
+**Special Consideration Priority:**
+- If a Special Consideration is provided, it describes essential design features of the tool that affect expected performance
+- Use this to resolve disagreements where evaluators may have misunderstood the tool's intentional design
+- Do not penalize the AI for behaviors that are part of its intended pedagogical approach
+- Consider how these design features should influence the final adjudicated scores
+
+**When evaluations disagree:**
+- Re-examine the original interaction data carefully
+- Consider both evaluators' reasoning but make an independent judgment
+- If one evaluation has clear errors or misinterpretations of the tool's design, favor the more accurate one
+- For borderline cases, consider the predominant evidence in the interaction and tool design
+- Document your reasoning for choosing one score over another in the explanations
+- Consider how the tool's capabilities (from Tool Overview) should inform expected performance
+
+**For Mathematical Accuracy disputes:**
+- If evaluators disagree on applicability, carefully check if ANY mathematical content exists in the AI's responses
+- When in doubt about applicability, err toward including it (applicable = true)
+- For null vs non-null score disputes, verify whether mathematical content truly exists to evaluate
+
+## Output Format
+
+Provide your adjudicated evaluation as a single JSON object with the same structure as the original evaluations:
+
+```json
+{
+  "scores": {
+    "Mathematical_Accuracy": {
+      "Validity": <1-4 or null>,
+      "Clarity_and_Labeling": <1-4 or null>,
+      "Justification_and_Explanation": <1-4 or null>
+    },
+    "Pedagogical_Quality": {
+      "Problem_Solving_Strategies": <1-4>,
+      "Relevance": <1-4>,
+      "Scaffolded_Support": <1-4>,
+      "Clarity_of_Explanation": <1-4>,
+      "Feedback": <1-4>,
+      "Motivational_Engagement": <1-4>
+    },
+    "Equity_and_Fairness": {
+      "Language_neutrality": <1-3>,
+      "Feedback_tone": <1-3>,
+      "Cultural_relevance": <1-3>
+    }
+  },
+  "explanations": {
+    "Mathematical_Accuracy": {
+      "Validity": "Adjudication reasoning with specific evidence",
+      "Clarity_and_Labeling": "Justification for chosen score",
+      "Justification_and_Explanation": "Reasoning for final decision"
+    },
+    "Pedagogical_Quality": {
+      "Problem_Solving_Strategies": "Explanation for adjudicated score",
+      "Relevance": "Justification for final rating",
+      "Scaffolded_Support": "Reasoning with examples",
+      "Clarity_of_Explanation": "Explanation for chosen score",
+      "Feedback": "Justification for adjudication",
+      "Motivational_Engagement": "Assessment reasoning"
+    },
+    "Equity_and_Fairness": {
+      "Language_neutrality": "Adjudication explanation",
+      "Feedback_tone": "Justification for score",
+      "Cultural_relevance": "Final assessment reasoning"
+    }
+  },
+  "mathematical_accuracy_relevance": {
+    "applicable": <true/false>,
+    "explanation": "Adjudication reasoning for applicability decision",
+    "extracted_mathematical_content": "If applicable, extract any mathematical content from the AI's response",
+    "catastrophic_errors": "List any significant mathematical errors, or 'None'"
+  },
+  "adjudication_notes": {
+    "key_discrepancies_resolved": "Brief summary of main disagreements and how they were resolved",
+    "evaluation_preferred": "If one evaluation was generally more accurate, note which (1 or 2) and why"
+  }
+}
+```
+
+## Input Components
+
+### Tool Overview
+{{TOOL_OVERVIEW}}
+
+### Tool Description
+{{TOOL_DESCRIPTION}}
+
+### Evaluation Rubrics
+{{RUBRICS}}
+
+### Practice Guide Reference
+{{PRACTICE_GUIDE}}
+
+### Example Evaluations from Human Raters
+{{EXAMPLE_EVALUATIONS}}
+
+### Example Tutor Conversations
+{{EXAMPLE_TUTOR_CONVERSATIONS}}
+
+### Input Data Explanation
+{{COLUMN_EXPL}}
+
+### Input Data to Evaluate
+{{ROW_DATA}}
+
+### Evaluation 1 (First Independent Evaluation)
+{{EVALUATION_1}}
+
+### Evaluation 2 (Second Independent Evaluation)
+{{EVALUATION_2}}
+
+### Special Consideration (Optional)
+{{SPECIAL_CONSIDERATION}}

@@ -1,0 +1,79 @@
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  8
+
+Recommendation 4
+
+Recommendation 4: Number Lines
+
+Use the number line to facilitate the learning of mathematical concepts and procedures, build understanding of grade-level material, and prepare students for advanced mathematics.
+
+The number line is a semi-concrete mathematical representation that can concurrently represent all real numbers, including whole numbers and rational numbers, positive and negative numbers, and other sets of numbers (Example 4).
+
+The ability to represent different sets of numbers makes the number line a powerful tool for helping students develop a unified understanding of numbers and for supporting their learning of advanced mathematics. Number lines are an important tool for teaching and understanding magnitude and operations for both whole numbers and fractions, graphing coordinates, and displaying and analyzing data.
+
+Students who are proficient in mathematics often construct a mental number line as they solve problems. When a teacher consistently uses number lines during intervention, students gradually develop the ability to visualize a number line when considering the magnitude of a number, determining strategies for solving mathematics problems, or evaluating the reasonableness of their answers after solving problems. It also sets the stage for more advanced work in middle and high school mathematics.
+
+Each step in this recommendation provides guidance for whole numbers in early elementary (grades K–2) and fractions and decimals in upper elementary (grades 3–6).
+
+Example 4. Number line representing magnitudes of whole, positive, negative, and rational numbers.
+
+How to carry out the recommendation
+
+1. Represent whole numbers, fractions,
+
+and decimals on a number line to build students’ understanding of numerical magnitude. Early elementary (grades K–2). Before using a number line, introduce students to a concrete version of a number line. For example, use a walkable number path, board games, or clotheslines. This may help students begin to form a visual image of a number line.
+
+After exposing students to the concrete number line with a series of individual units lined up on a path, connect that idea to a number line on paper or projected on a screen. Ask students to identify similarities and differences between the two representations. Draw their attention to the distance from zero to one and how that distance is the same length as one unit. This connection will help students understand that the 1 on a number line is not merely a tick mark, but also represents the full one-unit distance from zero.
+
+Upper elementary (grades 3–6). Once students understand the concept of a fraction with concrete representations, show students how to represent fractions on a number line.
+
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  9
+
+Recommendation 4
+
+Demonstrate the location of fractions on the number line, starting with familiar fractions that are less than one. Reinforce the idea that the denominator represents the number of partitions in one whole. Number lines can be used to:
+
+• Demonstrate the pattern of unit fractions and their corresponding magnitude. • Teach students that not all fractions are less than one; depict fractions equal to or greater than one. • Show students that whole numbers can be represented as fractions and that some fractions are located between other whole numbers. • Explain that some fractions are positioned at the same location on the number line and are therefore equivalent (for example, 1/2, 2/4, and 4/8 ). • Expand the idea of equivalencies to include decimals and percentages so that students understand that these numbers are also equivalencies.
+
+2. Compare numbers and determine their relative magnitude using a number line to help students understand quantity. Early elementary (grades K–2). Use number lines to teach the relative magnitude of whole numbers. Start by putting two numbers on a number line using equal units. Explain that each number’s distance from zero represents the number’s magnitude. Explain how to compare the two numbers and determine which is greater based on which is more equal units away from zero.
+
+Upper elementary (grades 3–6). Use number lines to compare the magnitude of fractions and decimals. Reinforce for students that fraction and decimal magnitude, like whole-number magnitude, is represented by how far to the right or left of zero a number is positioned. Help students compare fraction magnitude by locating “benchmark numbers,” starting with 0, 1/2, and 1, when thinking of fractions between 0 and 1.
+
+3. Use the number line to build students’ understanding of the concepts underlying operations. Early elementary (grades K–2). Show students how to use number lines for addition and subtraction of whole numbers by looking at the distance between whole numbers. Teach students to focus on the unit length, or distance between two tick marks, rather than counting tick marks. When moving to the left students see that starting with 8 and moving 3 units to the left is equal to 5, showing the subtraction equation 8 – 3 = 5.
+
+Upper elementary (grades 3–6). A number line is a powerful visual for demonstrating addition and subtraction of fractions. Start by adding fractions with the same denominator using one number line. When adding and subtracting fractions with unlike denominators, use double number lines to make the equivalences more visible for students.
+
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  10
+
+Recommendation 5
+
+Recommendation 5: Word Problems
+
+Provide deliberate instruction on word problems to deepen students’ mathematical understanding and support their capacity to apply mathematical ideas. Learning to solve word problems is an important part of the elementary mathematics curriculum because word problems help students apply the mathematics they are learning, develop critical thinking skills, and begin to connect mathematics to a variety of scenarios or contexts. Becoming successful at solving word problems can deepen students’ understanding of grade-level content and set students up for success in advanced mathematics courses and the workforce.
+
+Unfortunately, learning calculations alone does not necessarily help students successfully solve word problems. To set up and solve word problems successfully, students need to read and understand the problem’s narrative, determine what the problem is asking them to find, and identify one or more mathematical operations that will solve the problem. Students who struggle with mathematics often have difficulty with one or more of these steps.
+
+How to carry out the recommendation
+
+1. Teach students to identify word problem
+
+types that include the same type of action or event. Introduce one problem type at a time. Begin by introducing a new problem type with a story that includes all quantities.
+
+This helps students think about what the quantities represent without needing to solve for an unknown. Next, present the same story with a missing quantity (that is, a word problem). For instance:
+
+• Story with all quantities: There were 18 children on the bus. 7 children got off the bus at the first stop.  11 children are still on the bus.
+
+• Word problem with a missing quantity: There were 18 children on the bus. 7 children got off the bus at the first stop. How many children are still on the bus? Connect the quantities between the story and the word problem so that the students see how they are the same. Use role-playing, gestures, or concrete and/or semi-concrete manipulatives to help students visualize the problem and identify relevant information.
+
+This helps students see how the quantities relate to each other.
+
+2. Teach students a solution method for solving each problem type. Introduce a solution method using a worked-out example. Talk through the problem-solving process and connect the relevant problem information to the worked-out example. Say out loud the decisions that were made to solve the problem at each step. Then demonstrate how to apply the solution method by solving a similar problem with students using that method. Discuss each decision you make and ask students guiding questions to engage them as you solve the problem.
+
+Provide students with a visual guide detailing steps to reference as they solve word problems. Some parts of the guide may apply to understanding the problem before solving it, such as “read the problem,” “name the problem type,” “identify the question,” and “find relevant information.” Other parts may be geared toward choosing a solution method that is specific to the problem type. Over time, gradually fade the use of visual guides so students do not become overly reliant on them.
+
+

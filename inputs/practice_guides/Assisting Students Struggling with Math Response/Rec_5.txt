@@ -1,0 +1,109 @@
+Recommendation 5.
+
+Intervention materials should include opportunities for students to work with visual representations of mathematical ideas and interventionists should be proficient in the use of visual representations of mathematical ideas.
+
+A major problem for students who struggle with mathematics is weak understanding of the relationships between the abstract symbols of mathematics and the various visual representations.93 Student understanding of these relationships can be strengthened through the use of visual representations of mathematical concepts such as solving equations, fraction equivalence, and the commutative property of addition and multiplication (see the glossary).
+
+Such representations may include number lines, graphs, simple drawings of concrete objects such as blocks or cups, or simplified drawings such as ovals to represent birds.
+
+In the view of the panel, the ability to express mathematical ideas using visual representations and to convert visual representations into symbols is critical for success in mathematics. A major goal of interventions should be to systematically teach students how to develop visual representations and how to transition these representations to standard symbolic representations used in problem solving. Occasional and unsystematic exposure (the norm in many classrooms) is insufficient and does not facilitate understanding of the relationship between the abstract symbols of mathematics and various visual representations.
+
+Level of evidence: Moderate
+
+The panel judged the level of evidence supporting this recommendation to be moderate. This recommendation is based on 13 randomized controlled trials that met WWC standards or met standards with reservations.
+
+These studies provide sup­ port for the systematic use of visual rep­resentations or manipulatives to improve achievement in general mathematics,95 prealgebra concepts,96 word problems,97 and operations.98 But these representations were part of a complex multicomponent intervention in each of the studies. So, it is difficult to judge the impact of the representation component alone, and the panel believes that a moderate designation is appropriate for the level of evidence for this recommendation.
+
+Brief summary of evidence to support the recommendation Research shows that the systematic use of visual representations and manipulatives may lead to statistically significant or sub­stantively important positive gains in math
+
+Recommendation 5. Intervention materials should include opportunities for the student
+
+( 31 ) achievement.99 Four studies used visual representations to help pave the way for students to understand the abstract version of the representation.100 For example, one of the studies taught students to use visual representations such as number lines to understand mathematics facts.101 The four studies demonstrated gains in mathematics facts and operations102 and word problem proficiencies,103 and may provide evidence that using visual representations in inter­ventions is an effective technique.
+
+Three of the studies used manipulatives in the early stages of instruction to rein­ force understanding of basic concepts and operations.104 One used concrete models such as groups of boxes to teach rules for multiplication problems.105 The three stud­ies largely showed significant and positive effects and provide evidence that using manipulatives may be helpful in the initial stages of an intervention to improve profi­ciency in word problem solving.106 In six of the studies, both concrete and vi­sual representations were used, and over­ all these studies show that using some combination of manipulatives and visual representations may promote mathematical understanding.107 In two of the six, instruction did not include fading of the manipulatives and visual representations to promote understanding of math at a more abstract level.108 One of these inter­ventions positively affected general math achievement,109 but the other had no effect on outcome measures tested.110 In the other four studies, manipulatives and visual rep­resentations were presented to the students sequentially to promote understanding at a more abstract level.111 One interven­tion that used this method for teaching fractions did not show much promise,112
+
+but the other three did result in positive gains.113 One of them taught 1st graders basic math concepts and operations,114 and the other two taught prealgebra concepts to low-achieving students.115 How to carry out this recommendation
+
+1. Use visual representations such as number
+
+lines, arrays, and strip diagrams. In the panel’s view, visual representations such as number lines, number paths, strip diagrams, drawings, and other forms of pictorial representations help scaffold learn­ and pave the way for understanding the abstract version of the representation. We recommend that interventionists use such abstract visual representations extensively and consistently. We also recommend that interventionists explicitly link visual representations with the standard symbolic representations used in mathematics.
+
+
+Recommendation 5. Intervention materials should include opportunities for the student
+
+( 32 ) In early grades, number lines, number paths, and other pictorial representations are often used to teach students foundational concepts and procedural operations of addition and subtraction. Although number lines or number paths may not be a suitable initial representation in some situations (as when working with multiplication and division), they can help conceptually and procedurally with other types of problems. Conceptually, number lines and number paths show magnitude and allow for explicit instruction on magnitude comparisons. Procedurally, they help teach principles of addition and subtraction operations such as “counting down,” “counting up,” and “counting down from.” The figure in example 4 shows how a number line may be used to assist with counting strategies. The top arrows show how a child learns to count on. He adds 2 + 5 =
+
+. To start, he places his finger on 2. Then, he jumps five times to the right and lands on
+
+7. The arrows under the number line show
+
+how a child subtracts using a counting down strategy. For 10 – 3 = , she starts with her finger on the 10. Then, she jumps three times to the left on the number line, where she finishes on 7.
+
+The goal of using a number line should be for students to create a mental number line and establish rules for movement along the line according to the more or less marking arrows placed along the line. Such rules and procedures should be directly tied to the explicit instruction that guided the students through the use of the visual representation.116 Pictorial representations of objects such as birds and cups are also often used to teach basic addition and subtraction, and simple drawings can help students under­ stand place value and multidigit addition. Note that this study was not eligible for review because it was conducted outside the United States. and subtraction. Example 5 (p. 34) shows how a student can draw a picture to solve a multidigit addition problem. In the figure, circles represent one unit and lines represent units of 10.
+
+In upper grades, diagrams and pictorial representations used to teach fractions also help students make sense of the basic structure underlying word problems. Strip diagrams (also called model diagrams and bar diagrams) are one type of diagram that can be used. Strip diagrams are drawings of narrow rectangles that show relationships among quantities. Students can use strip diagrams to help them reason about and solve a wide variety of word problems about related quantities. In example 6 (p. 34), the full rectangle (consisting of all three equal parts joined together) represents Shauntay’s money before she bought the book. Since she spent 2⁄3 of her money on the book, two of the three equal parts represent the $26 she spent on the book. Students can then reason that if two parts stand for $26, then each part stands for $13, so three parts stand for $39. So, Shauntay had $39 before she bought the book.
+
+2. If visuals are not sufficient for developing
+
+accurate abstract thought and answers, use concrete manipulatives first. Although this can also be done with students in upper el­ementary and middle school grades, use of manipulatives with older students should be expeditious because the goal is to move to­ ward understanding of—and facility with— visual representations, and finally, to the abstract.
+
+Manipulatives are usually used in lower grades in the initial stages of learning as teachers introduce basic concepts with whole numbers. This exposure to concrete objects is often fleeting and transitory. The use of manipulatives in upper elementary school grades is virtually nonexistent.
+
+
+Recommendation 5. Intervention materials should include opportunities for the student
+
+( 33 ) The panel suggests that the interventionist use concrete objects in two ways. First, in lower elementary grades, use concrete objects more extensively in the initial stages of learning to reinforce the understanding of basic concepts and operations.118 Concrete models are routinely used to teach basic foundational concepts such as place value.119 They are also useful in teaching other aspects of mathematics such as multiplication facts. When a multiplication fact is memorized by question and answer alone, a student may believe that numbers are to be memorized rather than understood. For example, 4 × 6 equals
+
+24. When shown using manipulatives (as
+
+in example 7, p. 35), 4 × 6 means 4 groups of 6, which total as 24 objects.
+
+118.  Darch at al. (1984); Fuchs, Seethaler et al.           ;
+
+(2008) Fuchs, Fuchs, Craddock et al. (2008).
+
+119.  Fuchs et al. (2005); Fuchs, Seethaler et al.
+
+(2008); Fuchs, Powell et al. (2008). Second, in the upper grades, use concrete objects when visual representations do not seem sufficient in helping students understand mathematics at the more abstract level.
+
+Use manipulatives expeditiously, and focus on fading them away systematically to reach the abstract level.120
+
+In other words, explicitly teach students the concepts and operations when students are at the concrete level and consistently repeat the instructional procedures at the visual and abstract levels. Using consistent language across representational systems (manipulatives, visual representations, and ab­stract symbols) has been an important component in several research studies.121 Example 8 (p. 35) shows a set of matched concrete, visual, and abstract representa­tions of a concept involving solving single variable equations.
+
+
+Recommendation 5. Intervention materials should include opportunities for the student
+
+Example 5. Using visual representations for multidigit addition A group of ten can be drawn with a long line to indicate that ten ones are joined to form one ten:
+
+Simple drawings help make sense of two-digit addition with regrouping:
+
+36 +27 63 Example 6. Strip diagrams can help students make sense of fractions Shauntay spent of the money she had on a book that cost $26.
+
+How much money did Shauntay have before she bought the book? $26 book 2 parts 1 part 3 parts $26 $26 ÷ 2 = $13 3 × $13 = $39 Shauntay’s had $39 / 2 3 Shauntay’s money at first
+
+RECOMMENDATION 5. INTERVENTION MATERIALS SHOULD INCLUDE OPPORTUNITIES FOR THE STUDENT
+
+( 35 ) Example 7. Manipulatives can help students understand that four multiplied by six means four groups of six, which means 24 total objects Example 8. A set of matched concrete, visual, and abstract representations to teach solving single-variable equations Solving the Equation with Concrete Manipulatives (Cups and Sticks) Solving the Equation with Visual Representations of Cups and Sticks Solving the Equation with Abstract Symbols Concrete Steps A. 3 sticks plus one group of X equals 7 sticks B. Subtract 3 sticks from each side of the equation C. The equation now reads as one group of X equals 4 sticks D. Divide each side of the equation by one group E. One group of X is equal to four sticks (i.e., 1X/group = 4 sticks/group; 1X = 4 sticks)
+
+Recommendation 5. Intervention materials should include opportunities for the student
+
+( 36 ) Potential roadblocks and solutions Roadblock 5.1. In the opinion of the panel, many intervention materials provide very few examples of the use of visual representations.
+
+Suggested Approach. Because many curricular materials do not include sufficient examples of visual representations, the interventionist may need the help of the mathematics coach or other teachers in developing the visuals. District staff can also arrange for the development of these materials for use throughout the district.
+
+Roadblock 5.2. Some teachers or interventionists believe that instruction in concrete manipulatives requires too much time.
+
+Suggested Approach. Expeditious use of manipulatives cannot be overemphasized. Since tiered interventions often rely on foundational concepts and procedures, the use of instruction at the concrete level allows for reinforcing and making explicit the foundational concepts and operations.
+
+Note that overemphasis on manipulatives can be counterproductive, because stu­ dents manipulating only concrete objects may not be learning to do math at an ab­stract level.122 The interventionist should
+
+122.  Witzel, Mercer, and Miller (2003).
+
+use manipulatives in the initial stages strategically and then scaffold instruction to the abstract level. So, although it takes time to use manipulatives, this is not a major concern since concrete instruction will happen only rarely and expeditiously.
+
+Roadblock 5.3. Some interventionists may not fully understand the mathematical ideas that underlie some of the representations. This is likely to be particularly true for topics involving negative numbers, proportional reasoning, and interpretations of fractions.
+
+Suggested Approach. If interventionists do not fully understand the mathematical ideas behind the material, they are un­ likely to be able to teach it to struggling students.123 It is perfectly reasonable for districts to work with a local university faculty member, high school mathemat­ics instructor, or mathematics special­ist to provide relevant mathematics in­struction to interventionists so that they feel comfortable with the concepts. This can be coupled with professional development that addresses ways to explain these concepts in terms their students will understand.
+
+
+

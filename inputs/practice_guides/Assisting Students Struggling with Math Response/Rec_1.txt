@@ -1,0 +1,111 @@
+( 13 )
+
+Recommendation 1.
+
+Screen all students to identify those at risk for potential mathematics difficulties and provide interventions to students identified as at risk.
+
+The panel recommends that schools and districts systematically use universal screening to screen all students to determine which students have mathematics difficulties and require research-based interventions.
+
+Schools should evaluate and select screening measures based on their reliability and predictive validity, with particular emphasis on the measures’ specificity and sensitivity. Schools should also consider the efficiency of the measure to enable screening many students in a short time.
+
+Level of evidence: Moderate
+
+The panel judged the level of evidence supporting this recommendation to be mod­erate. This recommendation is based on a series of high-quality correlational studies with replicated findings that show the ability of measures to predict performance in mathematics one year after administration (and in some cases two years).29 Brief summary of evidence to support the recommendation A growing body of evidence suggests that there are several valid and reliable ap­proaches for screening students in the primary grades. All these approaches target
+
+29.  For reviews see Jiban and Deno (2007); Fuchs,
+
+Fuchs, Compton et al. (2007); Gersten, Jordan, and Flojo (2005). aspects of what is often referred to as number sense.30 They assess various as­pects of knowledge of whole numbers— properties, basic arithmetic operations, understanding of magnitude, and applying mathematical knowledge to word prob­lems. Some measures contain only one aspect of number sense (such as magni­tude comparison) and others assess four to eight aspects of number sense. The sin­gle-component approaches with the best ability to predict students’ subsequent mathematics performance include screen­ing measures of students’ knowledge of magnitude comparison and/or strategic counting.31 The broader, multicomponent measures seem to predict with slightly greater accuracy than single-component measures.32 Effective approaches to screening vary in efficiency, with some taking as little as 5 minutes to administer and others as long as 20 minutes. Multicomponent measures, which by their nature take longer to administer, tend to be time-consuming for administering to an entire school population. Timed screening measures33 and untimed screening measures34 have been shown to be valid and reliable.
+
+For the upper elementary grades and mid­dle school, we were able to locate fewer studies. They suggest that brief early screening measures that take about 10 minutes and cover a proportional sam­pling of grade-level objectives are reasonable and provide sufficient evidence of reli­ability.35 At the current time, this research area is underdeveloped.
+
+Recommendation 1. Screen all students to identify those at risk
+
+( 14 ) How to carry out this recommendation
+
+1. As a district or school sets up a screen­ing system, have a team evaluate potential screening measures. The team should select measures that are efficient and reasonably reliable and that demonstrate predictive va­lidity. Screening should occur in the begin­ning and middle of the year.
+
+The team that selects the measures should include individuals with expertise in mea­surement (such as a school psychologist or a member of the district research and evaluation division) and those with expertise in mathematics instruction. In the opinion of the panel, districts should evaluate screening measures on three dimensions. • Predictive validity is an index of how well a score on a screening measure earlier in the year predicts a student’s later mathematics achievement. Greater predictive validity means that schools can be more confident that decisions based on screening data are accurate.
+
+In general, we recommend that schools and districts employ measures with predictive validity coefficients of at least .60 within a school year.36 • Reliability is an index of the consistency and precision of a measure. We recom­mend measures with reliability coeffi­cients of .80 or higher.37 • Efficiency is how quickly the universal screening measure can be administered, scored, and analyzed for all the students. As a general rule, we suggest that a screening measure require no
+
+36.  A coefficient of .0 indicates that there is no
+
+relation between the early and later scores, and a coefficient of 1.0 indicates a perfect positive relation between the scores.
+
+37.  A coefficient of .0 indicates that there is no
+
+relation between the two scores, and a coeffi­cient of 1.0 indicates a perfect positive relation between the scores. more than 20 minutes to administer, which enables collecting a substantial amount of information in a reasonable time frame. Note that many screening measures take five minutes or less.38 We recommend that schools select screen­ing measures that have greater effi­ciency if their technical adequacy (predictive validity, reliability, sensitivity, and specificity) is roughly equivalent to less efficient measures. Remember that screening measures are intended for administration to all students in a school, and it may be better to invest more time in diagnostic assessment of students who perform poorly on the universal screening measure.
+
+Keep in mind that screening is just a means of determining which students are likely to need help. If a student scores poorly on a screening measure or screening battery— especially if the score is at or near a cut point, the panel recommends monitoring her or his progress carefully to discern whether extra instruction is necessary.
+
+Developers of screening systems recom­mend that screening occur at least twice a year (e.g., fall, winter, and/or spring).39 This panel recommends that schools alleviate concern about students just above or below the cut score by screening students twice during the year. The second screen­ing in the middle of the year allows another check on these students and also serves to identify any students who may have been at risk and grown substantially in their mathe­matics achievement—or those who were on track at the beginning of the year but have not shown sufficient growth. The panel considers these two universal screenings to determine student proficiency as distinct from progress monitoring (Recommenda­tion 7), which occurs on a more frequent
+
+38. Foegen, Jiban, and Deno (2007); Fuchs, Fuchs, Compton et al. (2007); Gersten, Clarke, and Jordan (2007).
+
+39.  Kaminski et al. (2008); Shinn (1989).
+
+Recommendation 1. Screen all students to identify those at risk ( 15 ) basis (e.g., weekly or monthly) with a select group of intervention students in order to monitor response to intervention.
+
+2. Select screening measures based on the content they cover, with an emphasis on crit­ical instructional objectives for each grade. The panel believes that content covered in a screening measure should reflect the instructional objectives for a student’s grade level, with an emphasis on the most critical content for the grade level. The Na­tional Council of Teachers of Mathematics (2006) released a set of focal points for each grade level designed to focus instruc­tion on critical concepts for students to master within a specific grade. Similarly, the National Mathematics Advisory Panel (2008) detailed a route to preparing all students to be successful in algebra. In the lower elementary grades, the core focus of instruction is on building student under­standing of whole numbers. As students establish an understanding of whole num­bers, rational numbers become the focus of instruction in the upper elementary grades. Accordingly, screening measures used in the lower and upper elementary grades should have items designed to as­sess student’s understanding of whole and rational number concepts—as well as com­putational proficiency.
+
+3. In grades 4 through 8, use screening data in combination with state testing results. In the panel’s opinion, one viable option that schools and districts can pursue is to use results from the previous year’s state testing as a first stage of screening. Students who score below or only slightly above a benchmark would be considered for subsequent screening and/or diagnostic or placement testing. The use of state testing results would allow districts and schools to combine a broader measure that covers more content with a screening measure that is narrower but more focused. Because of the lack of available screening measures at these grade levels, districts, county offices, or state departments may need to develop additional screening and diagnostic mea­sures or rely on placement tests provided by developers of intervention curricula.
+
+4. Use the same screening tool across a district to enable analyzing results across schools. The panel recommends that all schools within a district use the same screening measure and procedures to ensure ob­jective comparisons across schools and within a district. Districts can use results from screening to inform instructional de­cisions at the district level. For example, one school in a district may consistently have more students identified as at risk, and the district could provide extra resources or professional development to that school. The panel recommends that districts use their research and evaluation staff to reevaluate screening measures an­nually or biannually. This entails exam­ining how screening scores predict state testing results and considering resetting cut scores or other data points linked to instructional decision making.
+
+Potential roadblocks and solutions Roadblock 1.1. Districts and school personnel may face resistance in allocating time resources to the collection of screening data.
+
+Suggested Approach. The issue of time and personnel is likely to be the most significant obstacle that districts and schools must overcome to collect screening data.
+
+Collecting data on all students will require structuring the data collection process to be efficient and streamlined.
+
+The panel notes that a common pitfall is a long, drawn-out data collection process, with teachers collecting data in their classrooms “when time permits.” If schools are allocating resources (such as providing an intervention to students with the 20 low­ est scores in grade 1), they must wait until
+
+Recommendation 1. Screen all students to identify those at risk
+
+( 16 ) all the data have been collected across classrooms, thus delaying the delivery of needed services to students. Furthermore, because many screening measures are sensitive to instruction, a wide gap between when one class is assessed and another is assessed means that many students in the second class will have higher scores than those in the first because they were assessed later.
+
+One way to avoid these pitfalls is to use data collection teams to screen students in a short period of time. The teams can consist of teachers, special education staff including such specialists as school psychologists, Title I staff, principals, trained instructional assistants, trained older students, and/or local college students studying child development or school psychology.
+
+Roadblock 1.2. Implementing universal screening is likely to raise questions such as, “Why are we testing students who are doing fine?” Suggested Approach. Collecting data on all students is new for many districts and schools (this may not be the case for elementary schools, many of which use screening assessments in reading).40 But screening allows schools to ensure that all students who are on track stay on track and collective screening allows schools to evaluate the impact of their instruction on groups of students (such as all grade 2 students). When schools screen all students, a distribution of achievement from high to low is created. If students considered not at risk were not screened, the distribution of screened students would consist only of at-risk students. This could create a situation where some students at the “top” of the distribution are in reality at risk but not identified as such. For upper-grade students whose scores were
+
+40.  U.S. Department of Education, Office of Plan­ning, Evaluation and Policy Development, Policy and Program Studies Service (2006). high on the previous spring’s state assessment, additional screening typically is not required.
+
+Roadblock 1.3. Screening measures may identify students who do not need services and not identify students who do need services.
+
+Suggested Approach. All screening measures will misidentify some students as either needing assistance when they do not (false positive) or not needing assistance when they do (false negative). When screening students, educators will want to maximize both the number of students correctly identified as at risk—a measure’s sensitivity—and the number of students correctly identified as not at risk—a measure's specificity. As illustrated in table 3, screening students to determine risk can result in four possible categories indicated by the letters A, B, C, and D.  Using these categories, sensitivity is equal to A/(A + C) and specificity is equal to D/(B + D).
+
+Table 3. Sensitivity and specificity
+
+STUDENTS
+
+ACTUALLY AT RISK
+
+Yes No
+
+STUDENTS
+
+IDENTIFIED
+
+AS BEING
+
+AT RISK
+
+Yes A (true positives) B (false positives) No C (false negatives) D (true negatives) The sensitivity and specificity of a mea­sure depend on the cut score to classify children at risk.41 If a cut score is high (where all students below the cut score are considered at risk), the measure will have a high degree of sensitivity because most students who truly need assistance will be
+
+41.  Sensitivity and specificity are also influenced
+
+by the discriminant validity of the measure and its individual items.  Measures with strong item discrimination are more likely to correctly identify students’ risk status.
+
+Recommendation 1. Screen all students to identify those at risk
+
+( 17 ) identified as at risk. But the measure will have low specificity since many students who do not need assistance will also be identified as at risk. Similarly, if a cut score is low, the sensitivity will be lower (some students in need of assistance may not be identified as at risk), whereas the specificity will be higher (most students who do not need assistance will not be identified as at risk).
+
+Schools need to be aware of this tradeoff between sensitivity and specificity, and the team selecting measures should be aware that decisions on cut scores can be somewhat arbitrary. Schools that set a cut score too high run the risk of spending resources on students who do not need help, and schools that set a cut score too low run the risk of not providing interventions to students who are at risk and need extra instruction. If a school or district consistently finds that students receiving intervention do not need it, the measurement team should consider lowering the cut score.
+
+Roadblock 1.4. Screening data may identify large numbers of students who are at risk and schools may not immediately have the resources to support all at-risk students.
+
+This will be a particularly severe problem in low-performing Title I schools. Suggested Approach. Districts and schools need to consider the amount of resources available and the allocation of those resources when using screening data to make instructional decisions. Districts may find that on a nationally normed screening measure, a large percentage of their students (such as 60 percent) will be classified as at risk. Districts will have to determine the resources they have to provide interventions and the number of students they can serve with their resources.
+
+This may mean not providing interventions at certain grade levels or providing interventions only to students with the lowest scores, at least in the first year of implementation.
+
+There may also be cases when schools identify large numbers of students at risk in a particular area and decide to provide instruction to all students. One particularly salient example is in the area of fractions. Multiple national assessments show many students lack proficiency in fractions,42 so a school may decide that, rather than deliver interventions at the individual child level, they will provide a school-wide intervention to all students. A school-wide intervention can range from a supplemental fractions program to professional development involving fractions.

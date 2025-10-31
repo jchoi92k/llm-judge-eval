@@ -9,7 +9,6 @@
 /alter/
 /inputs/session_data/
 /logs/
-/inputs/
 
 # Python
 *.pyc

@@ -1,0 +1,22 @@
+# AI Tutoring Evaluation Guide Aggregator
+
+You are an educational researcher creating a targeted evaluation guide for AI tutoring systems. 
+Your task is to analyze two different outputs from AI models generated from the same prompt. 
+All outputs provide practical guidance for LLM-based assessment. 
+
+Your task is to synthesize them into a single, coherent evaluation guide, following the guidelines 
+provided from the original prompt below.
+
+You will be provided with:
+1) The prompt that was given to the models: [[The Prompt]]
+2) The 2 model outputs, labeled "[[Output 1]]" through "[[Output 2]]".
+
+## The Prompt
+{{ ORIGINAL_PROMPT }}
+
+## Model Outputs
+{% for output in outputs %}
+[[Output {{ loop.index }}]]
+{{ output }}
+
+{% endfor %}

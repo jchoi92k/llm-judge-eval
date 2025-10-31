@@ -1,0 +1,152 @@
+( 32 )
+
+Recommendation 4
+
+effects for some algebra outcomes—two of these studies also found positive effects for some outcomes. Consequently, the panel determined that there is moderate evidence to support this recommendation.
+
+Six of the seven studies that included procedural flexibility outcomes found that exposing students to multiple problem-solving strategies Expose students to multiple problem-solving strategies.
+
+Problem solvers who know how to use multiple strategies to solve problems may be more successful.90 When regularly exposed to problems that require different strategies, students learn different ways to solve problems. As a result, students become more efficient in selecting appropriate ways to solve problems91 and can approach and solve math problems with greater ease and flexibility.92 In this recommendation, the panel suggests ways to teach students that problems can be solved in more than one way and that they should learn to choose between strategies based upon their ease and efficiency. The panel recommends that teachers instruct students in a variety of strategies for solving problems and provide opportunities for students to use, share, and compare the strategies. Teachers should consider emphasizing the clarity and efficiency of different strategies when they are compared as part of a classroom discussion.
+
+Summary of evidence: Moderate Evidence
+
+Eight studies found positive effects of teaching and encouraging multiple problem-solving strategies, although in some of these studies the effects were not discernible across all types of outcomes. Three additional studies involving students with limited or no knowledge of algebraic methods found negative
+
+( 33 )
+
+Recommendation 4 (continued)
+
+improved students’ procedural flexibility— their ability to solve problems in different ways using appropriate strategies.93 However, the estimated effects of teaching multiple strate­gies on students’ ability to solve problems correctly (procedural knowledge) and aware­ ness of mathematical concepts (conceptual knowledge) were inconsistent.94 Three studies found that when students were instructed in using multiple strate­gies to solve the same problem, procedural knowledge improved; however, all of these studies included additional instructional components (checklists and visual aids) that may have produced the positive results.95 Another study with an eight-minute strategy demonstration found no discernible effects.96 Providing students with worked examples explicitly comparing multiple-solution strate­gies had positive effects on students’ proce­dural flexibility in three of the four studies that examined this intervention; however, the three studies found inconsistent effects on students’ procedural knowledge and conceptual knowledge.97 The fourth study providing students with worked examples found that the effects varied by baseline skills—the intervention had a negative effect on procedural knowledge, conceptual knowl­edge, and procedural flexibility for students who did not attempt algebra reasoning on a pretest, but no discernible effect for students who had attempted algebraic reasoning on the pretest (correctly or incorrectly).98 Finally, when students attempted to solve problems using multiple strategies and then shared and compared their strategies, their ability to solve problems did improve.99 Two additional studies involving students with no or minimal algebra knowledge found that asking students to re-solve an algebra problem using a different method had negative effects on procedural knowledge measures and positive effects on procedural flexibility.100 The panel identified three suggestions for how to carry out this recommendation.
+
+How to carry out the recommendation
+
+1.	 Provide instruction in multiple strategies.
+
+Teach students multiple strategies for solving problems.101 These can be problem-specific102 or general strategies for use with more than one type of problem.103 For instance, in Example 14, a teacher shows his or her students two ways to solve the same problem.
+
+Example 14. Two ways to solve the same problem Ramona’s furniture store has a choice of 3-legged stools and 4-legged stools. There are five more 3-legged stools than 4-legged stools. When you count the legs of the stools, there are exactly 29 legs. How many 3-legged and 4-legged stools are there in the store? 9 × 3 legs = 27 legs total = 43 legs 3 × 4 legs = 12 legs 8 × 3 legs = 24 legs total = 36 legs 2 × 4 legs = 8 legs 7 × 3 legs = 21 legs total = 29 legs Problem
+
+Solution 1: Guess and check
+
+TEACHER: This works; the total equals 29, and with two 4-legged stools and seven
+
+3-legged stools, there are five more 3-legged stools than 4-legged stools. (continued)
+
+( 34 )
+
+Recommendation 4 (continued)
+
+When teaching multiple strategies, periodically employ unsuccessful strategies and demonstrate changing to an alternate strategy to show students that problems are not always solved easily the first time and that sometimes problem solvers need to try more than one strategy to solve a problem. This will help students develop the persistence the panel believes is necessary to complete challenging and non-routine problems.
+
+Example 14. Two ways to solve the same problem (continued) Solution 2
+
+TEACHER: Let’s see if we can solve this problem logically. The problem says that there
+
+are five more 3-legged stools than 4-legged stools. It also says that there are 29 legs altogether. If there are five more 3-legged stools, there has to be at least one 4-legged stool in the first place. Let’s see what that looks like.
+
+TEACHER: I think this works. We have a total of 29 legs, and there are still five more
+
+3-legged stools than 4-legged stools. We solved this by thinking about it logically. We knew there was at least one 4-legged stool, and there were six 3-legged stools. Then we added to both sides so we always had a difference of five stools.
+
+TEACHER: We can add a stool to each group, and there will still be a difference of five stools.
+
+stools total legs 4 × 1 = 4 3 × 6 = 18 4 + 18 = 22 + stools total legs 4 × 2 = 8 3 × 7 = 21 8 + 21 = 29 +
+
+( 35 )
+
+Recommendation 4 (continued)
+
+Teachers should present worked examples side-by-side on the same page, rather than on two separate pages, to facilitate more effec­tive comparisons (see Example 15).108 Teach­ers also should include specific questions to facilitate student discussions.109 For example,
+
+teachers can ask these questions:
+
+•	 How are the strategies similar? How are they different? •	 Which method would you use to solve the problem? Why would you choose this approach? •	 The problem was solved differently, but the answer is the same. How is that possible? Ask students to respond to the questions first verbally and then in writing.110 See Example 15 for an example of how these questions can be tailored to a specific problem.
+
+Worked examples allow for quick, efficient comparisons between strategies.104 Success­ful students should be able to compare the similarities and differences among multiple strategies.105 They may reap more benefits from comparing multiple strategies in worked examples when they work with a partner instead of alone106 and when they can actively participate in the learning process.107 Teachers should provide opportunities for students to work together and should use worked exam­ples to facilitate the comparison of strategies.
+
+Teachers can use worked examples to facilitate comparison of strategies with interesting contrasts and not just minor differences. An added benefit of comparing strategies is that certain examples allow for concepts to be highlighted. The strategies used in Example 15 allow for a discussion of treating (y + 1) as a composite variable.
+
+2. Provide opportunities for students to compare multiple strategies in worked examples.
+
+Example 15. A comparison of strategies111 Mandy’s solution Erica’s solution 5(y + 1) = 3(y + 1) + 8 5y + 5 = 3y + 3 + 8 Distribute 5y + 5 = 3y + 11 Combine 2y + 5 = 11 Subtract on both 2y = 6 Subtract on both y = 3 Divide on both 5(y + 1) = 3(y + 1) + 8 2(y + 1) = 8 Subtract on both y + 1 = 4 Divide on both y = 3 Subtract on both
+
+TEACHER: Mandy and Erica solved the problem differently, but they got the same answer.
+
+Why? Would you choose to use Mandy’s way or Erica’s way? Why? Worked examples, of course, should be used alongside opportunities for students to solve problems on their own. For instance, teachers can provide worked examples for students to study with every couple of practice problems.
+
+Students who receive worked examples early on in a lesson may experience better learning outcomes with less effort than students who only receive problems to solve.112
+
+( 36 )
+
+Recommendation 4 (continued)
+
+Encourage students to generate multiple strategies as they work independently113 or in small groups.114 In Example 16, students share their strategies in a small group. Provide opportunities for students to share their strategies with the class. When students see the various methods employed by others, they learn to approach and solve problems in different ways.
+
+3. Ask students to generate and share multiple strategies for solving a problem.
+
+Find the area of this pentagon. Problem115 Solution strategies Ali and Maria each worked on this problem individually.
+
+After 20 minutes in a small-group activity, they talked to each other about how they approached the problem.
+
+ALI: The pentagon is slanted, so first I looked for figures for
+
+which I knew how to compute the area. Look what I found:
+
+six right triangles inside; and they get rid of the slanted parts, so what’s left are rectangles. Then, I noticed that the right triangles are really three pairs of congruent right triangles. So together, the ones marked 1 have an area of 2 × 3 = 6 square units. The ones marked 2 combine for an area of 3 × 1 = 3 square units. The ones marked 3 also combine for an area of 3 square units.
+
+What’s left inside is a 2-by-3 rectangle, with an area of 6 square units; a 1-by-4 rectangle, with an area of 4 square units; and a 1-by-3 rectangle, with an area of 3 square units.
+
+So, the area of the pentagon is 6 + 3 + 3 + 6 + 4 + 3 = 25 square units.
+
+MARIA: You looked inside the pentagon, but I looked
+
+outside to deal with the slanted parts. I saw that I could put the pentagon inside a rectangle. I colored in the pentagon and figured if I could subtract the area of the white space from the area of the rectangle, I’d have the area of the pentagon.
+
+I know the area of the rectangle is 6 × 7 = 42 square units. I saw that the white space was really five right triangles plus a little rectangle. The little rectangle is 1 by 2 units, so its area
+
+is 1 × 2 = 2 square units. Then, I figured the areas of the five right triangles: 1.5 square units,
+
+1.5 square units, 3 square units, 3 square units, and 6 square units. So, the area of the white
+
+space is 2 + 1.5 + 1.5 + 3 + 3 + 6 = 17 square units. To get the area of the pentagon, I subtracted 17 from 42 and, like you, I got 25 square units for the area of the pentagon.
+
+Example 16. How students solved a problem during a small-group activity
+
+( 37 )
+
+Recommendation 4 (continued)
+
+the problem using a strategy other than the one demonstrated, or a strategy not used by others in the class. Example 17 illustrates how two students might share their strategies for solving a fractions problem.
+
+Rather than randomly calling on students to share their strategies, select students pur­posefully based on the strategies they have used to solve the problem. For instance, teachers can call on students who solved Example 17. Two students share their strategies for solving a fractions problem Problem116 Solution strategies
+
+STUDENT 2: I see that the original green part and the part I’ve colored black have the
+
+same area. So the original green part is 1/2 of the parts black and green, or 1/2 of 5/6 of the entire rectangle. This tells me that the green and black part is 1/2 × 5/6 = 5/12 of the entire rectangle.
+
+Ensure that students present not only their strategy but also an explanation for using the strategy. Engage students in a discussion about the specifics of their strategy by questioning them as they explain their thinking. For example, after the first student in Example 17 said, “I see that on the left, the green part is 1/3,” the teacher could ask, “How do you know?” The teacher also could ask, “How did you know that the green part on the right is half the area?” For the second student in Example 17, the teacher could ask, “How did you know that the green part is the same as the area colored black?”
+
+STUDENT 1: If I think of it as what’s to the left of the middle plus what’s to the right of the middle, then I see that on the left, the green part is 1/3 of the area; so that is 1/3 of 1/2 of the entire rectangle. On the right, the green part is 1/2 of the area; so it is 1/2 of 1/2 of the entire rectangle. This information tells me that the green part is (1/3 × 1/2) + (1/2 × 1/2) = 1/6 + 1/4 = 2/12 + 3/12 = 5/12 of the entire rectangle.
+
+What fraction of the whole rectangle is green?
+
+( 38 )
+
+Recommendation 4 (continued)
+
+Potential roadblocks and solutions Roadblock 4.1. Teachers don’t have enough time in their math class for students to present and discuss multiple strategies.
+
+Suggested Approach. Teachers will need to purposefully select three to four strategies for sharing and discussing. To reduce the time students take to present their work to the class, ask them to use personal whiteboards or chart paper, or to bring their work to the document reader, so that they do not have to take time rewriting their strategies on the board. Teachers can document the strategies that different students use during independent or small-group work and summarize or display them for the whole class. This is likely to take less time than having students take turns sharing their own strategies. Teachers can also have students do a problem-solving task at the beginning of the school day as they settle in or at the beginning of the math class as a warm-up activity and devote 5–10 minutes to sharing and discussion.
+
+Roadblock 4.2. Not all students are willing to share their strategies. Suggested Approach. Fear of presenting wrong answers may limit the willingness of some students to share their strategies. It is important to create an environment in which students feel supported and encouraged to share, whether their strategy is correct or not.
+
+Teachers should emphasize that most problems can be solved using a variety of strategies and that each student may present a way to solve the problem that other students in the class had not thought to use. The panel believes that students will be more willing to explain their strategies once they notice that sharing helps them understand and solve problems better and gives students an opportunity to teach their classmates. Make sharing a regular part of mathematics instruction. Point out the benefits of sharing, such as how it enables students to teach their peers new ways to approach problems and to learn potentially quicker, easier, and more effective strategies from their peers.
+
+Roadblock 4.3. Some students struggle to learn multiple strategies. Suggested Approach. For some students who lack the prerequisite knowledge or do not remember the required skills, exposure to multi­ple strategies may be challenging.117 For example, some students who do not remember their mul­tiplication and division facts will have difficulty determining which strategy to use based on the numbers in a problem. Teachers may need to ask these students to take a minute and write down their facts before asking them to solve problems.
+
+Teachers also may need to change the problem to include numbers that allow these students to focus on the problem solving rather than on the arithmetic. For example, teachers could change the number 89.5 to 90. Some students may also get confused when multiple strategies for solving a problem are presented. Solving a problem one way, erasing it, and then solving it in another way can be difficult for students to comprehend if no opportunity is given to compare the meth­ods side-by-side.118 Students will also benefit from slowing down and having some time to get familiar with one strategy before being exposed to another or comparing it to a previ­ously learned strategy.119 Roadblock 4.4. Some of the strategies students share are not clear or do not make sense to the class.
+
+Suggested Approach. Students may have trouble articulating their strategies clearly so they make sense to the class. As students solve a problem, circulate among them and ask them to privately explain how they are working it.
+
+This will give teachers a clearer idea of the students' strategies. Then, when a student shares with the class, teachers will be better equipped to clarify the student’s thinking by asking guid­ing questions or by carefully rewording what a student shares.120 Another way to help students share is by asking another student to restate what the student has said.121 Be careful not to evaluate what students share (e.g., “Yes, that is the right answer.” or “No, that’s not correct.”) as students explain their thinking. Instead, ask students questions to help them explain their reasoning out loud (see Recommendation 2).
+

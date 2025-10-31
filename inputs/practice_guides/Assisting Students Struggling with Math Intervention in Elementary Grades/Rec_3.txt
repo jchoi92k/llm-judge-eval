@@ -1,0 +1,63 @@
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  6
+
+Recommendation 3
+
+Recommendation 3: Representations
+
+Use a well-chosen set of concrete and semi-concrete representations to support students’ learning of mathematical concepts and procedures.
+
+Students who struggle to learn mathematics need additional, focused instruction using representations to model mathematical ideas. Choose representations carefully and connect them explicitly to the abstract representations (mathematical notation). It is also important to provide students with many opportunities to use representations.
+
+How to carry out the recommendation
+
+1. Provide students with the concrete and semi-concrete representations that effectively represent the concept or procedure being covered. Not all representations work for every mathematical concept, so choosing representations must be intentional to be effective. Provide students with the representations that most accurately model the concept or procedure being addressed. When appropriate, use representations that are proportional. For example, when teaching place value, the representation for ones should be one-tenth the size of the representation for tens.
+
+2. When teaching concepts and procedures, connect concrete and semi-concrete representations to abstract representations. When demonstrating concepts and procedures with concrete and semi-concrete representations, present the mathematical notation simultaneously. It is also important to connect concrete and semi-concrete representations to each other. It is helpful to make these connections when introducing new material, when reviewing previously learned content, and when using familiar representations in a new way. Example 3 demonstrates how the representations can be aligned vertically to demonstrate their connections.
+
+3. Provide ample and meaningful opportunities for students to use representations to help solidify the use of representations as “thinking tools.” Students need many opportunities to work with representations before they will successfully use them to model concepts and procedures and solve problems. Over time, students will begin to more deeply understand mathematics concepts and grasp how representations can be used as “thinking tools”, which are tools to model and solve problems. - Representations can be used when students explain their thinking. At first, students may need help articulating how they used the representations to depict the mathematical concepts.
+
+Pose prompting questions to help students explain how they represented the concepts and/or procedures. As students become more comfortable using representations, routinely ask them to use the representations to explain their solution approach. This helps reinforce the mathematics not only for the student explaining their thinking, but also for the students who are listening to the explanation the student is giving.
+
+4. Revisit concrete and semi-concrete representations periodically to reinforce and deepen understanding of mathematical ideas. Systematically revisit concrete and semi-concrete representations to reinforce and deepen students’ understanding of mathematical concepts. Also, if students are not able to correctly solve problems or are uncertain about how to approach a problem, encourage them to use a concrete or semi-concrete representation.
+
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  7
+
+Recommendation 3
+
+Example 3. Teacher shows how summing two numbers relates to concrete and semi-concrete representations and to an equation. 5    +    4    =    _____
+
+Teacher: When looking at this problem we see that we need to add or combine the 4 and the 5. I can use counters to count out a group of 4 and another group of 5. Then I can combine them and count how many I have. I can also draw 4 squares to represent the 4 and 5 squares for the 5, and then count how many squares I drew in all. I find that I drew 9 squares, so the answer to the problem 4 + 5 equals 9.
+
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  8
+
+Recommendation 4
+
+Recommendation 4: Number Lines
+
+Use the number line to facilitate the learning of mathematical concepts and procedures, build understanding of grade-level material, and prepare students for advanced mathematics.
+
+The number line is a semi-concrete mathematical representation that can concurrently represent all real numbers, including whole numbers and rational numbers, positive and negative numbers, and other sets of numbers (Example 4).
+
+The ability to represent different sets of numbers makes the number line a powerful tool for helping students develop a unified understanding of numbers and for supporting their learning of advanced mathematics. Number lines are an important tool for teaching and understanding magnitude and operations for both whole numbers and fractions, graphing coordinates, and displaying and analyzing data.
+
+Students who are proficient in mathematics often construct a mental number line as they solve problems. When a teacher consistently uses number lines during intervention, students gradually develop the ability to visualize a number line when considering the magnitude of a number, determining strategies for solving mathematics problems, or evaluating the reasonableness of their answers after solving problems. It also sets the stage for more advanced work in middle and high school mathematics.
+
+Each step in this recommendation provides guidance for whole numbers in early elementary (grades K–2) and fractions and decimals in upper elementary (grades 3–6).
+
+Example 4. Number line representing magnitudes of whole, positive, negative, and rational numbers.
+
+How to carry out the recommendation
+
+1. Represent whole numbers, fractions, and decimals on a number line to build students’ understanding of numerical magnitude. Early elementary (grades K–2). Before using a number line, introduce students to a concrete version of a number line. For example, use a walkable number path, board games, or clotheslines. This may help students begin to form a visual image of a number line.
+
+After exposing students to the concrete number line with a series of individual units lined up on a path, connect that idea to a number line on paper or projected on a screen. Ask students to identify similarities and differences between the two representations. Draw their attention to the distance from zero to one and how that distance is the same length as one unit. This connection will help students understand that the 1 on a number line is not merely a tick mark, but also represents the full one-unit distance from zero.
+
+Upper elementary (grades 3–6). Once students understand the concept of a fraction with concrete representations, show students how to represent fractions on a number line.
+
+

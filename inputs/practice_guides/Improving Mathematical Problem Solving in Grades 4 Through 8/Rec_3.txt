@@ -1,0 +1,175 @@
+( 23 )
+
+Recommendation 3
+
+Teach students how to use visual representations. A major task for any student engaged in problem solving is to translate the quantitative information in a problem into a symbolic equation—an arithmetic/algebraic statement— necessary for solving the problem. Visual representations help students solve problems by linking the relationships between quantities in the problem with the mathematical operations needed to solve the problem. Students who learn to visually represent the mathematical information in problems prior to writing an equation are more effective at problem solving.67 Visual representations include tables, graphs, number lines, and diagrams such as strip diagrams, percent bars, and schematic diagrams. Example 10 provides a brief explanation of how a few types of visual representations can be used to solve problems.68 In the panel’s opinion, teachers should consistently teach students to use a few types of visual representations rather than overwhelming them with many examples. In this recommendation, the panel offers suggestions for selecting appropriate visual representations to teach and methods for teaching students how to represent the problem using a visual representation.
+
+Definitions of strip diagrams, percent bars, and schematic diagrams Strip diagrams use rectangles to represent quantities presented in the problem.
+
+Percent bars are strip diagrams in which each rectangle represents a part of 100 in the problem. Schematic diagrams demonstrate the relative sizes and relationships between quantities in the problem.
+
+( 24 )
+
+Recommendation 3 (continued)
+
+Example 10. Sample table, strip diagram, percent bar, and schematic diagram Cheese costs $2.39 per pound. Find the cost of 0.75 pounds of cheese.69 Eva spent 2/5 of the money she had on a coat and then spent 1/3 of what was left on a sweater. She had $150 remaining. How much did she start with? This table depicts the relationship between the weight of cheese and its cost. Every pound of cheese will cost $2.39, and this relationship can be used to determine the cost of 0.75 pounds of cheese by using the rule “times 2.39,” which can be stated in an equation as x = 0.75 × 2.39.
+
+Problem Problem Sample table Sample strip diagram 2/5 spent on a coat. 1/3 spent on a sweater. This strip diagram depicts the money Eva spent on a coat and a sweater. It shows how the amount of money she originally had is divided into 5 equal parts and that 2 of the 5 parts are unspent. The problem states that the unspent amount equals $150. Several strategies can then be employed to make use of this information in an equation, such as 2/5 × x = 150, to determine the original amount. (continued) Cost of Cheese Pounds of Cheese (a)
+
+2.39
+
+1 ?
+
+0.75
+
+(b)
+
+2.39
+
+2.39
+
+1 x
+
+2.39
+
+0.75
+
+( 25 )
+
+Recommendation 3 (continued)
+
+Example 10. Sample table, strip diagram, percent bar, and schematic diagram (continued) During a sale, prices were marked down by 20%. The sale price of an item was $84. What was the original price of the item before the discount?70 John recently participated in a 5-mile run. He usually runs 2 miles in 30 minutes. Because of an ankle injury, John had to take a 5-minute break after every mile. At each break he drank 4 ounces of water. How much time did it take him to complete the 5-mile run? Problem Problem Sample percent bar Sample schematic diagram Original Decrease Final Amount 100% x 20% y 80% $84 These percent bars depict the relative values of the original, decrease, and final amounts
+
+as 100:20:80, which can be reduced to 5:1:4. The relationship between the original and
+
+final amount (5:4) can be used in an algebraic equation, such as x/84 = 5/4, to determine
+
+the original amount when the final amount is $84. 15 15 15 15 15 5 5 5 5 Start End This schematic diagram depicts the amount of time John needed to run 5 miles when each mile took him 15 minutes to run and he took a 5-minute break after every mile.
+
+The total time (x) it took him to complete the run is equal to the total number of minutes in this diagram, or x = (5 × 15) + (4 × 5).
+
+( 26 )
+
+Recommendation 3 (continued)
+
+Summary of evidence: Strong Evidence
+
+The panel determined there is strong evidence supporting this recommendation because six studies with middle school student samples consistently found that using visual representa­ tions improved achievement.71 Both general education students and students with learning disabilities performed better when taught to use visual representations72 such as identifying and mapping relevant information onto sche­ matic diagrams.73 In four of the six studies, students were taught to differentiate between types of math prob­ lems and then to implement an appropriate diagram for the relevant type.74 An additional study involving an alternative problem-solving approach integrated with visual representa­ tions also resulted in higher achievement.75 Finally, one study showed that if teachers help students design, develop, and improve their own visual representations, student achieve­ ment improves more than if students simply use teacher- or textbook-developed visuals.76 The panel identified three suggestions for how to carry out this recommendation.
+
+How to carry out the recommendation
+
+1.	 Select visual representations that are appropriate for students and the problems
+
+they are solving.
+
+2.	 Use think-alouds and discussions to teach students how to represent problems visually.
+
+Sometimes curricular materials suggest using more than one visual representation for a particular type of problem. Teachers should not feel obligated to use all of these; instead, teachers should select the visual representation that will work best for students and should use it consistently for similar problems.77 For example, suppose a teacher introduced a ratio or proportion problem using a diagram that students found helpful in arriving at the equation needed to solve the problem. The teacher should continue using this same dia­ gram when students work on additional ratio or proportion problems. Remember, students may need time to practice using visual repre­ sentations and may struggle before achieving success with them.78 If, after a reasonable amount of time and further instruction, the representation still is not working for indi­ vidual students or the whole class, consider teaching another type of visual representation to the students in the future. Teachers can also consult a mathematics coach, other math teachers, or practitioner publications to iden­ tify more appropriate visual representations.
+
+Also keep in mind that certain visual rep­ resentations are better suited for certain types of problems.79 For instance, schematic diagrams work well with ratio and propor­ tion problems, percent bars are appropriate for percent problems, and strip diagrams are suited for comparison and fraction problems.
+
+When teaching a new visual representation or type of problem, demonstrate how to repre­ sent the problem using the representation.
+
+Teachers should think aloud about the deci­ sions they make as they connect the problem to the representation.80 Thinking aloud is more than just the teacher telling students what he or she is doing. It also involves the teacher expressing his or her thoughts as he or she approaches the problem, includ­ ing what decisions he or she is making and why he or she is making each decision (see Example 11).
+
+Teachers should explain how they identified the type of problem—such as proportion, ratio, or percent—based on mathematical ideas in the problem and why they think a
+
+( 27 )
+
+Recommendation 3 (continued)
+
+Demonstrate to students how to represent the information in a problem visually.83 Teach students to identify what information is relevant or critical to solving the problem.
+
+Often, problems include information that is irrelevant or unnecessary. For instance, in Example 11, students need to determine how many red roses are in Monica’s bouquet. The number of pink roses in Bianca’s bouquet is irrelevant; students need only focus on Monica’s bouquet. certain visual representation is most appro­ priate. For example, proportion problems describe equality between two ratios or rates that allows students to think about how both are the same. Teachers should be careful not to focus on surface features such as story context.81 In Example 12, the story contexts are different, but the problem type is the same. Students who cannot articulate the type of problem may struggle to solve it, even if they have the basic math skills.82 Example 11. One way of thinking aloud84 Monica and Bianca went to a flower shop to buy some roses. Bianca bought a bouquet with 5 pink roses. Monica bought a bouquet with two dozen roses, some red and some yellow. She has 3 red roses in her bouquet for every 5 yellow roses. How many red roses are in Monica’s bouquet? Problem Solution
+
+TEACHER: I know this is a ratio problem because two quantities are being compared: the
+
+number of red roses and the number of yellow roses. I also know the ratio of the two quan­ tities. There are 3 red roses for every 5 yellow roses. This tells me I can find more of each kind of rose by multiplying.
+
+I reread the problem and determine that I need to solve the question posed in the last sen­
+
+tence: “How many red roses are in Monica’s bouquet?” Because the question is about Monica,
+
+perhaps I don’t need the information about Bianca. The third sentence says there are two dozen red and yellow roses. I know that makes 24 red and yellow roses, but I still don’t know how many red roses there are. I know there are 3 red roses for every 5 yellow roses. I think I need to figure out how many red roses there are in the 24 red and yellow roses.
+
+Let me reread the problem… That’s correct. I need to find out how many red roses there are in the bouquet of 24 red and yellow roses. The next part of the problem talks about the ratio of red roses to red and yellow roses. I can draw a diagram that helps me understand the problem. I’ve done this before with ratio problems. These kinds of diagrams show the relationship between the two quantities in the ratio.
+
+Base Ratio value Compared (continued)
+
+( 28 )
+
+Recommendation 3 (continued)
+
+Example 11. One way of thinking aloud (continued)
+
+TEACHER: I write the quantities and units from the problem and an x for what must be
+
+solved in the diagram. First, I am going to write the ratio of red roses to yellow roses here in the circle. This is a part-to-whole comparison—but how can I find the whole in the part-to-whole ratio when we only know the part-to-part ratio (the number of red roses to the number of yellow roses)? I have to figure out what the ratio is of red roses to red and yellow roses when the prob­
+
+lem only tells about the ratio of red roses to yellow roses, which is 3:5. So if there are
+
+3 red roses for every 5 yellow roses, then the total number of units for red and yellow roses is 8. For every 3 units of red roses, there are 8 units of red and yellow roses, which
+
+gives me the ratio 3:8. I will write that in the diagram as the ratio value of red roses to
+
+red and yellow roses. There are two dozen red and yellow roses, and that equals 24 red and yellow roses, which is the base quantity. I need to find out how many red roses (x) there are in 24 red and yellow roses.
+
+I can now translate the information in this diagram to an equation like this:
+
+Base Ratio value Compared x red roses 24 red and yellow roses 3 8 Then, I need to solve for x. x red roses 24 red-and-yellow roses 3 8 3 8 x 24 3 8 72 8 x 24 24 24 ( ) ( ) x x 9
+
+( 29 )
+
+Recommendation 3 (continued)
+
+•	 What is the relevant information in this problem? Why is this information relevant?
+
+•	 What would you do next? Why? Encourage students to discuss similarities and differences among the various visuals they have learned or used. When students use their own visual representations to solve a problem correctly, teachers can emphasize noteworthy aspects of the representations and ask the students to share their visual representations with the class. They also may ask the students to explain how and why they used a particular representation to solve a problem. By sharing their work, students are modeling how to use visual representations for other students, allowing them to learn from one another.
+
+Promote discussions by asking students guid­ ing questions as they practice representing problems visually.85 For example, teachers
+
+can ask the following questions:
+
+Example 12. Variations in story contexts for a proportion problem Solve 2/10 = x/30 Sara draws 2 trees for every 10 animals.
+
+How many trees will she need to draw if she has 30 animals? Sarah creates a tiled wall using 2 black tiles for every 10 white tiles. If she has 30 white tiles, how many black tiles will she need? Problem Context 1 Context 2
+
+3.	 Show students how to convert the visually represented information into
+
+mathematical notation. After representing the relevant information in a problem visually, demonstrate how each part of the visual representation can be trans­ lated into mathematical notation.86 Students must see how each quantity and relationship in the visual representation corresponds to quantities and relationships in the equation.
+
+Sometimes, the translation from representa­ tion to equation is as simple as rewriting the quantities and relationships without the boxes, circles, or arrows in the visual rep­ resentation (see Example 11). Other times, correspondence between the visual repre­ sentation and the equation is not as simple, and teachers must illustrate the connections explicitly. For example, a teacher using the table in Example 10 should demonstrate how to represent the cost of 0.75 pounds of cheese as x and the rule “times 2.39” with the correct notation in an equation.
+
+Potential roadblocks and solutions Roadblock 3.1. Students do not capture the relevant details in the problem or include unnecessary details when representing a problem visually.
+
+Suggested Approach. Often, when repre­ senting a problem visually, students do not capture the relevant details and relationships in the problem, or include unnecessary details, such as the dots on a ladybug or a picket fence around a house. Consequently, such
+
+( 30 )
+
+Recommendation 3 (continued)
+
+representations do not correctly depict or help identify the mathematical nature of the prob­ lem. Teachers can help students improve their representations by building upon students’ thinking. They can ask guiding questions that will help students clarify and refine their representations. Once a student has revised his or her representation, teachers can ask him or her to explain what was missing from the representation and why the representation did not work initially. Teachers should be sure to point out specific aspects of the representation that the student did correctly. This will encour­ age students to keep trying.
+
+If necessary, teachers also can demonstrate how to alter the representation to represent and solve the problem correctly, using stu­ dents’ representations as a springboard for refinement.87 Teachers can show students how their diagrams can be modified to represent the relevant information without the unnecessary details. It is important to help students improve their representations, because students who represent irrelevant information could be less effective problem solvers than those who draw diagrams with relevant details from the problem.88 Teach­ ers also can help by explaining what the difference is between relevant and irrelevant details and how a visual representation can capture relevant details and relationships.
+
+They also should emphasize that a diagram’s goal is to illustrate the relationships that are important for solving the problem.
+
+Consider the river-crossing problem detailed in Example 13. The first representation is a simple narrative description of the story that depicts the boat and river, and the adults and children waiting to cross the river. The sche­ matic diagram, on the other hand, outlines the sequence of trips and boat occupants that are needed to take 4 adults and 2 children across the river in a small boat. The sche­ matic diagram better represents the relevant information in the problem and is helpful in arriving at the symbolic equation.
+
+Example 13. Diagrams with relevant and irrelevant details89 There are 4 adults and 2 children who need to cross the river. A small boat is available that can hold either 1 adult or 1 or 2 small children. Everyone can row the boat. How many one-way trips does it take for all of them to cross the river? Using a representation without rele­ vant details and with irrelevant details
+
+to represent the problem:
+
+Using a schematic diagram with relevant details and without irrelevant
+
+details to represent the problem:
+
+Problem
+
+( 31 )
+
+Recommendation 3 (continued)
+
+professional-development materials they may have collected or search the Internet for more examples. Using an overhead projector, a document reader, or an interactive white­ board, teachers can incorporate these visuals into their lessons.
+
+Roadblock 3.2. The class text does not use visual representations. Suggested Approach. Teachers can ask colleagues or math coaches for relevant visual representations, or they can develop some on their own. Teachers also can look through

@@ -1,0 +1,66 @@
+( 18 )
+
+Recommendation 2.
+
+Instructional materials for students receiving interventions should focus intensely on in-depth treatment of whole numbers in kindergarten through grade 5 and on rational numbers in grades 4 through 8. These materials should be selected by committee.
+
+The panel recommends that individuals knowledgeable in instruction and mathematics look for interventions that focus on whole numbers extensively in kindergarten through grade 5 and on rational numbers extensively in grades 4 through 8. In all cases, the specific content of the interventions will be centered on building the student’s foundational proficiencies. In making this recommendation, the panel is drawing on consensus documents developed by experts from mathematics education and research mathematicians that emphasized the importance of these topics for students in general.43 We conclude that the coverage of fewer topics in more depth, and with coherence, is as important, and probably more important, for students who struggle with mathematics.
+
+43.  National Council of Teachers of Mathemat­ics (2006); National Mathematics Advisory Panel (2008).
+
+Level of evidence: Low
+
+The panel judged the level of evidence supporting this recommendation to be low. This recommendation is based on the pro­fessional opinion of the panel and several recent consensus documents that reflect input from mathematics educators and re­ search mathematicians involved in issues related to kindergarten through grade 12 mathematics education.44 Brief summary of evidence to support the recommendation The documents reviewed demonstrate a growing professional consensus that coverage of fewer mathematics topics in more depth and with coherence is important for all students.45 Milgram and Wu (2005) suggested that an intervention curriculum for at-risk students should not be oversimplified and that in-depth coverage of key topics and concepts involving whole numbers and then rational numbers is critical for future success in mathematics.
+
+The National Council of Teachers of Math­ematics (NCTM) Curriculum Focal Points (2006) called for the end of brief ventures into many topics in the course of a school year and also suggested heavy emphasis on instruction in whole numbers and rational numbers. This position was reinforced by the 2008 report of the National Mathematics Advisory Panel (NMAP), which provided detailed benchmarks and again emphasized in-depth coverage of key topics involving whole numbers and rational numbers as crucial for all students. Although the latter two documents addressed the needs of all students, the panel concludes that the in-depth coverage of key topics is especially
+
+44.  National Council of Teachers of Mathemat­ics (2006); National Mathematics Advisory Panel (2008); Milgram and Wu (2005).
+
+45.  National Mathematics Advisory Panel (2008);
+
+Schmidt and Houang (2007); Milgram and Wu (2005); National Council of Teachers of Math­ematics (2006).
+
+Recommendation 2. Instructional materials for students receiving interventions
+
+( 19 ) important for students who struggle with mathematics. How to carry out this recommendation
+
+1. For students in kindergarten through
+
+grade 5, tier 2 and tier 3 interventions should focus almost exclusively on properties of whole numbers46 and operations. Some older students struggling with whole numbers and operations would also benefit from in-depth coverage of these topics.
+
+In the panel’s opinion, districts should review the interventions they are considering to ensure that they cover whole numbers in depth. The goal is proficiency and mastery, so in-depth coverage with extensive review is essential and has been articulated in the NCTM Curriculum Focal Points (2006) and the benchmarks determined by the National Mathematics Advisory Panel (2008). Readers are recommended to review these documents.47 Specific choices for the content of interventions will depend on the grade level and proficiency of the student, but the focus for struggling students should be on whole numbers. For example, in kindergarten through grade 2, intervention materials would typically include significant attention to counting (e.g., counting up), number composition, and number decomposition (to understand place-value multidigit operations). Interventions should cover the meaning of addition and subtraction and
+
+46.  Properties of numbers, including the associa­tive, commutative, and distributive properties.
+
+47.  More information on the National Mathemat­ics Advisory Panel (2008) report is available at www.ed.gov/about/bdscomm/list/mathpanel/ index.html. More information on the National Council of Teachers of Mathematics Curriculum Focal Points is available at www.nctm.org/ focalpoints. Documents elaborating the National Council of Teachers of Mathematics Curriculum Focal Points are also available (see Beckmann et al., 2009). For a discussion of why this content is most relevant, see Milgram and Wu (2005). the reasoning that underlies algorithms for addition and subtraction of whole numbers, as well as solving problems involving whole numbers. This focus should include understanding of the base-10 system (place value).
+
+Interventions should also include materials to build fluent retrieval of basic arith­metic facts (see recommendation 6). Materials should extensively use—and ask students to use—visual representations of whole numbers, including both concrete and visual base-10 representations, as well as number paths and number lines (more information on visual representations is in recommendation 5).
+
+2. For tier 2 and tier 3 students in grades 4 through 8, interventions should focus on in-depth coverage of rational numbers as well as advanced topics in whole number arithmetic (such as long division).
+
+The panel believes that districts should review the interventions they are considering to ensure that they cover concepts involving rational numbers in depth. The focus on rational numbers should include understanding the meaning of fractions, decimals, ratios, and percents, using visual representations (including placing fractions and decimals on number lines,48 see recom­mendation 5), and solving problems with fractions, decimals, ratios, and percents.
+
+In the view of the panel,  students in grades 4 through 8 will also require ad­ditional work to build fluent retrieval of basic arithmetic facts (see recommenda­tion 6), and some will require additional work involving basic whole number top­ ics, especially for students in tier 3. In the opinion of the panel, accurate and fluent
+
+48.  When using number lines to teach rational numbers for students who have difficulties, it is important to emphasize that the focus is on the length of the segments between the whole number marks (rather than counting the marks).
+
+Recommendation 2. Instructional materials for students receiving interventions ( 20 ) arithmetic with whole numbers is necessary before understanding fractions. The panel acknowledges that there will be periods when both whole numbers and rational numbers should be addressed in interventions. In these cases, the balance of concepts should be determined by the student’s need for support.
+
+3. Districts should appoint committees, in­cluding experts in mathematics instruction and mathematicians with knowledge of elementary and middle school mathematics curriculum, to ensure that specific criteria (described below) are covered in depth in the curricula they adopt.
+
+In the panel’s view, intervention materials should be reviewed by individuals with knowledge of mathematics instruction and by mathematicians knowledgeable in elementary and middle school mathematics.
+
+They can often be experts within the district, such as mathematics coaches, mathematics teachers, or department heads. Some districts may also be able to draw on the expertise of local university mathematicians.
+
+Reviewers should assess how well intervention materials meet four criteria. First, the materials integrate computation with solving problems and pictorial representations rather than teaching computation apart from problem-solving. Second, the materials stress the reasoning underlying calculation methods and focus student attention on making sense of the mathematics.
+
+Third, the materials ensure that students build algorithmic proficiency. Fourth, the materials include frequent review for both consolidating and understanding the links of the mathematical principles. Also in the panel’s view, the intervention program should include an assessment to assist in placing students appropriately in the intervention curriculum.
+
+Potential roadblocks and solutions Roadblock 2.1. Some interventionists may worry if the intervention program is not aligned with the core classroom instruction.
+
+Suggested Approach. The panel believes that alignment with the core curriculum is not as critical as ensuring that instruction builds students’ foundational proficiencies. Tier 2 and tier 3 instruction focuses on foundational and often prerequisite skills that are determined by the students’ rate of progress. So, in the opinion of the panel, acquiring these skills will be necessary for future achievement. Additionally, because tier 2 and tier 3 are supplemental, students will still be receiving core class­ room instruction aligned to a school or district curriculum (tier 1).
+
+Roadblock 2.2. Intervention materials may cover topics that are not essential to building basic competencies, such as data analysis, measurement, and time.
+
+Suggested Approach. In the panel’s opinion, it is not necessary to cover every topic in the intervention materials. Students will gain exposure to many supplemental topics (such as data analysis, measurement, and time) in general classroom instruction (tier 1). Depending on the student’s age and proficiency, it is most important to focus on whole and rational numbers in the interventions.
+

@@ -1,0 +1,86 @@
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  10
+
+Recommendation 5
+
+Recommendation 5: Word Problems
+
+Provide deliberate instruction on word problems to deepen students’ mathematical understanding and support their capacity to apply mathematical ideas.
+
+Learning to solve word problems is an important part of the elementary mathematics curriculum because word problems help students apply the mathematics they are learning, develop critical thinking skills, and begin to connect mathematics to a variety of scenarios or contexts. Becoming successful at solving word problems can deepen students’ understanding of grade-level content and set students up for success in advanced mathematics courses and the workforce.
+
+Unfortunately, learning calculations alone does not necessarily help students successfully solve word problems. To set up and solve word problems successfully, students need to read and understand the problem’s narrative, determine what the problem is asking them to find, and identify one or more mathematical operations that will solve the problem. Students who struggle with mathematics often have difficulty with one or more of these steps.
+
+How to carry out the recommendation
+
+1. Teach students to identify word problem
+
+types that include the same type of action or event. Introduce one problem type at a time. Begin by introducing a new problem type with a story that includes all quantities.
+
+This helps students think about what the quantities represent without needing to solve for an unknown. Next, present the same story with a missing quantity (that is, a word problem). For instance:
+
+• Story with all quantities: There were 18 children on the bus. 7 children got off the bus at the first stop.  11 children are still on the bus.
+
+• Word problem with a missing quantity:
+
+There were 18 children on the bus. 7 children got off the bus at the first stop. How many children are still on the bus? Connect the quantities between the story and the word problem so that the students see how they are the same. Use role-playing, gestures, or concrete and/or semi-concrete manipulatives to help students visualize the problem and identify relevant information.
+
+This helps students see how the quantities relate to each other.
+
+2. Teach students a solution method for solving each problem type. Introduce a solution method using a worked-out example. Talk through the problem-solving process and connect the relevant problem information to the worked-out example. Say out loud the decisions that were made to solve the problem at each step. Then demonstrate how to apply the solution method by solving a similar problem with students using that method. Discuss each decision you make and ask students guiding questions to engage them as you solve the problem.
+
+Provide students with a visual guide detailing steps to reference as they solve word problems. Some parts of the guide may apply to understanding the problem before solving it, such as “read the problem,” “name the problem type,” “identify the question,” and “find relevant information.” Other parts may be geared toward choosing a solution method that is specific to the problem type. Over time, gradually fade the use of visual guides so students do not become overly reliant on them.
+
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  11
+
+Recommendation 5
+
+3. Expand students’ ability to identify relevant information in word problems by presenting problem information differently. Once students can recognize and solve the most accessible problems within a type, present word problems of that same type that are less familiar so that students broaden their understanding of that problem type. For example, teachers can vary the unknown quantity to help students understand the mathematical structure in each problem type. Other problems that look different may require additional steps to solve or include irrelevant numerical information or information presented differently in a chart, graph, or diagram.
+
+Once students have learned several variations of each problem type, teachers can provide ongoing support to students in identifying which quantities are relevant for solving
+
+problems by:
+
+• Helping students visualize the problem by using concrete or semi-concrete representations. • Encouraging students to reread the problem more than once and restate the problem in their own words. This may help students determine which information is relevant versus irrelevant. • Asking students to write down, circle, or underline information that will be used solve the problem and to cross out information that is not useful.
+
+4. Teach vocabulary or language often used in word problems to help students understand the problem. When first introducing word problems, choose problems where all the words in the story are familiar to students. Before you start teaching, anticipate which words are critical for understanding the problem. Pay particular attention to words that relate to one another that may help students identify which information in the problem is relevant and which is irrelevant. Teach the meaning of words and continue to discuss them during problem solving to solidify their meaning.
+
+Over time, include word problems with more difficult language.
+
+5. Include a mix of previously and newly learned problem types throughout intervention. After a problem type has been taught, distribute previously learned problem types throughout lessons. By revisiting previously learned problems, students practice discriminating among problem types as they learn new ones.
+
+Include an activity where students identify and name problem types without solving them. This reinforces the importance of reading and thinking about each problem before solving it. Students may need support to remember the salient features of different problem types, like a prompt card listing the features of a problem or a gesture that evokes the action in the problem.
+
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  12
+
+Recommendation 6
+
+Recommendation 6: Timed Activities
+
+Regularly include timed activities as one way to build students’ fluency in mathematics. Quickly retrieving basic arithmetic facts is not easy for students who struggle with mathematics. Automatic retrieval gives students more mental energy to understand relatively complex mathematical tasks and execute multistep mathematical procedures. Thus, building automatic fact retrieval in students is one (of many) important goals of intervention.
+
+In addition to basic facts, timed activities may address other mathematical subtasks important for solving complex problems. This could include, for example, recalling equivalencies for fraction benchmarks of 1/2 and 1, or quickly evaluating and estimating place value. The goal of these activities is to move students toward accurate and efficient performance of these smaller mathematical tasks so that this knowledge can be easily accessed when necessary for solving problems.
+
+How to carry out the recommendation
+
+1. Identify already-learned topics for activities to support fluency and create a timeline. When planning activities to support fluency, think through what students need to know how to do in order to understand and more easily apply the mathematics they are learning. Consider the mathematics topic that is the focus of intervention and whether reteaching basic facts and/or other subtasks might help students understand and perform that task more fluently. Think about which complex strategies or procedures the students will learn and break those into a series of smaller subtasks. Plan activities to support fluency in one of those areas.
+
+Pick one topic to build over time. For each topic, plan a schedule for introducing and conducting the activity to support fluency. At the start, choose easier items for the activity.
+
+To help students remain engaged in the topic, increase the difficulty of the items as students become more fluent with the easier items.
+
+For example, if working on addition facts, you might start with n + 1 or doubles. Then, increase the difficulty of the items to include other more difficult combinations.
+
+2. Choose the activity and accompanying materials to use in the timed activity and set clear expectations. Timed activities are brief (usually 1–5 minutes) and require students to generate many correct responses in that short amount of time. Activities that support fluency can be done using flash cards, computer programs, or worksheets.
+
+Using these materials, activities can be structured for students to work together as a group or individually. In a small-group intervention setting, set up the activity with clear expectations of who responds and when.
+
+Periodically incorporate game-like features, such as keeping score or having students cooperate as a team to increase their score.
+
+3. Ensure that students have an efficient strategy to use as they complete the timed activity. Plan timed activities that focus on previously learned content. Include the strategies you want students to use during timed activities during other portions of the intervention lessons. For example, when teaching addition facts, instruction may be organized around teaching number
+

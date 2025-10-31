@@ -1,0 +1,198 @@
+Recommendation 5
+
+The first suggestion for implementing this recommendation, explaining relevant concepts and notation, was supported by a study find­ing that student achievement improved when teachers discussed math problems conceptu­ally (without numbers) and then represented them visually.126 Three studies examined the second suggestion for implementing this Help students recognize and articulate mathematical concepts and notation.
+
+Mathematical concepts and notation provide students with familiar structures for organizing information in a problem; they also help students understand and think about the problem.122 When students have a strong understanding of mathematical concepts and notation, they are better able to recognize the mathematics present in the problem, extend their understanding to new problems,123 and explore various options when solving problems.124 Building from students’ prior knowledge of mathematical concepts and notation is instrumental in developing problem-solving skills.
+
+In this recommendation, the panel suggests that teachers explain relevant concepts and notation in the context of a problem-solving activity, prompt students to describe how worked examples are solved using mathematically valid explanations, and introduce algebraic notation systematically. The panel believes these actions will help students develop new ways of reasoning, which in turn will help students successfully solve new mathematical challenges.
+
+Summary of evidence: Moderate Evidence
+
+Three studies directly support two sugges­tions for implementing this recommendation, and although the findings for the other sug­gestion are inconsistent, the panel believes there is moderate evidence supporting this recommendation.125
+
+( 40 )
+
+Recommendation 5 (continued)
+
+recommendation, providing students with worked examples and asking them to explain the process used to solve a problem; two studies reported positive effects, and one study reported no discernible effects.127 Finally, two studies supported the third suggestion for implementing this recommendation, algebraic notation. The first study found that providing students with concrete intermediate arithmetic problems before asking them to understand the algebraic notation for a different problem significantly improved achievement.128 The second study found that having students practice symbolic algebraic problems (substituting one expression into another) improved performance on two-step word problems more than practicing with one-step word problems.129 The panel identified three suggestions for how to carry out this recommendation.
+
+How to carry out the recommendation
+
+1.	 Describe relevant mathematical concepts and notation, and relate them to the
+
+problem-solving activity. Students tend to enter school with informal, personally constructed ways of making sense of math.130 Students often use this informal understanding to solve problems.131 Teachers can turn problem-solving activities into learn­ing opportunities by connecting students’ intuitive understanding to formal mathemati­cal concepts and notation.132 Teachers can watch and listen for opportu­nities to call attention to the mathematical concepts and notation that students use as they solve problems. For example, if teachers notice students informally using the commutative property to solve a problem, teachers can explain this concept, ask students if it will always work in similar situations, and describe the property’s usefulness to the class.133 If teachers see students talking about formal mathematical notation in an informal way, teachers can connect students’ informal language to the formal notation or symbol, pointing out that there is often more than one mathematically correct way to state it (e.g., “12 take away 3”, “12 minus 3”, and “12 less 3” are all equal to 9). The teacher in Exam­ple 18 uses this technique to help her student better understand number theory. This example illustrates how students can better grasp formal mathematical concepts when teachers interpret the informal ideas and concepts students use to solve problems.134
+
+( 41 )
+
+Recommendation 5 (continued)
+
+Sometimes, teachers may need to draw atten­tion to mathematical ideas and concepts by directly instructing students in them before engaging the students in problem solving.135 For instance, some middle graders think of area as a product of numbers, rather than a measure of an array of units.136 Faced with a problem such as the problem in Example 16 that asks them to find the area of a penta­gon, students might measure the lengths of each side of the pentagon and calculate area by multiplying two or more of the numbers together. To offset this mistaken approach, their teacher might explicitly define area as “the measure of the space inside a figure.”
+
+2. Ask students to explain each step
+
+used to solve a problem in a worked example. Routinely provide students with opportunities to explain the process used to solve a prob­lem in a worked example and to explain why the steps worked.137 Students will develop a better understanding of mathematical con­cepts when they are asked to explain the steps used to solve a problem in a worked example, and this understanding will help them solve problems successfully.138 Studying worked examples could help accelerate learn­ing and improve problem solving.139 Use small-group activities to encourage students to discuss the process used to solve a problem in a worked example and the reasoning for each step. Alternatively, ask one student to repeat another student’s explanation and to then state whether he or she agrees and why.
+
+Initially, students may not provide mathematically valid explanations. For example, students may restate the correct steps but fail to provide good reasons or justifications.
+
+The panel believes that teachers should ask students probing questions to help them articulate mathematically valid explanations.
+
+Mathematically valid explanations are factually and mathematically correct, logical.
+
+Example 18. Students’ intuitive understanding of formal mathematical concepts Is the sum of two consecutive numbers always odd? Problem Solution
+
+STUDENT: Yes.
+
+TEACHER: How do you know?
+
+STUDENT: Well, suppose you take a number, like 5. The next number is 6. For 5, I can write five lines, like this:
+
+| | | | | For 6, I can write five lines and one more line next to it, like this:
+
+| | | | |   | 
+
+Then, I can count all of them, and I get 11 lines. See? It’s an odd number.
+
+TEACHER: When you say, “It’s an odd number,” you mean the sum of the two consecutive numbers is odd. So, can you do that with any whole number, like n? What would the next number be?
+
+STUDENT: It would be n + 1.
+
+TEACHER: So, can you line them up like you did for 5 and 6?
+
+STUDENT: You mean, like this?
+
+n
+
+n + 1
+
+TEACHER: Right. So, what does that tell you about the sum of n and n + 1?
+
+STUDENT: It’s 2 n’s and 1, so it’s odd.
+
+TEACHER: Very good. The sum, which is n + n + 1 = 2n + 1, is always going to be odd.
+
+( 42 )
+
+Recommendation 5 (continued) thorough, and convincing.140 See Example 19 for sample student explanations that are not mathematically valid. Teachers also might need to provide students with examples of mathematically valid explanations or help reword their partially correct explanations.
+
+Example 19 also illustrates how teacher questioning can help students better organize their thoughts when their explanation is not mathematically valid.
+
+Example 19. Sample student explanations: How mathematically valid are they?
+
+Are 2/3 and 8/12 equivalent fractions? Why or why not? Problem An explanation that is not math­ematically valid A mathematically valid explanation A correct description, but still not a complete explanation
+
+STUDENT: To find an equivalent fraction, whatever we do to the top of 2/3, we must do to the bottom. This description is not mathematically valid because, using this rule, we might think we could add the same number to the numera­ tor and denominator of a fraction and obtain an equivalent fraction. However, that is not true. For example, if we add 1 to both the numerator and denominator of 2/3, we get (2 + 1)/(3 + 1), which is 3/4. 3/4 and 2/3 are not equivalent. Below is an explanation of how teacher questioning can clarify students' explanations and reasoning.
+
+TEACHER: What do you mean?
+
+STUDENT: It just works when you multiply.
+
+TEACHER: What happens when you multi­ply in this step?
+
+STUDENT: The fraction stays…the same.
+
+TEACHER: That’s right. When you multiply a numerator and denominator by the same number, you get an equivalent fraction. Why is that?
+
+STUDENT: Before there were 3 parts, but we made 4 times as many parts, so now there are 12 parts.
+
+TEACHER: Right, you had 2 parts of a whole of 3. Multiplying both by 4 gives you 8 parts of a whole of 12. That is the same part-whole relationship—the same fraction,
+
+as you said. Here’s another way to look at it:
+
+when you multiply the fraction by 4/4, you are multiplying it by a fraction equivalent to 1; this is the identifying property of multiplication, and it means when you multiply anything by 1, the number stays the same.
+
+STUDENT: You can get an equivalent frac­tion by multiplying the numerator and denominator of 2/3 by the same number. If we multiply the numerator and denominator by 4, we get 8/12.
+
+If I divide each of the third pieces in the first fraction strip into 4 equal parts, then that makes 4 times as many parts that are shaded and 4 times as many parts in all. The 2 shaded parts become 2 × 4 = 8 smaller parts and the 3 total parts become 3 × 4 = 12 total smaller parts. So the shaded amount is 2/3 of the strip, but it is also 8/12 of the strip.
+
+STUDENT: Whatever we multiply the top of
+
+2/3 by, we must also multiply the bottom by. This rule is correct, but it doesn’t explain why we get an equivalent fraction this way.
+
+This explanation is correct, complete, and logical. 2/3 8/12
+
+Understanding the symbolic notation used in algebra takes time. The panel suggests that teachers introduce it early and at a moderate pace, allowing students enough time to become familiar and comfortable with it.
+
+Teachers should engage students in activities that facilitate understanding and better or cor­rect use of symbols.141 For instance, teachers can provide familiar arithmetic problems as an intermediate step before asking students to translate a problem into an algebraic equa­tion (see Example 20).142 Simple arithmetic
+
+3. Help students make sense of algebraic notation.
+
+Example 20. How to make sense of algebraic notation: Solve a problem arithmetically before solving it algebraically A plumbing company charges $42 per hour, plus $35 for the service call.
+
+Problem Solution
+
+TEACHER: How much would you pay for a 3-hour service call?
+
+STUDENT: $42 × 3 + $35 = $161 for a 3-hour service call.
+
+TEACHER: What will the bill be for 4.5 hours?
+
+STUDENT: $42 × 4.5 + $35 = $224 for 4.5 hours.
+
+TEACHER: Now, I’d like you to assign a variable for the number of hours the company works and write an expression for the number of dollars required.
+
+STUDENT: I’ll choose h to represent the number of hours the company works. 42h + 35 = $ required
+
+TEACHER: What is the algebraic equa­tion for the number of hours worked if the bill comes out to $140?
+
+STUDENT: 42h + 35 = 140
+
+problems draw on students’ prior math experience, so the problems are more meaningful. By revisiting their earlier knowledge of simple arithmetic, students can connect what they already know (arithmetic) with new information (algebra).
+
+Teachers also can ask students to explain each component of an algebraic equation by having them link the equation back to the problem they are solving (see Example 21).144 This will help students understand how components in the equation and elements of the problem correspond, what each component of the equation means, and how useful algebra is for solving the problem.
+
+Example 21. How to make sense of algebraic notation: Link components of the equation to the problem
+
+145 Joseph earned money for selling 7 CDs and his old headphones. He sold the headphones for $10. He made $40.31.
+
+How much did he sell each CD for? Problem Solution
+
+The teacher writes this equation:
+
+10 + 7x = 40.31
+
+TEACHER: If x represents the number of dollars he sold the CD for, what does the 7x represent in the problem? What does the 10 represent? What does the
+
+40.31 represent? What does the 10 + 7x represent?
+
+( 44 )
+
+Recommendation 5 (continued)
+
+Potential roadblocks and solutions Roadblock 5.1. Students’ explanations are too short and lack clarity and detail.
+
+It is difficult for teachers to identify which mathematical concepts they are using. Suggested Approach. Many students in the United States are not given regular opportunities to explain why steps to solve problems work;146 without this experience to draw from, students who are suddenly given sharing opportunities often provide quick explanations that lack detail and clarity. They do not yet know how to explain the problem-solving process, which information to present, or how much detail to provide.
+
+To anticipate which mathematical concepts students might use to solve the problem, teachers may need to prepare for each lesson by solving the problem themselves.
+
+To help students explain their thoughts in more detail, teachers can ask them specific questions about how a problem was solved and how they thought about the problem.
+
+Teachers can also have students create a “reason sheet” of mathematical rules (e.g., “the identity property of multiplication for fractions—multiplying a fraction by 1 keeps the same value,” “2/2 and 3/3 are fractions equal to 1,” and so on). Students should only include a few key rules, as too many may make reasoning more difficult. Some helpful ones may appear in the student textbook as definitions, properties, rules, laws, or theorems. Ask students to use reasons from their reason sheet when composing explanations.
+
+Roadblock 5.2. Students may be confused by mathematical notations used in algebraic equations. Suggested Approach. Students may have difficulty interpreting mathematical notations used as variables in algebraic equations when the notations relate to items in the problem.
+
+Students may misinterpret the notations as labels for items in the problem (e.g., c stands for cookies). Teachers should encourage students to use arbitrary variables, such as non-mnemonic English letters (x and y) or Greek letters (Φ and Ω).147 Arbitrary variables can facilitate student understanding of the abstract role that variables play in representing quantities.
+
+( 45 ) Conclusion
+
+2.	 Depending on the content or goal of the lesson, teach students how to use visual representations (Recommendation 3), expose students to multiple problem solving strategies (Recommendation 4), and/or help students recognize and articulate mathematical concepts and notation (Recommendation 5).
+
+If visual representations are featured in the
+
+lesson:
+
+•	 Use think-alouds and discussions to teach students how to represent problems visually (Recommendation 3).
+
+Teachers should clarify the type of problem and how to determine which information in the problem is relevant. Teachers should then talk students through how to map the relevant information onto an appropriate visual representation and lead a discussion to compare representations.
+
+Allow students to share their work so that students can learn from others in the class. When students use their own representations, have them explain why and how they are using the representation. If any refinement is needed, build upon the student representation. •	 Show students how to convert the visually represented information into mathematical notation (Recommendation 3). Teachers should demonstrate how each quantity and relationship in the visual representation corresponds to components of the equation.
+
+If the goal is to teach students multiple
+
+strategies:
+
+•	 Provide instruction in multiple strategies (Recommendation 4). Teachers should teach students a variety of ways to solve problems. These can be generic strategies
+
+T
+
+The recommendations in this practice guide include research-based practices for teaching math­ematical problem solving. Below is an example of how these recommendations can be incorporated into a lesson using a four-step process. It is important to consider all of the recommended practices when conducting a lesson from start to finish, even though you may not be able to apply all four steps for every problem-solving lesson. ­ 	 Plan by preparing appropriate problems and using them in whole-class instruction (Recommendation 1) and by selecting visual representations that are appropriate for students and the problems they are solving (Recommendation 3). •	 Include a variety of problem-solving activities (Recommendation 1). Teachers should ask themselves, “Is the purpose of these problems to help students understand a key concept or operation? To help students learn to persist with solving difficult problems? To use a particular strategy? To use a visual representation?” Teachers should select problems that fit the goal of the lesson. •	 Ensure that students will understand the problem by addressing issues students might encounter with the problem's context or language; consider students’ knowledge of mathematical content when planning the lesson (Recommendation 1). Some problems may have complex or unusual vocabulary, depend on specific background knowledge, or reference ideas that are unfamiliar to some students. In some cases, it may be necessary to modify problems based on the learning or cultural needs of the students. In other cases, teachers may need to explain the context or language to students before asking them to solve the problem. •	 Select visual representations that are appropriate for students and the problems they are solving (Recommen­dation 3). If the lesson will include a visual representation, teachers should consider the types of problems they plan to present and should select appropriate visual representations. Also, teachers should consider students’ past experience with visual representations to determine whether a new representation should be presented.
+

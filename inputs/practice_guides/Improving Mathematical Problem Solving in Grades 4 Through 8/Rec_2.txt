@@ -1,0 +1,145 @@
+( 17 )
+
+Recommendation 2
+
+Assist students in monitoring and reflecting on the problem-solving process. Students learn mathematics and solve problems better when they monitor their thinking and problem-solving steps as they solve problems.45 Monitoring and reflecting during problem solving helps students think about what they are doing and why they are doing it, evaluate the steps they are taking to solve the problem, and connect new concepts to what they already know. The more students reflect on their problem-solving processes, the better their mathematical reasoning—and their ability to apply this reasoning to new situations—will be.46 In this recommendation, the panel suggests that teachers help students learn to monitor and reflect on their thought process when they solve math problems. While the ultimate goal is for students to monitor and reflect on their own while solving a problem, teachers may need to support students when a new activity or concept is introduced. For instance, a teacher may provide prompts and use them to model monitoring and reflecting as the teacher solves a problem aloud. In addition, a teacher can use what students say as a basis for helping the students improve their monitoring and reflecting. Teachers can use students’ ideas to help students understand the problem-solving process.
+
+Summary of evidence: Strong Evidence
+
+Several studies with diverse student samples directly tested this recommendation and consistently found positive effects. As a result, the panel determined there was strong evidence to support this recommendation.47
+
+( 18 )
+
+Recommendation 2 (continued)
+
+The relevant studies examined students’ mathematics achievement in different content areas, including numbers and operations, data analysis and probability, algebra, and geometry. Two studies found that provid­ ing students with a task list that identified specific steps to solving problems resulted in better student achievement.48 Two addi­ tional studies found that a self-questioning checklist improved achievement,49 and in one study, this effect persisted for at least four months after instruction ended;50 however, both studies included additional instructional components (visual aids and multiple-strategy instruction) that may have produced the posi­ tive results. Similarly, five studies found that student performance improved when teachers modeled a self-questioning process and then asked students to practice it.51 The panel identified three suggestions for how to carry out this recommendation.
+
+How to carry out the recommendation
+
+1.	 Provide students with a list of prompts to help them monitor and reflect during the
+
+problem-solving process. The prompts that teachers provide can either be questions that students should ask and answer as they solve problems (see Example 6) or task lists that help students complete steps in the problem-solving process (see Example 7).52 The questions teachers provide should require students to think through the problemsolving process, similar to the way in which task lists guide students through the process.
+
+Select a reasonable number of prompts, rather than an exhaustive list, as too many prompts may slow down the problem-solving process or be ignored. Ensure that the prompts help students evaluate their work at each stage of the problem-solving process, from initially reading and understanding the problem, to determining a way to solve the problem, and then to evaluating the appropriateness of the solution given the facts in the problem.53 Encourage students to explain and justify their response to each prompt, either orally54 or in writing.55 Students can use the prompts when working independently, in small groups,56 or even when solving problems at a computer.57 When working in small groups, students can take turns asking and answering questions or reading each action aloud and responding to it. As they share in small groups, students serve as models for others in their group, allowing all the students to learn from one another. Teachers may wish to post prompts on the board, include them on worksheets,58 or list them on index cards for students.59 When students first use the prompts, they may need help. Teachers can participate in the questioning or refer to tasks in the task list when students work in small groups or during whole-group discussions. If, for exam­ ple, a student solves a problem incorrectly, ask him what questions he should have asked himself to help him reason out loud, rather than providing him with the correct answer.60 Alternatively, provide the correct answer, but ask the student to explain why it is right and why his original answer is not.61 As students become more comfortable with their reason­ ing abilities and take greater responsibility for monitoring and reflecting during problem solving, teachers can gradually withdraw the amount of support they provide.62
+
+( 19 )
+
+Recommendation 2 (continued)
+
+Model how to monitor and reflect while solv­ ing a problem using the prompts given to students.64 This can be done when introduc­ ing a problem-solving activity or a new con­ cept to the whole class or as students work independently or in small groups.65 Say aloud not only the response to each prompt, but also the reasons why each step was taken.
+
+Alternatively, say which step was taken, but ask students to explain why this would work. Make sure to use a prompt at each stage in the problem-solving process, for example, when first reading the problem, when attempting a strategy to solve the problem, and after solving the problem.
+
+Example 8 describes one teacher’s experience with modeling how to monitor and reflect using questions. It illustrates the importance of persistence if the student fails to under­ stand the problem or the appropriate method to employ for solving it.
+
+Example 6. Sample question list Example 7. Sample task list63 •	 What is the story in this problem about? •	 What is the problem asking? •	 What do I know about the problem so far ? What information is given to me? How can this help me? •	 Which information in the problem is relevant? •	 In what way is this problem similar to problems I have previously solved? •	 What are the various ways I might approach the problem? •	 Is my approach working? If I am stuck, is there another way I can think about solv­ ing this problem? •	 Does the solution make sense? How can I verify the solution? •	 Why did these steps work or not work? •	 What would I do differently next time?
+
+Note: These are examples of the kinds of ques­
+
+tions that a teacher can use as prompts to help students monitor and reflect during the problem-solving process. Select those that are applicable for your students, or formulate new questions to help guide your students. •	 Identify the givens and goals of the problem. •	 Identify the problem type. •	 Recall similar problems to help solve the current problem. •	 Use a visual to represent and solve the problem. •	 Solve the problem. •	 Check the solution.
+
+2. Model how to monitor and reflect on the problem-solving process.
+
+( 20 )
+
+Recommendation 2 (continued)
+
+Example 8. One way to model monitoring and reflecting using questions Last year was unusually dry in Colorado. Denver usually gets 60 inches of snow per year. Vail, which is up in the mountains, usually gets 350 inches of snow. Both places had 10 inches of snow less than the year before. Kara and Ramon live in Colorado and heard the weather re­ port. Kara thinks the decline for Denver and Vail is the same. Ramon thinks that when you compare the two cities, the decline is different. Explain how both people are correct.
+
+TEACHER: First, I ask myself, “What is this story about, and what do I need to find
+
+out?” I see that the problem has given me the usual amount of snowfall and the change in snowfall for each place, and that it talks about a decline in both cities. I know what decline
+
+means: "a change that makes something less." Now I wonder how the decline in snowfall
+
+for Denver and Vail can be the same for Kara and different for Ramon. I know that a decline of 10 inches in both cities is the same, so I guess that’s what makes Kara correct. How is Ramon thinking about the problem? I ask myself, “Have I ever seen a problem like this before?” As I think back to the assignments we had last week, I remember seeing a problem that asked us to calculate the discount on a $20 item that was on sale for $15. I remember we had to determine the percent change. This could be a similar kind of problem. This might be the way Ramon is thinking about the problem.
+
+Before I go on, I ask myself, “What steps should I take to solve this problem?” It looks like I need to divide the change amount by the original amount to find the percent change in snowfall for both Denver and Vail.
+
+Denver: 10 ÷ 60 = 0.166 or 16.67% or 17% when we round it to the nearest whole number
+
+Vail: 10 ÷ 350 = 0.029 or 2.9% or 3% when we round it to the nearest whole number
+
+So the percent decrease in snow for Denver was much greater (17%) than for Vail (3%). Now I see what Ramon is saying! It’s different because the percent decrease for Vail is much smaller than it is for Denver.
+
+Finally, I ask myself, “Does this answer make sense when I reread the problem?” Kara’s answer makes sense because both cities did have a decline of 10 inches of snow.
+
+Ramon is also right because the percent decrease for Vail is much smaller than it is for Denver. Now, both of their answers make sense to me.
+
+Problem Solution
+
+( 21 )
+
+Recommendation 2 (continued)
+
+students clarify and refine their thinking and to help them establish a method for monitor­ ing and reflecting that makes sense to them (see Example 9). This is helpful for students who dislike working with teacher-provided prompts or who are having difficulty under­ standing and using these prompts.
+
+The panel believes that, by building on students’ ideas, teachers can help students clarify and refine the way they monitor and reflect as they solve a problem. Teachers can help students verbalize other ways to think about the problem. The teacher-student dia­ logue can include guided questioning to help Example 9. Using student ideas to clarify and refine the monitoring and reflecting process
+
+3. Use student thinking about a problem to develop students’ ability to monitor
+
+and reflect. Find a set of five different numbers whose average is 15.
+
+TEACHER: Jennie, what did you try?
+
+STUDENT: I’m guessing and checking. I tried 6, 12, 16, 20, 25 and they didn’t work. The
+
+average is like 17.8 or something decimal like that.
+
+TEACHER: That’s pretty close to 15, though. Why’d you try those numbers?
+
+STUDENT: What do you mean?
+
+TEACHER: I mean, where was the target, 15, in your planning? It seems like it was in your
+
+thinking somewhere. If I were choosing five numbers, I might go with 16, 17, 20, 25, 28.
+
+STUDENT: But they wouldn’t work—you can tell right away.
+
+TEACHER: How?
+
+STUDENT: Because they are all bigger than 15.
+
+TEACHER: So?
+
+STUDENT: Well, then the average is going to be bigger than 15.
+
+TEACHER: Okay. That’s what I meant when I asked “Where was 15 in your planning?”
+
+You knew they couldn’t all be bigger than 15. Or they couldn’t all be smaller either?
+
+STUDENT: Right.
+
+TEACHER: Okay, so keep the target, 15, in your planning. How do you think five numbers
+
+whose average is 15 relate to the number 15?
+
+STUDENT: Well, some have to be bigger and some smaller. I guess that is why I tried the
+
+five numbers I did.
+
+TEACHER: That’s what I guess, too. So, the next step is to think about how much bigger
+
+some have to be, and how much smaller the others have to be. Okay?
+
+STUDENT: Yeah.
+
+TEACHER: So, use that thinking to come up with five numbers that work.
+
+Problem Solution
+
+( 22 )
+
+Recommendation 2 (continued)
+
+Roadblock 2.3. Students take too much time to monitor and reflect on the problemsolving process. Suggested Approach. It is likely that when students initially learn the tasks of monitoring and reflecting, they will be slow in using the prompts. However, after a bit of practice, they are likely to become more efficient at using the prompts.
+
+Roadblock 2.4. When students reflect on problems they have already solved, they resort to using methods from those problems rather than adapting their efforts to the new problem before them.
+
+Suggested Approach. While students should consider whether they have seen a similar problem before, sometimes they overdo it and simply solve the problem using similar methods, rather than using methods that will work for the problem they are solv­ ing. To help students overcome this, try ask­ ing them to explain why the solution method worked for the previous problem and what components of it may or may not be useful for the new problem.
+
+Potential roadblocks and solutions Roadblock 2.1. Students don’t want to monitor and reflect; they just want to solve the problem.
+
+Suggested Approach. The panel believes that students need to develop the habit of monitoring and reflecting throughout the problem-solving process, from setting up the problem to evaluating whether their solution is accurate. Ideally, whenever students solve problems, they should practice monitor­ ing and reflecting on their problem-solving process. Acknowledge that simply solving a problem may seem easier, but encour­ age students to incorporate monitoring and reflecting into their process every time they solve a problem. Inform students that doing so will help them understand and solve problems better, as well as help them convey their strategies to classmates.66 Explain that expert problem solvers learn from unsuccess­ ful explorations and conjectures by reflecting on why they were unsuccessful.
+
+Roadblock 2.2. Teachers are unclear on how to think aloud while solving a nonroutine problem. Suggested Approach. Prepare ahead of time using the list of prompts given to stu­ dents. Outline responses to the prompts in advance of the lesson. It might also help to anticipate how students would think about the prompts as they solved the problem. A colleague or math coach can help teachers think through the prompts and the problemsolving process if they get stuck.

@@ -1,0 +1,39 @@
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  12
+
+Recommendation 6
+
+Recommendation 6: Timed Activities
+
+Regularly include timed activities as one way to build students’ fluency in mathematics. Quickly retrieving basic arithmetic facts is not easy for students who struggle with mathematics. Automatic retrieval gives students more mental energy to understand relatively complex mathematical tasks and execute multistep mathematical procedures. Thus, building automatic fact retrieval in students is one (of many) important goals of intervention.
+
+In addition to basic facts, timed activities may address other mathematical subtasks important for solving complex problems. This could include, for example, recalling equivalencies for fraction benchmarks of 1/2 and 1, or quickly evaluating and estimating place value. The goal of these activities is to move students toward accurate and efficient performance of these smaller mathematical tasks so that this knowledge can be easily accessed when necessary for solving problems.
+
+How to carry out the recommendation
+
+1. Identify already-learned topics for activities to support fluency and create a timeline. When planning activities to support fluency, think through what students need to know how to do in order to understand and more easily apply the mathematics they are learning. Consider the mathematics topic that is the focus of intervention and whether reteaching basic facts and/or other subtasks might help students understand and perform that task more fluently. Think about which complex strategies or procedures the students will learn and break those into a series of smaller subtasks. Plan activities to support fluency in one of those areas.
+
+Pick one topic to build over time. For each topic, plan a schedule for introducing and conducting the activity to support fluency. At the start, choose easier items for the activity.
+
+To help students remain engaged in the topic, increase the difficulty of the items as students become more fluent with the easier items.
+
+For example, if working on addition facts, you might start with n + 1 or doubles. Then, increase the difficulty of the items to include other more difficult combinations.
+
+2. Choose the activity and accompanying materials to use in the timed activity and set clear expectations. Timed activities are brief (usually 1–5 minutes) and require students to generate many correct responses in that short amount of time. Activities that support fluency can be done using flash cards, computer programs, or worksheets.
+
+Using these materials, activities can be structured for students to work together as a group or individually. In a small-group intervention setting, set up the activity with clear expectations of who responds and when.
+
+Periodically incorporate game-like features, such as keeping score or having students cooperate as a team to increase their score.
+
+3. Ensure that students have an efficient strategy to use as they complete the timed activity. Plan timed activities that focus on previously learned content. Include the strategies you want students to use during timed activities during other portions of the intervention lessons. For example, when teaching addition facts, instruction may be organized around teaching number combinations, doubles, doubles plus one, or various combinations of 10 or other numbers. Be sure that students are competent in using these strategies before students begin the timed activity.
+
+4. Encourage and motivate students to work hard by having them chart their progress. Remind students that the goal of fluency activities isn’t to simply generate answers quickly, but instead to generate accurate answers in a short amount of time.
+
+To keep students focused and motivated during these activities, have students record their scores over time on a chart or graph. As students see their scores improve over time, they may feel more excited and motivated to set goals and work hard. Goals to “meet or beat” a previously earned fluency score can be set for individuals or as a collective score for the intervention group. Working toward a goal as a group can reduce the pressure on individual students.
+
+5. Provide immediate feedback by asking students to correct errors using an efficient strategy. When using flash cards or other activities that allow immediate feedback from a teacher, students may self-correct before feedback can be provided. This might indicate that they are moving toward fluency.
+
+If students do not self-correct, immediately ask them to fix their incorrect answer and explain why the new answer is correct. If the student struggles, remind them of the efficient strategy they have learned. The student is responsible for using the taught strategy and correcting their answer before moving on.
+
+Often, computer-based programs provide students with immediate feedback. However, immediate feedback is sometimes not possible with worksheets, even in small groups. In the opinion of the panel, teachers should score and return worksheets as soon as possible and then review with students the problems that need to be corrected and the effective strategies that could be used.

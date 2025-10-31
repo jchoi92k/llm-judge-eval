@@ -1,0 +1,68 @@
+Recommendation 4.
+
+Interventions should include instruction on solving word problems that are based on common underlying structures.
+
+Students who have difficulties in mathematics typically experience severe difficulties in solving word problems related to the mathematics concepts and operations they are learning.74 This is a major impediment for future success in any math-related discipline.75 Based on the importance of building proficiency and the convergent findings from a body of high-quality research, the panel recommends that interventions include systematic explicit instruction on solving word problems, using the problems’ underlying structure.
+
+Simple word problems give meaning to mathematical operations such as subtraction or multiplication. When students are taught the underlying structure of a word problem, they not only have greater success in problem solving but can also gain insight into the deeper mathematical ideas in word problems.76 The panel also recommends systematic instruction on the structural connections between known, familiar word problems and  unfamiliar, new problems. By making explicit the underlying structural connections between familiar and unfamiliar problems, students will know when to apply the solution methods they have learned.
+
+Level of evidence: Strong
+
+The panel judged the level of evidence supporting this recommendation to be strong. This recommendation is based on nine randomized controlled trials that met WWC standards or met standards with reservations and that examined the effectiveness of word problem-solving strategies. Interventions that teach students the structure of problem types— and how to discriminate superficially from substantive information to know when to apply the solution methods they have learned80—positively and marginally or significantly affect proficiency in solving word problems.
+
+Brief summary of evidence to support the recommendation Research demonstrates that instruction on solving word problems based on underlying problem structure leads to statistically significant positive effects on measures of word problem solving. Three randomized controlled trials isolated this practice. In these studies, interventionists taught students to identify problems of a given type by focusing on the problem structure and then to design and execute appropriate solution strategies for each problem. These techniques typi­cally led to significant and positive effects on word-problem outcomes for students
+
+Recommendation 4. Interventions should include instruction on solving word problems experiencing difficulties in mathematics across grade levels. Six other randomized controlled trials took the instructional intervention on problem structure a step further. They demonstrated that teaching students to distinguish superficial from substantive information in problems also leads to marginally or statistically significant posi­tive effects on measures of word problem solving.83 After students were explicitly taught the pertinent structural features and problem-solution methods for differ­ent problem types, they were taught su­perficial problem features that can change a problem without altering its underlying structure. They were taught to distinguish substantive information from superficial information in order to solve problems that appear new but really fit into one of the categories of problems they already know how to solve. They were also taught that the same underlying problem structures can be applied to problems that are presented in graphic form (for example, with tables or maps). These are precisely the issues that often confuse and derail students with difficulties in math­ematics. These six studies consistently demonstrated marginally or statistically significant positive effects on an array of word problem-solving proficiencies for students experiencing difficulties in mathematics.
+
+How to carry out this recommendation
+
+1. Teach students about the structure of vari­ous problem types, how to categorize problems based on structure, and how to determine appropriate solutions for each problem type.
+
+Students should be explicitly taught about the salient underlying structural features of each problem type.85 Problem types are groups of problems with similar mathematical structures. For example, change problems describe situations in which a quantity (such as children or pencils) is either increased or decreased (example 1).
+
+Change problems always include a time element. For these problems, students determine whether to add or subtract by determining whether the change in the quantity is more or less.
+
+Example 1. Change problems The two problems here are addition and subtraction problems that students may be tempted to solve using an incorrect operation. In each case, students can draw a simple diagram like the one shown below, record the known quantities (two of three of A, B, and C) and then use the diagram to decide whether addition or subtraction is the correct operation to use to determine the unknown quantity.
+
+Problem 1. Brad has a bottlecap collection. After Madhavi gave Brad 28 more bottle­ caps, Brad had 111 bottlecaps. How many bottlecaps did Brad have before Madhavi gave him more? Problem 2. Brad has a bottlecap collection.
+
+After Brad gave 28 of his bottlecaps to Mad­havi, he had 83 bottlecaps left. How many bottlecaps did Brad have before he gave Madhavi some?
+
+Recommendation 4. Interventions should include instruction on solving word problems. 
+
+In contrast, compare problems have no time element (example 2). They focus
+
+on comparisons between two different types of items in two different sets (pears and apples, boys and girls, hot and cold items).
+
+Students add or subtract by determining whether they need to calculate the unknown difference (subtract), unknown compared amount (add), or unknown ref­erent amount (subtract).
+
+Example 2. Compare problems. Although these problem types seem simple and intuitive to adults and mathematically precocious students, they are not necessarily obvious for students requiring math­ematics interventions. To build understand­ing of each problem type, we recommend initially teaching solution rules (or guiding questions that lead to a solution equation) for each problem type through fully and partially worked examples, followed by student practice in pairs.86 Visual representations such as those in ex­ ample 2 can be effective for teaching stu­dents how to categorize problems based on their structure and determine a solu­tion method appropriate for the underlying structure (see recommendation 5 for more information on visual representations).87 Teachers can present stories with unknown information and work with students in using diagrams to identify the problem type and transform the information in the diagram into a mathematics equation to solve for the unknown quantity.
+
+
+2. Teach students to recognize the common
+
+underlying structure between familiar and unfamiliar problems and to transfer known solution methods from familiar to unfamiliar problems.
+
+A known familiar problem often appears as a new and unfamiliar problem to a stu­ dent because of such superficial changes as format changes (whether it is written in traditional paragraph form or as an adver­tisement for a brochure), key vocabulary changes (half, one-half, ½), or the inclusion of irrelevant information (additional story elements such as the number of buttons on a child’s shirt or the size of a storage container for a compare problem).88 These superficial changes are irrelevant to un­derstanding the mathematical demands of a problem. But while focusing on these irrelevant superficial changes, students can find it difficult to discern the critical common underlying structure between the new and the old problems and to apply the solution that is part of their repertoire to the new unfamiliar problem.
+
+To facilitate the transfer of the known solution from the familiar to the unfamiliar problem, students should first be shown explicitly that not all pieces of information in the problem are relevant to discerning the underlying problem structure. Teach­ers should explain these irrelevant superficial features explicitly and systematically, as described in recommendation 3.90 This instruction may be facilitated by the use of a poster displayed in the classroom that lists the ways familiar problems can be­ come unfamiliar because of new wording or situations (such as information displayed in
+
+Recommendation 4. Interventions should include instruction on solving word problems
+
+( 29 ) chart versus paragraph form) or the ways relevant to problem type. The students must also be provided with opportunities to explain why a piece of information is relevant or irrelevant.91 We suggest that students practice sets of problems with varied superficial features and cover stories. Students who know how to recognize and solve a “change” problem type with whole numbers should know that they can apply the same strategy to a structurally similar word problem that looks different because of changes in wording and the presence of additional story elements (example 3).92 Example 3. Solving different problems with the same strategy •	 Mike wants to buy 1 pencil for each of his friends. Each packet of pencils contains 12 pencils. How many packets does Mike have to buy to give 1 pencil to each of his 13 friends? •	 Mike wants to buy 1 pencil for each of his friends. Sally wants to buy 10 pencils. Each box of pencils contains 12 pencils. How many boxes does Mike have to buy to give 1 pencil to each of his 13 friends?
+
+
+Potential roadblocks and solutions Roadblock 4.1. In the opinion of the panel, the curricular material may not classify problems into problem types.
+
+Suggested Approach. The interventionist may need the help of a mathematics coach, a mathematics specialist, or a district or state curriculum guide in determining the problem types and an instructional sequence for teaching them to students.
+
+The key issue is that students are taught to understand a set of problem structures related to the mathematics they are learning in their intervention.
+
+Roadblock 4.2. As problems get complex, so will the problem types and the task of discriminating among them.
+
+Suggested Approach. As problems get more intricate (such as multistep problems), it becomes more difficult for students to determine the problem type, a critical step that leads to solving the problem correctly.
+
+It is important to explicitly and systematically teach students how to differentiate one problem type from another.
+
+Interventionists will need high-quality professional development to ensure that they convey the information clearly and accurately. The professional development program should include opportunities for participants to determine problem types, justify their responses, and practice explaining and modeling problem types to peers and children. Trainers should provide constructive feedback during the practice sessions by telling participants both what they did well and what aspects of their instruction need improvement.
+

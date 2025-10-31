@@ -1,0 +1,130 @@
+# AI Tutoring Evaluation Guide Generation
+
+You are an educational researcher creating a targeted evaluation guide for educational AI systems. Your task is to analyze provided educational research and human evaluation data to produce practical guidance for LLM-based assessment.
+
+## Input Materials Overview
+
+You will be provided with six key inputs at the end of this prompt:
+
+1. **Tool Overview** - A description of the AI tutoring tool's capabilities, features, and intended use cases
+2. **Evaluation Rubric (JSON Format)** - The structured rubric used to assess AI tutoring interactions, including scoring criteria and definitions
+3. **Sample Data with Human Evaluations (CSV Format)** - Real interaction data that has been evaluated by human raters, providing concrete examples and evaluation patterns
+4. **Column Information** - Explanations of data columns if necessary for interpretation
+5. **Educational Research Content** - Research-backed pedagogical principles and recommendations relevant to tutoring and student learning
+6. **Special Consideration** - A specific focus area or priority to emphasize throughout the analysis
+
+## Your Task
+
+Create two distinct outputs based on the provided materials:
+
+**Part 1: Relevant Research Summary (under 2,000 words)**
+- Extract and summarize only the parts of the educational research that directly apply to evaluating the provided sample data
+- Focus specifically on principles relevant to AI tutoring assessment
+- Pay special attention to the provided special consideration throughout the analysis
+- Maintain strict fidelity to the source material - no personal interpretations
+
+**Part 2: LLM Evaluation Guidelines (under 750 words)**
+- Identify notable patterns in how sample interactions were scored by human raters
+- Connect observed evaluation patterns to pedagogical principles from Part 1
+- Use sample interactions as illustrative reference points rather than definitive standards
+- Emphasize the special consideration when interpreting evaluation patterns
+- Focus on helping LLM evaluators understand what distinguished different quality levels in the examples
+
+## Part 1 Requirements: Research Summary
+
+**Focus Areas:**
+- Extract research findings directly applicable to the rubric categories
+- Identify pedagogical principles relevant to AI-student interactions
+- Summarize evidence-based recommendations for tutoring practices
+- Include specific examples and implementation guidance from the source
+
+**AI Contextualization:**
+- Consider the tool's specific capabilities when translating human teaching practices to AI system behaviors
+- Address what this AI tutoring system can/cannot do in implementing pedagogical practices
+- Focus on measurable behaviors in AI-student interactions that align with the tool's design
+
+**Structure:**
+- Organize by rubric categories when possible
+- Use clear headings for navigation
+- Maintain logical flow between concepts
+- Include direct quotes for key principles
+
+## Part 2 Requirements: LLM Evaluation Guidelines
+
+**Primary Focus:**
+Examine the sample interactions alongside their human-rated scores to identify notable evaluation patterns. With limited data (N=10), the goal is to extract illustrative insights rather than establish statistical trends. Connect observed patterns to the pedagogical principles from Part 1 to help LLM evaluators understand what distinguished different quality levels in these examples.
+
+**Critical Requirement:**
+The output must stand alone without requiring access to the original sample data. Do not reference specific samples by number or identifier (e.g., "Sample 1," "Sample 3," "the second interaction"). Instead, describe patterns and examples in general terms that convey the insight without needing to locate specific samples (e.g., "In several highly-rated interactions..." or "One lower-scored exchange demonstrated...").
+
+**Tool-Specific Consideration:**
+If a Tool-Specific Consideration is provided in the evaluation context, apply appropriate weighting and context to that dimension. Certain tools or domains may have inherent characteristics that should not be penalized without specific justification. Ensure evaluation criteria are calibrated to the specified focus and avoid penalizing characteristics that are intentional or domain-appropriate.
+
+**Content Should Address:**
+
+1. **Notable Patterns in Sample Evaluations**
+   - What tutoring behaviors or interaction characteristics appear consistently associated with higher or lower scores across the samples?
+   - Which aspects of the interactions seem to have influenced human judgment most noticeably?
+   - How do the pedagogical principles from Part 1 help interpret what made certain interactions score differently?
+
+2. **Interaction Quality Indicators**
+   - What observable features in AI tutor responses (e.g., explanation depth, response to student cues, mathematical approach) appear in differently-scored interactions?
+   - How do student engagement patterns or problem characteristics relate to the scores observed?
+   - What combinations of tutoring behaviors seem to co-occur in the sample data?
+
+3. **Illustrative Examples**
+   - Which types of interactions exemplify particular strengths or weaknesses that align with research principles from Part 1?
+   - What edge cases or interesting scenarios in the samples provide useful reference points?
+   - How do specific interaction moments connect to the evaluation outcomes?
+
+4. **Research-Grounded Interpretation**
+   - How do the pedagogical principles from Part 1 help explain why certain interaction features may have influenced scoring?
+   - What research insights contextualize the evaluation patterns observed in these samples?
+   - How does understanding of effective tutoring practices illuminate the human scoring decisions?
+
+**Format Requirements:**
+- Treat samples as illustrative reference points, not statistical evidence
+- Describe examples in general, context-rich terms without sample identifiers
+- Connect patterns explicitly to Part 1 research insights
+- Maintain descriptive/analytical tone; avoid prescriptive language
+- Focus on what LLM evaluators can learn from these examples
+- Avoid reproducing rubric language or creating scoring thresholds
+- Ensure the output is fully comprehensible without access to the original sample data
+
+**What NOT to Include:**
+- References to specific sample numbers or identifiers
+- Reformulations of rubric definitions or criteria
+- Specific score assignments or scoring formulas
+- Statistical claims about trends or distributions
+- Step-by-step procedures or checklists
+- Prescriptive "if-then" scoring rules
+
+## Output Format
+
+# Part 1: Research Summary for AI Tutoring Evaluation
+[Your 2,000-word summary here]
+
+# Part 2: LLM Evaluation Guidelines  
+[Your 750-word guidelines here]
+
+Begin your analysis and writing now, ensuring every recommendation is grounded in the provided materials and focused on practical educational AI evaluation.
+
+## Input Materials
+
+### Tool Overview
+{{TOOL_OVERVIEW}}
+
+### Tool-Specific Consideration
+{{TOOL_SPECIFIC_CONSIDERATION}}
+
+### Evaluation Rubric (JSON Format)
+{{RUBRIC_JSON}}
+
+### Sample Data with (or without) Human Evaluations (CSV Format)
+{{SAMPLE_DATA_CSV}}
+
+### Column Information (If necessary)
+{{COLUMN_EXPL}}
+
+### Educational Research Content
+{{SOURCE_CONTENT}}

@@ -1,0 +1,94 @@
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  2
+
+Recommendation 1
+
+Recommendation 1: Systematic Instruction
+
+Provide systematic instruction during intervention to develop student understanding of mathematical ideas.
+
+Effective interventions for improving  mathematics achievement for students struggling with mathematics share one key feature: the design of the curricular materials and the instruction provided are systematic. The term systematic indicates that instructional elements intentionally build students’ knowledge
+
+over time toward an identified learning outcome(s). Systematic intervention materials are designed to cover topics in an incremental and intentional way. Systematic interventions most often include a “bundle” of practices used to build and support student learning strategically.
+
+How to carry out the recommendation
+
+1. Review and integrate previously learned
+
+content throughout intervention to ensure that students maintain understanding of concepts and procedures. The panel recommends that interventions include systematic review of content by including a mix of previously and newly learned material within and across lessons. Review previously taught material before introducing new, related content. Help students understand the link between the previous content and the new content. To avoid having students overgeneralize new concepts or procedures to previously learned material, regularly present a variety of problems that require students to discriminate among problem types.
+
+Mathematical ideas are complex, and virtually all learners need to use, discuss, and explain the ideas multiple times over a long period of time to understand them. Provide students with opportunities to use and explain previous or newly learned mathematics concepts or procedures.
+
+2. When introducing new concepts and
+
+procedures, use accessible numbers to support learning. When teaching a new concept or procedure, use single-digit or easy-to-process numbers so that students can focus on the new concept or procedure rather than on difficult calculations. For example, when teaching students to find equivalent fractions, first work on equivalencies to unit fractions.
+
+Start with fractions equivalent to one-half, one-third, and one-fourth that are familiar and accessible to students. When students have a grasp of the concept, systematically add other fraction types to prevent students from overgeneralizing that equivalencies are only applicable to unit fractions.
+
+3. Sequence instruction so that the
+
+mathematics students are learning builds incrementally. Present mathematics concepts in a cohesive and logical way.
+
+Introduce concepts strategically so that the new learning relates to concepts previously taught. An intentional sequence of instruction capitalizes on prior learning and ensures that students have the knowledge necessary to learn new content effectively.
+
+Focus lessons on smaller tasks needed to solve complex problems before pulling it all together. This may apply to highly procedural multi-digit computation problems, or when teaching students to solve word problems. In the view of the panel, the key to building knowledge in this incremental way is to help students become comfortable with simpler subtasks of problem solving so they can eventually connect them to solve complex problems. For example, focus students on simpler tasks by using worked-out examples. Then exclude steps in a worked-out example and ask students to provide those steps until they become more comfortable with the procedures in solving problems.
+
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  3
+
+Recommendation 1
+
+Recommendation 1
+
+4. Provide visual and verbal supports. Verbal
+
+supports may include teacher prompting or questioning to help students remember the connections between prior learning and new concepts. These verbal supports may be accompanied by a visual which could include a gesture or a concrete or semi-concrete representation. For example, when teaching division, a teacher might gesture using a motion like a dealer dealing out cards to show the action of divvying concrete items (such as cards) into equal groups. A visual may also include a picture or diagram to be used as a “hint” for a next step or as a reminder to think about a certain concept.
+
+Representations illustrate the value of numbers and the relationship between quantities. • Concrete representations are threedimensional (3D) physical materials or actions that students can organize, act upon, or manipulate (e.g., regrouping with base 10 blocks, using fraction tiles to compare two fractions, and role playing a problem situation). • Semi-concrete representations are twodimensional (2D) visual depictions such as strip diagrams, simple drawings, tables, arrays, graphs, and number lines. • Abstract representations are mathematical notations that can include numbers, equations, operations, relational symbols, and expressions (such as 4 × 4 = 16).
+
+5. Provide immediate, supportive feedback
+
+to students to address any misunderstandings. If students are not able to explain their understanding of key mathematical concepts or do not execute procedures correctly, provide them with immediate feedback. When students solve problems, encourage them to articulate their thinking so that you can identify their strengths. Ask probing questions to identify any misconceptions and build on their strengths to correct those misunderstandings.
+
+Structure questions in such a way as to help students self-identify where their thinking went wrong. It might be helpful for students to use representations to help them articulate what they are thinking. Correcting misunderstandings early can prevent the confusion from becoming an enduring problem.
+
+Example 1. Reviewing previously learned content with verbal and visual supports*. The teacher reviews what the students have previously learned and reminds students of key concepts, including fact families (sets of mathematically related number sentences, such as 3x5=15 and 15/5=3) and the inverse relationship between multiplication and division. After explicitly reviewing what students know, the teacher asks a student to explain how the equal-sized group model can be used to solve the problem 4×6. Because the student has recently practiced solving multiplication and division problems with a visual representation, the student draws 4 circles with 6 dots in each and explains how she created 4 groups of 6 and skip counted to solve the multiplication problem. If needed, the teacher is poised to prompt the student if she misses a key point and provide corrective feedback.
+
+*This is an abbreviated version of the example presented in the practice guide.
+
+WWC 2021006
+
+Assisting Students Struggling with Mathematics: Intervention in the Elementary Grades  |  Practice Guide Summary  |  4
+
+Recommendation 2
+
+Recommendation 2: Mathematical Language
+
+Teach clear and concise mathematical language and support students’ use of the language to help students effectively communicate their understanding of mathematical concepts Mathematical language is academic language that precisely conveys mathematical ideas, including the vocabulary, terminology, and language structures used when thinking about, talking about, and writing about mathematics.
+
+Understanding mathematical language is critical to students’ learning because it is used in textbooks, curricular and assessment materials, and teachers’ instruction.
+
+When teachers use conversational or informal language instead of mathematical language, students may get confused. For example, some teachers may refer to the commutative property (a + b = b + a) as the “flip-flop property.” Although this creative property name may be viewed as a fun memory device, replacing accurate terms with informal language can confuse students later when they don’t know the connection to the correct formal term commutative property.
+
+Using and practicing correct terminology from the start can eliminate later challenges. How to carry out the recommendation
+
+1. Routinely teach mathematical vocabulary
+
+to build students’ understanding of the mathematics they are learning. Introduce new mathematical vocabulary during instruction and provide context and meaning to the words. Use student-friendly definitions with simple and familiar mathematical words. Simply providing a definition of a term is not sufficient for developing students’ understanding of mathematical vocabulary and concepts.
+
+Link new vocabulary to a variety of examples when possible, including concrete or semi-concrete representations. A graphic organizer, such as in Example 2, can provide a student-friendly definition and visually and symbolically depict a vocabulary word’s meaning, characteristics, examples, and non-examples. Hand gestures and role-playing can also provide context and meaning to mathematical vocabulary.
+
+To support learning across grade levels and settings, schools should consider creating a list of mathematical terminology that is shared among teachers and strategically becomes more sophisticated with each grade.
+
+2. Use clear, concise, and correct mathematical
+
+language throughout lessons to reinforce students’ understanding of important mathematical vocabulary words. Consistent use of mathematical language helps students learn how the terms should be used and develop a deeper understanding of the terms.
+
+Use and emphasize clear, concise, and correct
+
+mathematical language throughout instruction:
+
+when referring to a new or previously learned topic, when discussing homework, and when responding to questions. Model precise mathematical language when explaining your thought process and demonstrating how to solve a problem.
+
