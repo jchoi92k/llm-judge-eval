@@ -21,7 +21,7 @@ uv pip install -r requirements.txt
 echo "OPENAI_API_KEY=your_key_here" > .env
 ```
 Next run the data preprocessing notebook, `data_preprocessing_{tool_name}.ipynb`, followed by the evaluation notebook `notebook evaluation_pipeline_{tool_name}.ipynb`, both found in the tool-specific package.
-Refer to the full [Setup section](## Setup) for more troubleshooting or for more information.
+Refer to the full [Setup section](#setup) or the [Troubleshooting documentation](TROUBLESHOOTING.md) for more troubleshooting or for more information.
 
 ## Core Concepts
 
@@ -231,30 +231,6 @@ Adjudications will also include the following field:
   }
 ```
 
-## Troubleshooting
-
-### Check Evaluation Status
-```python
-evaluator.check_evaluation_status()
-```
-
-### Batch Retrieval After Kernel Restart
-```python
-# Find batch_id in logs or OpenAI dashboard
-evaluator.check_and_retrieve(
-    until_complete=True,
-    batch_id_override="batch_abc123"
-)
-```
-
-### Cancel a Batch
-```python
-evaluator.cancel_batch()
-```
-
-### Starting Over
-Delete output files or change output paths in `config_{tool_name}.toml` to run fresh evaluations.
-
 ## Other Topics
 
 ### RAG Integration
@@ -269,9 +245,9 @@ The `human_evaluation.csv` should provide few-shot examples. Format should match
 ## Project Structure
 ```
 .
-├── run_evaluation_{tool_name}.ipynb         # Main evaluation notebook
-├── data_preprocessing_{tool_name}.ipynb     # Data preprocessing notebook - run this first
-├── config_{tool_name}.toml                  # Configuration
+├── run_evaluation_{tool_name}.ipynb         # Main evaluation notebook; provided via download link
+├── data_preprocessing_{tool_name}.ipynb     # Data preprocessing notebook - run this first; provided via download link
+├── config_{tool_name}.toml                  # Configuration; provided via download link
 ├── CONFIG.md                                # Config documentation
 ├── README.md                                # General documentation  
 ├── inputs/
@@ -280,8 +256,8 @@ The `human_evaluation.csv` should provide few-shot examples. Format should match
 │   └── RAG/                                 # Knowledge base + embeddings
 ├── outputs/                                 # Generated results
 ├── logs/                                    # Run logs
-├── {tool_name}_utils                        # Tool-specific utilities
-├── {tool_name}_files                        # Tool-specific files
+├── {tool_name}_utils                        # Tool-specific utilities; provided via download link
+├── {tool_name}_files                        # Tool-specific files; pprovided via download link
 │   ├── rubrics/                
 │   ├── session_data/   
 │   ├── source_package_data/   
