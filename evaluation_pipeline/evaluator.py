@@ -395,7 +395,6 @@ class Evaluator:
             expected_output_tokens=self.config.model.expected_output_tokens
         ) 
         
-        # This is a rough estimate
         guideline_run_adjudcation = self.client.estimate_cost(
             prompt_cached="", 
             prompt_uncached=guideline_prompt,
@@ -542,7 +541,7 @@ class Evaluator:
         for _, row in tqdm(target_data.iterrows(), total=len(target_data), desc="Generating prompts"):
             session_id = row['session_id']
             
-            # Format row for embedding
+            # Format row for embedding; exclude the image data row (urls, base64, etc.)
             row_string = utils.format_any_tabular_data(
                 row[~row.index.isin(['image_data_base64'])], 
                 f"{self.config.tool_settings.tool_name} Data"
@@ -598,43 +597,18 @@ class Evaluator:
         if not self.dynamic_prompts:
             raise ValueError("No dynamic prompts generated. Call generate_dynamic_prompts() first. Or you might be in adjudication mode with no sessions needing adjudication.")
         
-        # Estimate cost
-        expected_output_tokens = self.config.model.expected_output_tokens
-        
         # Find common cached prefix
         all_prompts = list(self.dynamic_prompts.values())
         if all_prompts:
             
-            # Extract only text components from prompts
-            all_texts = [utils.extract_text_from_prompts(prompt) for prompt in all_prompts]
-            
-            # Find common prefix among all text versions
-            cached_prefix = ""
-            if all_texts:
-                first_text = all_texts[0]
-                
-                # Simple common prefix detection
-                for text in all_texts[1:]:
-                    common = ""
-                    for c1, c2 in zip(first_text, text):
-                        if c1 == c2:
-                            common += c1
-                        else:
-                            break
-                    if not cached_prefix or len(common) < len(cached_prefix):
-                        cached_prefix = common
-                
-                if not cached_prefix:
-                    cached_prefix = first_text[:len(first_text)//2] if first_text else ""
-            
-            # Estimate cost per prompt
-            sample_text = all_texts[0] if all_texts else ""
-            uncached_text = sample_text.replace(cached_prefix, '', 1)  # Remove only first occurrence
+            # Extract only text components from prompts; ignore image data for now
+            # If interested in image data cost, check https://openai.com/api/pricing/ under "How is pricing calculated for images?"
+            cached_prefix, uncached_text = utils.find_prefix(all_prompts)
             
             cost_per_evaluation = self.client.estimate_cost(
                 prompt_cached=cached_prefix,
                 prompt_uncached=uncached_text,
-                expected_output_tokens=expected_output_tokens
+                expected_output_tokens=500  # evaluation output estimate hardcoded for now
             )
             
             total_cost = cost_per_evaluation * len(self.dynamic_prompts) * n_runs
@@ -727,36 +701,16 @@ class Evaluator:
         if self.batch_file_path.exists():
             self.logger.info("Batch file already exists, skipping creation")
             return self
-        
-        # Cost estimation and approval
-        expected_output_tokens = self.config.model.expected_output_tokens
 
         # Find common cached prefix
         all_prompts = list(self.dynamic_prompts.values())
-        cached_prefix = ""
         if all_prompts:
-            first_prompt_text = all_prompts[0][0]['content'][0]['text']
-            
-            # Simple common prefix detection
-            for prompt in all_prompts[1:]:
-                prompt_text = prompt[0]['content'][0]['text']
-                common = ""
-                for c1, c2 in zip(first_prompt_text, prompt_text):
-                    if c1 == c2:
-                        common += c1
-                    else:
-                        break
-                if not cached_prefix or len(common) < len(cached_prefix):
-                    cached_prefix = common
-            
-            # Estimate cost per prompt
-            sample_prompt = all_prompts[0]
-            uncached_text = sample_prompt[0]['content'][0]['text'].replace(cached_prefix, '')
+            cached_prefix, uncached_text = utils.find_prefix(all_prompts)
             
             cost_per_evaluation = self.client.estimate_cost(
                 prompt_cached=cached_prefix,
                 prompt_uncached=uncached_text,
-                expected_output_tokens=expected_output_tokens
+                expected_output_tokens=500  # evaluation output estimate hardcoded for now
             )
             
             total_cost = cost_per_evaluation * len(self.dynamic_prompts) * n_runs

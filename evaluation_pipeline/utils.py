@@ -288,3 +288,33 @@ def flush_logs():
         handler.flush()
     sys.stdout.flush()
     print()
+
+
+def find_prefix(all_prompts: List[List[Dict[str, Any]]]) -> Tuple[str, str]:
+    """
+    Find the longest common prefix among all prompts and return it along with the remaining text.
+    
+    Args:
+        all_prompts: List of prompts, where each prompt is a list of dictionaries with text content.
+        
+    Returns:
+        A tuple containing the common prefix string and the remaining text string.
+    """
+    all_texts = [extract_text_from_prompts(prompt) for prompt in all_prompts]
+    
+    # Find common prefix among all text versions
+    cached_prefix = ""
+    if all_texts:
+        prefix = []
+        for chars in zip(*all_texts):
+            if len(set(chars)) == 1:  # All characters are the same
+                prefix.append(chars[0])
+            else:
+                break
+        cached_prefix = "".join(prefix)
+    
+    # Estimate cost per prompt; estimate using first prompt as sample instead of running tiktoken on all texts
+    sample_text = all_texts[0] if all_texts else ""
+    uncached_text = sample_text.replace(cached_prefix, '', 1)  # Remove only first occurrence
+
+    return cached_prefix, uncached_text
