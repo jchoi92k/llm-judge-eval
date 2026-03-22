@@ -9,6 +9,8 @@
 /alter/
 /inputs/session_data/
 /logs/
+/misc/
+/Second Benchmark Data Sets v1/
 
 # Python
 *.pyc
