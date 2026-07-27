@@ -96,7 +96,7 @@ def generate_evaluation_guidelines(evaluator, service_tier: str = "flex", n_runs
                 return evaluator
 
         # use n=1 samples of session data to show sample data sans human evaluations
-        sample_data = evaluator.session_data.sample(n=1, random_state=42).reset_index(drop=True)
+        sample_data = evaluator.session_data.sample(n=1, random_state=evaluator.config.evaluation_settings.random_state).reset_index(drop=True)
 
         # remove image data from sample data for now
         if 'image_data_base64' in sample_data.columns:

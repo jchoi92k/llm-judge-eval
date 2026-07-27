@@ -84,13 +84,16 @@ def flex_evaluate(evaluator, service_tier: str = "flex", adjudication: bool = Fa
         text_cost_per_eval = evaluator.client.estimate_cost(
             prompt_cached=cached_prefix,
             prompt_uncached=uncached_text,
-            expected_output_tokens=500  # evaluation output estimate hardcoded for now
+            expected_output_tokens=getattr(evaluator.config.api_settings, "expected_evaluation_output_tokens", 500)
         )
 
         # Estimate image token cost
         image_counts = [utils.count_images_in_prompt(p) for p in all_prompts]
         avg_images = sum(image_counts) / len(image_counts) if image_counts else 0
-        avg_image_tokens = utils.estimate_image_tokens(int(avg_images))
+        avg_image_tokens = utils.estimate_image_tokens(
+            int(avg_images),
+            tokens_per_image=getattr(evaluator.config.api_settings, "tokens_per_image", 1100),
+        )
         image_cost_per_eval = avg_image_tokens * evaluator.config.model.input_token_price
 
         cost_per_evaluation = text_cost_per_eval + image_cost_per_eval
@@ -184,13 +187,16 @@ def prepare_batch_file(evaluator, adjudication: bool = False, n_runs: int = 2, a
         text_cost_per_eval = evaluator.client.estimate_cost(
             prompt_cached=cached_prefix,
             prompt_uncached=uncached_text,
-            expected_output_tokens=500  # evaluation output estimate hardcoded for now
+            expected_output_tokens=getattr(evaluator.config.api_settings, "expected_evaluation_output_tokens", 500)
         )
 
         # Estimate image token cost
         image_counts = [utils.count_images_in_prompt(p) for p in all_prompts]
         avg_images = sum(image_counts) / len(image_counts) if image_counts else 0
-        avg_image_tokens = utils.estimate_image_tokens(int(avg_images))
+        avg_image_tokens = utils.estimate_image_tokens(
+            int(avg_images),
+            tokens_per_image=getattr(evaluator.config.api_settings, "tokens_per_image", 1100),
+        )
         image_cost_per_eval = avg_image_tokens * evaluator.config.model.input_token_price
 
         cost_per_evaluation = text_cost_per_eval + image_cost_per_eval

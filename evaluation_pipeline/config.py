@@ -41,6 +41,11 @@ class EvaluationSettings(BaseModel):
     """Settings for the evaluation process."""
     n_samples: int = Field(gt=0)
     n_human_rating_samples: int = Field(gt=0)
+    # Seed for all data sampling (session/human-eval subsets, few-shot pools).
+    # Changing it changes which sessions are evaluated, so a non-default value
+    # is included in the run_id hash (the default is omitted to keep existing
+    # configs' run_ids stable).
+    random_state: int = 42
     
     @field_validator('n_samples')
     @classmethod
@@ -141,6 +146,10 @@ class APISettings(BaseModel):
     # Lives in api_settings (excluded from run_id hashing) so enabling it
     # does not orphan existing checkpoints keyed by run_id.
     use_structured_outputs: bool = True
+    # Cost-estimation constants (estimates only — never affect evaluation
+    # results, hence excluded from run_id hashing with the rest of api_settings)
+    expected_evaluation_output_tokens: int = Field(default=500, gt=0)
+    tokens_per_image: int = Field(default=1100, gt=0)
     
     @field_validator('max_retries')
     @classmethod
@@ -244,9 +253,18 @@ class Config(BaseModel):
                             )
 
     def to_dict(self) -> dict:
-        """Export configuration as a dictionary with string paths."""
+        """
+        Export configuration as a dictionary with string paths.
+
+        Feeds the run_id hash: random_state is omitted at its default (42) so
+        pre-existing configs keep their run_id, but a custom seed — which
+        changes what data gets evaluated — produces a new run_id.
+        """
+        evaluation_settings = self.evaluation_settings.model_dump()
+        if evaluation_settings.get("random_state") == 42:
+            del evaluation_settings["random_state"]
         return {
-            "evaluation_settings": self.evaluation_settings.model_dump(),
+            "evaluation_settings": evaluation_settings,
             "model": self.model.model_dump(),
             "tool_settings": self.tool_settings.model_dump(),
             "file_paths": {k: str(v) for k, v in self.file_paths.model_dump().items()},

@@ -50,6 +50,11 @@ tool_name = "Your Tool Name"  # Change to your tool's name
 |---------|---------|----------------|
 | `n_samples` | How many sessions to evaluate | 5 (testing) - complete set |
 | `n_human_rating_samples` | Human examples for guidelines | 3-10 |
+| `random_state` | Seed for all data sampling | 42 (default) |
+
+Note on `random_state`: changing it changes which sessions are sampled, so a
+non-default value produces a new `run_id` (fresh checkpoints). Leaving it at the
+default keeps existing run_ids unchanged.
 
 **Impact on costs:**
 - More `n_samples` = proportionally higher evaluation costs
@@ -78,18 +83,25 @@ expected_output_tokens = 1500
 
 ### `[api_settings]`
 
-**What it controls:** API call behavior and reliability
+**What it controls:** API call behavior, reliability, and cost-estimation constants
 ```toml
 max_retries = 3           # Retry failed calls up to 3 times
 timeout = 900.0           # Wait up to 15 minutes per call
 retry_delay = 2.0         # Wait 2 seconds before retrying
 embedding_delay = 0.1     # Delay between embedding calls (rate limiting)
+use_structured_outputs = true         # Enforce rubric-derived JSON schema on evaluation outputs
+expected_evaluation_output_tokens = 500  # Output-size estimate for evaluation cost projections
+tokens_per_image = 1100               # Per-image token estimate for cost projections
 ```
 
 **When to change:**
 - Experiencing frequent timeouts → increase `timeout`
 - Rate limit errors → increase delays
 - Want faster failure → decrease `max_retries`
+- Model rejects the output schema or you want free-form outputs → `use_structured_outputs = false`
+- Cost estimates consistently off → tune `expected_evaluation_output_tokens` / `tokens_per_image` (estimates only; results are unaffected)
+
+All `[api_settings]` values are excluded from the `run_id` hash — changing them keeps existing checkpoints valid.
 
 ---
 

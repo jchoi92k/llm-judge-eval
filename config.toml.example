@@ -1,6 +1,7 @@
 [evaluation_settings]
 n_samples = 2
 n_human_rating_samples = 1
+# random_state = 42  # Sampling seed; non-default values produce a new run_id
 
 [model]
 model_name = "o3"
@@ -14,6 +15,9 @@ max_retries = 3
 timeout = 900.0
 retry_delay = 2.0
 embedding_delay = 1.0
+# use_structured_outputs = true          # Enforce rubric-derived JSON schema on outputs
+# expected_evaluation_output_tokens = 500  # Cost-estimate only
+# tokens_per_image = 1100                # Cost-estimate only
 
 [tool_settings]
 tool_name = <Replace with appropriate tool name>

@@ -51,7 +51,7 @@ def generate_sniff_test_prompts(evaluator, sniff_data: pd.DataFrame):
             # Sample up to n_few_shot from the remaining pool
             n_sample = min(n_few_shot, len(pool))
             if n_sample > 0:
-                few_shot_samples = pool.sample(n=n_sample, random_state=42)
+                few_shot_samples = pool.sample(n=n_sample, random_state=evaluator.config.evaluation_settings.random_state)
             else:
                 few_shot_samples = None
         else:

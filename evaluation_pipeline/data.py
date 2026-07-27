@@ -44,8 +44,8 @@ def load_session_data(config: Config, data_prep_function) -> pd.DataFrame:
     # Sample if configured
     if config.evaluation_settings.n_samples:
         df = df.sample(
-            n=config.evaluation_settings.n_samples, 
-            random_state=42
+            n=config.evaluation_settings.n_samples,
+            random_state=config.evaluation_settings.random_state
         ).reset_index(drop=True)
     
     return df
@@ -61,7 +61,7 @@ def load_human_evaluation(config: Config) -> pd.DataFrame:
         DataFrame with human evaluation data
     """
     human_evaluation = pd.read_csv(config.file_paths.human_evaluation)
-    human_evaluation = human_evaluation.sample(n=config.evaluation_settings.n_human_rating_samples, random_state=42).reset_index(drop=True)
+    human_evaluation = human_evaluation.sample(n=config.evaluation_settings.n_human_rating_samples, random_state=config.evaluation_settings.random_state).reset_index(drop=True)
 
     # remove 'image data base64' column if it exists
     if 'image_data_base64' in human_evaluation.columns:
