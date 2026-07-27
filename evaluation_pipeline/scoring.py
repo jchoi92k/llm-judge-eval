@@ -13,6 +13,19 @@ from typing import Any, Dict
 from . import utils
 
 
+def _coerce_score(value):
+    """Coerce a string score to int (or float) — legacy pkl data holds strings."""
+    if not isinstance(value, str):
+        return value
+    try:
+        return int(value)
+    except ValueError:
+        try:
+            return float(value)
+        except ValueError:
+            return value
+
+
 def generate_final_scores(evaluator):
     """Generate final scores using adjudication if available, otherwise average."""
     if not evaluator.evaluations:
@@ -65,16 +78,8 @@ def generate_final_scores(evaluator):
                         score2 = eval2['scores'][category][subcategory]
 
                         # Coerce string scores to numeric (handles legacy pkl data)
-                        if isinstance(score1, str):
-                            try: score1 = int(score1)
-                            except ValueError:
-                                try: score1 = float(score1)
-                                except ValueError: pass
-                        if isinstance(score2, str):
-                            try: score2 = int(score2)
-                            except ValueError:
-                                try: score2 = float(score2)
-                                except ValueError: pass
+                        score1 = _coerce_score(score1)
+                        score2 = _coerce_score(score2)
 
                         if score1 is None and score2 is None:
                             final_eval['scores'][category][subcategory] = None

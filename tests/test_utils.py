@@ -8,10 +8,7 @@ All fixtures are synthetic. No API calls, no file IO.
 
 import json
 
-import pytest
-
 from evaluation_pipeline import utils
-
 
 # ============================================================================
 # extract_json_from_string

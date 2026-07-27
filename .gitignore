@@ -19,6 +19,7 @@
 # --- Allowed: templates and dependencies ---
 !/config.toml.example
 !/requirements.txt
+!/pyproject.toml
 !/run_evaluation.example.ipynb
 
 # --- Allowed: code and shared inputs ---
@@ -35,3 +36,7 @@ __pycache__/
 *.pyc
 *.py[cod]
 .ipynb_checkpoints/
+*.egg-info/
+build/
+dist/
+.ruff_cache/

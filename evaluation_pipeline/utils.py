@@ -4,23 +4,15 @@
 Utility functions for the evaluation pipeline.
 """
 
-import re
 import json
-import time
-import base64
-import requests
-from pathlib import Path
-from typing import Dict, List, Any, Optional, Tuple, Union
-from io import BytesIO
-import tiktoken
-import sys
 import logging
+import re
+import sys
+from typing import Any, Dict, List, Optional, Tuple
 
-import pandas as pd
 import numpy as np
-from PIL import Image
-from tqdm import tqdm
-
+import pandas as pd
+import tiktoken
 
 # ============================================================================
 # FORMATTING UTILITIES
@@ -161,14 +153,14 @@ def try_parse_evaluation(eval_text: str) -> Tuple[bool, Optional[Dict], str]:
             fixed_content = json_content.replace("'", '"')
             parsed = json.loads(fixed_content)
             _coerce_scores_to_numeric(parsed)
-            return True, parsed, f"Fixed by replacing single quotes"
+            return True, parsed, "Fixed by replacing single quotes"
         except:
             pass
         try:
             fixed_content = re.sub(r',\s*([}\]])', r'\1', json_content)
             parsed = json.loads(fixed_content)
             _coerce_scores_to_numeric(parsed)
-            return True, parsed, f"Fixed by removing trailing commas"
+            return True, parsed, "Fixed by removing trailing commas"
         except:
             pass
         return False, None, error_msg

@@ -2,17 +2,17 @@
 
 import logging
 import pickle
-from pathlib import Path
-from typing import Dict, List, Any, Optional, Callable
 from collections import defaultdict
+from pathlib import Path
+from typing import Any, Callable, Dict, List, Optional
 
 import pandas as pd
 from tqdm import tqdm
 
+from . import calibration, data, execution, guidelines, reporting, scoring, utils
 from .config import Config
 from .openai_client import OpenAIClient
 from .prompts import PromptBuilder, retrieve_similar
-from . import calibration, data, execution, guidelines, reporting, scoring, utils
 
 
 class Evaluator:
@@ -137,7 +137,7 @@ class Evaluator:
 
     def _load_existing_guidelines(self):
         """Load existing guidelines from disk if available."""
-        guideline_pattern = f"guideline_*.txt"
+        guideline_pattern = "guideline_*.txt"
         guideline_files = list(self.config.dirs.evaluation_guidelines.glob(guideline_pattern))
 
         for file_path in guideline_files:
@@ -182,7 +182,7 @@ class Evaluator:
             self.logger.info(f"Auto-loaded human evaluation ({len(self.human_evaluation)} samples)")
         except Exception as e:
             self.logger.warning(f"Human evaluation not loaded: {e}")
-            self.logger.warning(f"You may proceed without human evaluations, but it may affect guideline and evaluation quality.")
+            self.logger.warning("You may proceed without human evaluations, but it may affect guideline and evaluation quality.")
             self.human_evaluation = None
 
         # Load curated few-shot examples (OPTIONAL — falls back to human_evaluation)

@@ -4,16 +4,15 @@
 Prompt building and RAG retrieval utilities.
 """
 
-import numpy as np
-from pathlib import Path
-from typing import List, Tuple, Dict, Any, Union, Optional
-from jinja2 import Template
-import pandas as pd
-
-from .config import Config
-from . import utils
 import json
-import logging
+from typing import Dict, List, Optional, Tuple
+
+import numpy as np
+import pandas as pd
+from jinja2 import Template
+
+from . import utils
+from .config import Config
 
 
 def _score_bounds(ratings: dict) -> tuple:

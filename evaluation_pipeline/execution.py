@@ -14,8 +14,8 @@ from typing import Optional
 
 from tqdm import tqdm
 
-from .openai_client import build_text_format
 from . import utils
+from .openai_client import build_text_format
 
 
 def _output_schema(evaluator):

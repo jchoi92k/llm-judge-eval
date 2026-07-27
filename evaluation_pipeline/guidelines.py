@@ -8,7 +8,6 @@ same as data.py). The Evaluator methods are one-line delegates to these.
 """
 
 from pathlib import Path
-from typing import List
 
 from . import utils
 

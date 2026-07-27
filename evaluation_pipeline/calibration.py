@@ -15,8 +15,8 @@ from pathlib import Path
 import pandas as pd
 from tqdm import tqdm
 
-from .prompts import retrieve_similar
 from . import utils
+from .prompts import retrieve_similar
 
 
 def generate_sniff_test_prompts(evaluator, sniff_data: pd.DataFrame):
@@ -89,8 +89,9 @@ def run_sniff_test(
     column_map: dict = None,
 ) -> dict:
     """Run evaluation on the human-reviewed subset and compare with human scores."""
-    from . import error_analysis
     from jinja2 import Template
+
+    from . import error_analysis
 
     if evaluator.human_evaluation is None:
         raise ValueError(

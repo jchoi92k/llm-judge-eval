@@ -1,15 +1,15 @@
 # evaluation_pipeline/openai_client.py
 
+import json
+import logging
 import os
 import time
-import logging
-import json
 from pathlib import Path
-from typing import Optional, Dict, Any, List
+from typing import Any, Dict, List, Optional
 
 import openai
 import tiktoken
-from dotenv import load_dotenv, find_dotenv
+from dotenv import find_dotenv, load_dotenv
 
 from .config import Config
 

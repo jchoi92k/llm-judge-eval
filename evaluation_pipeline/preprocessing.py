@@ -7,17 +7,15 @@ These functions are used to prepare raw data before evaluation.
 Run once, save the results, then use the processed data.
 """
 
-import time
 import base64
-import requests
-from pathlib import Path
-from typing import Optional, List, Union
+import time
 from io import BytesIO
+from typing import List, Optional, Union
 
 import pandas as pd
+import requests
 from PIL import Image
 from tqdm import tqdm
-
 
 # ============================================================================
 # IMAGE PREPROCESSING (ONE-TIME SETUP)

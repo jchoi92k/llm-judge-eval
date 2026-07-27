@@ -148,7 +148,7 @@ def sanity_check_prompts(evaluator, n_examples: int = 3):
     print(f"  Sessions without few-shot content: {empty_examples}/{len(evaluator.dynamic_prompts)}")
 
     if has_examples == 0:
-        print(f"\n  ⚠ WARNING: No prompts contain few-shot examples!")
+        print("\n  ⚠ WARNING: No prompts contain few-shot examples!")
     elif empty_examples > 0:
         print(f"\n  ⚠ WARNING: {empty_examples} prompts are missing few-shot examples")
 
@@ -159,13 +159,13 @@ def sanity_check_prompts(evaluator, n_examples: int = 3):
         print(f"    {str(sid)[:20]}...  {count:,} chars")
 
     if empty_examples > 0:
-        print(f"\n  Empty few-shot examples:")
+        print("\n  Empty few-shot examples:")
         empty = [x for x in sorted_counts if x[1] <= 50]
         for sid, count in empty[:n_examples]:
             print(f"    {str(sid)[:20]}...  {count} chars")
 
     # ---- Check 2: Image handling ----
-    print(f"\n## 2. Image Handling\n")
+    print("\n## 2. Image Handling\n")
 
     sessions_with_images = 0
     prompts_with_images = 0
@@ -220,9 +220,9 @@ def sanity_check_prompts(evaluator, n_examples: int = 3):
             print(f"    {str(sid)[:20]}...  data: {n_data} images, prompt: {n_prompt} images — {reason}")
     else:
         if sessions_with_images > 0:
-            print(f"\n  ✓ All image counts match between data and prompts")
+            print("\n  ✓ All image counts match between data and prompts")
         else:
-            print(f"\n  (No sessions with images in current prompt set)")
+            print("\n  (No sessions with images in current prompt set)")
 
     if image_examples:
         print(f"\n  Sample sessions with images (up to {n_examples}):")
@@ -280,7 +280,7 @@ def failures_summary(evaluator) -> list:
     affected = sorted({str(f["session_id"]) for f in failures if f["session_id"] is not None})
     if affected:
         print(f"  Affected sessions ({len(affected)}): re-run flex_evaluate() or the batch flow")
-        print(f"  to fill missing evaluations; check_evaluation_status() shows what's incomplete.")
+        print("  to fill missing evaluations; check_evaluation_status() shows what's incomplete.")
 
     return failures
 

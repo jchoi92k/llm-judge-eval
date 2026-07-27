@@ -1,11 +1,11 @@
 # evaluation_pipeline/config.py
 
-from pathlib import Path
-from typing import Optional
-import tomllib
 import hashlib
 import json
 import logging
+import tomllib
+from pathlib import Path
+from typing import Optional
 
 from pydantic import BaseModel, Field, field_validator, model_validator
 
@@ -109,7 +109,7 @@ class FilePaths(BaseModel):
         
         if missing_files:
             raise ValueError(
-                f"Missing required files:\n" + "\n".join(missing_files)
+                "Missing required files:\n" + "\n".join(missing_files)
             )
         return self
 
@@ -184,8 +184,9 @@ class Config(BaseModel):
         Validate session_data file for main notebook usage.
         Checks that required columns exist and data is properly formatted.
         """
-        import pandas as pd
         import ast
+
+        import pandas as pd
         
         if not self.file_paths.session_data.exists():
             raise ValueError(
@@ -279,7 +280,6 @@ class Config(BaseModel):
         If config settings OR session data file contents change, run_id changes.
         All files generated will use this run_id as an affix.
         """
-        import hashlib
         
         config_dict = self.to_dict()
         

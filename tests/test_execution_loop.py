@@ -18,7 +18,6 @@ import pytest
 
 from evaluation_pipeline import execution
 
-
 VALID_EVAL = {
     "scores": {"category_a": {"sub_1": 3}},
     "mathematical_accuracy_relevance": {"applicable": True},
