@@ -2,6 +2,7 @@
 n_samples = 2
 n_human_rating_samples = 1
 # random_state = 42  # Sampling seed; non-default values produce a new run_id
+# adjudication_threshold = 2  # Score gap between runs that triggers adjudication; non-default values produce a new run_id
 
 [model]
 model_name = "o3"

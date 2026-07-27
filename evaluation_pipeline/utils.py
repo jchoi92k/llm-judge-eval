@@ -204,8 +204,15 @@ def extract_text_from_prompts(prompt: List[Dict[str, Any]]) -> str:
 # ADJUDICATION LOGIC
 # ============================================================================
 
-def needs_adjudication(eval1: Dict, eval2: Dict) -> Tuple[bool, str]:
-    """Check if two evaluations need adjudication."""
+def needs_adjudication(eval1: Dict, eval2: Dict, threshold: int = 2) -> Tuple[bool, str]:
+    """
+    Check if two evaluations need adjudication.
+
+    Args:
+        eval1, eval2: Parsed evaluation dicts.
+        threshold: Minimum score gap that triggers adjudication
+            (config: evaluation_settings.adjudication_threshold).
+    """
     # Check mathematical_accuracy_relevance flag discrepancy
     # Normalize to Python bool: handles True/False, "true"/"false", "True"/"False"
     def _to_bool(val):
@@ -222,21 +229,21 @@ def needs_adjudication(eval1: Dict, eval2: Dict) -> Tuple[bool, str]:
 
     scores1 = eval1.get('scores', {})
     scores2 = eval2.get('scores', {})
-    
-    # Check for score discrepancies >= 2
-    # Categories hardcoded as per rubric schema
-    for category in ['Mathematical_Accuracy', 'Pedagogical_Quality', 'Equity_and_Fairness']:
+
+    # Check for score discrepancies >= threshold across all rubric categories
+    categories = list(scores1) + [c for c in scores2 if c not in scores1]
+    for category in categories:
         cat1 = scores1.get(category, {})
         cat2 = scores2.get(category, {})
-        
+
         for subcategory in cat1.keys():
             val1 = cat1.get(subcategory)
             val2 = cat2.get(subcategory, val1)
-            
+
             if val1 is not None and val2 is not None:
                 try:
-                    if abs(int(val1) - int(val2)) >= 2:
-                        return True, f"Score discrepancy >= 2 in {category} for {subcategory}"
+                    if abs(int(val1) - int(val2)) >= threshold:
+                        return True, f"Score discrepancy >= {threshold} in {category} for {subcategory}"
                 except (ValueError, TypeError):
                     pass
 

@@ -167,7 +167,8 @@ def check_evaluation_status(evaluator) -> Dict[str, Any]:
             # Check if needs adjudication
             needs_adj, reason = utils.needs_adjudication(
                 evaluator.evaluations[session_id][0][0],
-                evaluator.evaluations[session_id][1][0]
+                evaluator.evaluations[session_id][1][0],
+                threshold=evaluator.config.evaluation_settings.adjudication_threshold
             )
 
             if needs_adj:

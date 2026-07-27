@@ -204,6 +204,32 @@ class TestNeedsAdjudication:
         needed, _ = utils.needs_adjudication(make_scored_eval(validity=1), eval2)
         assert needed is False
 
+    def test_custom_threshold_lowers_trigger(self):
+        # Gap of 1 doesn't trigger at the default, but does at threshold=1
+        needed, reason = utils.needs_adjudication(
+            make_scored_eval(validity=2), make_scored_eval(validity=3), threshold=1
+        )
+        assert needed is True
+        assert ">= 1" in reason
+
+    def test_custom_threshold_raises_trigger(self):
+        # Gap of 2 triggers at the default, but not at threshold=3
+        needed, _ = utils.needs_adjudication(
+            make_scored_eval(validity=1), make_scored_eval(validity=3), threshold=3
+        )
+        assert needed is False
+
+    def test_non_standard_category_name_triggers(self):
+        # Categories come from the evaluations themselves, not a hardcoded
+        # list — a rubric with a new category name must still be checked
+        e1 = {"scores": {"Some_New_Category": {"Crit": 1}},
+              "mathematical_accuracy_relevance": {"applicable": True}}
+        e2 = {"scores": {"Some_New_Category": {"Crit": 4}},
+              "mathematical_accuracy_relevance": {"applicable": True}}
+        needed, reason = utils.needs_adjudication(e1, e2)
+        assert needed is True
+        assert "Some_New_Category" in reason
+
 
 # ============================================================================
 # Image marker / multimodal input handling

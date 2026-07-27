@@ -61,6 +61,23 @@ class TestRunIdStability:
         assert "api_settings" not in make_config().to_dict()
 
 
+class TestAdjudicationThresholdHashStability:
+    def test_default_threshold_omitted_from_hash_input(self):
+        """Pre-existing configs (no adjudication_threshold key in toml) must
+        produce the same to_dict as before the field existed."""
+        d = make_config().to_dict()
+        assert "adjudication_threshold" not in d["evaluation_settings"]
+
+    def test_custom_threshold_included_in_hash_input(self):
+        """A non-default threshold changes which sessions get adjudicated,
+        so it must change the run_id hash input."""
+        d = make_config(adjudication_threshold=3).to_dict()
+        assert d["evaluation_settings"]["adjudication_threshold"] == 3
+
+    def test_default_and_custom_threshold_hash_inputs_differ(self):
+        assert make_config().to_dict() != make_config(adjudication_threshold=3).to_dict()
+
+
 class TestNewDefaults:
     def test_cost_estimation_defaults_match_old_hardcoded_values(self):
         api = APISettings()
@@ -69,3 +86,6 @@ class TestNewDefaults:
 
     def test_random_state_default_matches_old_hardcoded_value(self):
         assert EvaluationSettings(n_samples=1, n_human_rating_samples=1).random_state == 42
+
+    def test_adjudication_threshold_default_matches_old_hardcoded_value(self):
+        assert EvaluationSettings(n_samples=1, n_human_rating_samples=1).adjudication_threshold == 2

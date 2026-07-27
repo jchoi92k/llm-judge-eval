@@ -308,7 +308,8 @@ class Evaluator:
                     for j in range(i + 1, len(self.evaluations[session_id])):
                         adj_needed, reason = utils.needs_adjudication(
                             self.evaluations[session_id][i][0],
-                            self.evaluations[session_id][j][0]
+                            self.evaluations[session_id][j][0],
+                            threshold=self.config.evaluation_settings.adjudication_threshold
                         )
                         if adj_needed:
                             needs_adj = True

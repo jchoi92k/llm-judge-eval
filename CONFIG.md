@@ -51,10 +51,12 @@ tool_name = "Your Tool Name"  # Change to your tool's name
 | `n_samples` | How many sessions to evaluate | 5 (testing) - complete set |
 | `n_human_rating_samples` | Human examples for guidelines | 3-10 |
 | `random_state` | Seed for all data sampling | 42 (default) |
+| `adjudication_threshold` | Score gap between two runs that triggers adjudication | 2 (default) |
 
-Note on `random_state`: changing it changes which sessions are sampled, so a
-non-default value produces a new `run_id` (fresh checkpoints). Leaving it at the
-default keeps existing run_ids unchanged.
+Note on `random_state` and `adjudication_threshold`: changing either changes
+what gets evaluated (which sessions are sampled / which sessions get a third
+adjudication run), so a non-default value produces a new `run_id` (fresh
+checkpoints). Leaving them at the defaults keeps existing run_ids unchanged.
 
 **Impact on costs:**
 - More `n_samples` = proportionally higher evaluation costs

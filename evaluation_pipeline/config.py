@@ -46,6 +46,11 @@ class EvaluationSettings(BaseModel):
     # is included in the run_id hash (the default is omitted to keep existing
     # configs' run_ids stable).
     random_state: int = 42
+    # Minimum score gap between two evaluation runs that triggers adjudication.
+    # Changing it changes which sessions get a third (adjudication) run, so a
+    # non-default value is included in the run_id hash (the default is omitted
+    # to keep existing configs' run_ids stable).
+    adjudication_threshold: int = Field(default=2, ge=1)
     
     @field_validator('n_samples')
     @classmethod
@@ -257,13 +262,16 @@ class Config(BaseModel):
         """
         Export configuration as a dictionary with string paths.
 
-        Feeds the run_id hash: random_state is omitted at its default (42) so
-        pre-existing configs keep their run_id, but a custom seed — which
-        changes what data gets evaluated — produces a new run_id.
+        Feeds the run_id hash: random_state and adjudication_threshold are
+        omitted at their defaults (42 and 2) so pre-existing configs keep
+        their run_id, but custom values — which change what data gets
+        evaluated or which sessions get adjudicated — produce a new run_id.
         """
         evaluation_settings = self.evaluation_settings.model_dump()
         if evaluation_settings.get("random_state") == 42:
             del evaluation_settings["random_state"]
+        if evaluation_settings.get("adjudication_threshold") == 2:
+            del evaluation_settings["adjudication_threshold"]
         return {
             "evaluation_settings": evaluation_settings,
             "model": self.model.model_dump(),

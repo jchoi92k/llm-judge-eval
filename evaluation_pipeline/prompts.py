@@ -409,6 +409,7 @@ class PromptBuilder:
             EVALUATION_1=json.dumps(evaluation_1, indent=2),
             EVALUATION_2=json.dumps(evaluation_2, indent=2),
             OUTPUT_SCHEMA=self.output_schema,
+            SCORE_DISCREPANCY_THRESHOLD=self.config.evaluation_settings.adjudication_threshold,
         )
         
         # Get image data
