@@ -24,6 +24,7 @@
 # --- Allowed: code and shared inputs ---
 !/evaluation_pipeline/
 !/inputs/
+!/tests/
 
 # Session data stays local even though inputs/ is allowed
 /inputs/session_data/
