@@ -14,7 +14,21 @@ from typing import Optional
 
 from tqdm import tqdm
 
+from .openai_client import build_text_format
 from . import utils
+
+
+def _output_schema(evaluator):
+    """
+    Rubric-derived JSON schema for API-enforced structured outputs, or None
+    when disabled via config (api_settings.use_structured_outputs = false)
+    or unavailable on the evaluator.
+    """
+    api_settings = getattr(evaluator.config, "api_settings", None)
+    if api_settings is not None and not getattr(api_settings, "use_structured_outputs", True):
+        return None
+    prompt_builder = getattr(evaluator, "prompt_builder", None)
+    return getattr(prompt_builder, "output_json_schema", None)
 
 
 # ============================================================================
@@ -32,7 +46,7 @@ def _call_and_record(evaluator, session_id, prompt, service_tier, context):
     Returns:
         True if the evaluation was parsed and recorded, False if parsing failed.
     """
-    response = evaluator.client.call(prompt, service_tier=service_tier)
+    response = evaluator.client.call(prompt, service_tier=service_tier, output_schema=_output_schema(evaluator))
     eval_text = response.output_text.strip()
 
     success, parsed_eval, error_msg = utils.try_parse_evaluation(eval_text)
@@ -186,20 +200,25 @@ def prepare_batch_file(evaluator, adjudication: bool = False, n_runs: int = 2, a
         evaluator.logger.info(f"Evaluation mode: using {n_runs} runs per session")
 
     custom_id_map = {}
+    output_schema = _output_schema(evaluator)
 
     for session_id, prompt in evaluator.dynamic_prompts.items():
         for _ in range(n_runs):
             custom_id = f"{evaluator.config.run_id}_{timestamp}_{request_counter}"
             custom_id_map[custom_id] = session_id
 
+            body = {
+                "model": evaluator.config.model.model_name,
+                "input": prompt
+            }
+            if output_schema is not None:
+                body["text"] = build_text_format(output_schema)
+
             batch_entry = {
                 "custom_id": custom_id,
                 "method": "POST",
                 "url": "/v1/responses",
-                "body": {
-                    "model": evaluator.config.model.model_name,
-                    "input": prompt
-                }
+                "body": body
             }
 
             with open(evaluator.batch_file_path, "a", encoding="utf-8") as f:

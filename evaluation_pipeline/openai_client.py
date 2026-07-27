@@ -14,6 +14,21 @@ from dotenv import load_dotenv, find_dotenv
 from .config import Config
 
 
+def build_text_format(output_schema: dict) -> dict:
+    """
+    Responses API `text` parameter enforcing structured outputs against a JSON schema.
+    Shared by direct calls (OpenAIClient.call) and batch request bodies.
+    """
+    return {
+        "format": {
+            "type": "json_schema",
+            "name": "session_evaluation",
+            "strict": True,
+            "schema": output_schema,
+        }
+    }
+
+
 class OpenAIClient:
     """
     Wrapper for OpenAI API with automatic retries, cost estimation, and batch processing.
@@ -52,28 +67,35 @@ class OpenAIClient:
     # DIRECT API CALLS
     # ========================================================================
     
-    def call(self, prompt: Any, service_tier: str = "flex", retries: Optional[int] = None, timeout: Optional[float] = None) -> Any:
+    def call(self, prompt: Any, service_tier: str = "flex", retries: Optional[int] = None, timeout: Optional[float] = None, output_schema: Optional[dict] = None) -> Any:
         """
         Call OpenAI API with automatic retry logic.
-        
+
         Args:
             prompt: The prompt to send
             retries: Number of retry attempts (defaults to config value)
             timeout: Request timeout in seconds (defaults to config value)
-            
+            output_schema: Optional JSON schema; when provided, the API enforces
+                the response to match it (structured outputs)
+
         Returns:
             OpenAI response object
         """
         retries = retries or self.config.api_settings.max_retries
         timeout = timeout or self.config.api_settings.timeout
         retry_delay = self.config.api_settings.retry_delay
-        
+
+        extra_kwargs = {}
+        if output_schema is not None:
+            extra_kwargs["text"] = build_text_format(output_schema)
+
         for attempt in range(retries):
             try:
                 response = self.client.with_options(timeout=timeout).responses.create(
                     model=self.model_name,
                     input=prompt,
                     service_tier=service_tier,
+                    **extra_kwargs,
                 )
                 return response
             except Exception as e:

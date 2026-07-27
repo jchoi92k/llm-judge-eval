@@ -137,6 +137,10 @@ class APISettings(BaseModel):
     timeout: float = Field(default=900.0, gt=0)
     retry_delay: float = Field(default=2.0, ge=0)
     embedding_delay: float = Field(default=1.0, ge=0)
+    # API-enforced structured outputs for evaluation/adjudication calls.
+    # Lives in api_settings (excluded from run_id hashing) so enabling it
+    # does not orphan existing checkpoints keyed by run_id.
+    use_structured_outputs: bool = True
     
     @field_validator('max_retries')
     @classmethod

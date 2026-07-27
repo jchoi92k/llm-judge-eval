@@ -103,3 +103,119 @@ class TestBuildOutputSchemaFromRubric:
             "extracted_mathematical_content",
             "catastrophic_errors",
         }
+
+
+class TestBuildJsonSchemaFromRubric:
+    """Strict JSON Schema for API-enforced structured outputs (task 9)."""
+
+    def make_schema(self, rubric=None):
+        from evaluation_pipeline.prompts import build_json_schema_from_rubric
+        return build_json_schema_from_rubric(json.dumps(rubric or make_rubric()))
+
+    def test_top_level_structure(self):
+        schema = self.make_schema()
+        assert schema["type"] == "object"
+        assert set(schema["properties"].keys()) == {
+            "scores", "explanations", "mathematical_accuracy_relevance",
+        }
+        assert set(schema["required"]) == set(schema["properties"].keys())
+        assert schema["additionalProperties"] is False
+
+    def test_every_object_node_is_strict(self):
+        """OpenAI strict mode: all objects need required=all-props and additionalProperties=False."""
+        def walk(node):
+            if isinstance(node, dict):
+                if node.get("type") == "object":
+                    assert set(node["required"]) == set(node["properties"].keys())
+                    assert node["additionalProperties"] is False
+                for v in node.values():
+                    walk(v)
+
+        walk(self.make_schema())
+
+    def test_score_bounds_from_ratings(self):
+        schema = self.make_schema()
+        feedback_tone = schema["properties"]["scores"]["properties"]["Equity_and_Fairness"]["properties"]["Feedback_tone"]
+        assert feedback_tone == {"type": "integer", "minimum": 1, "maximum": 3}
+
+    def test_math_accuracy_scores_nullable(self):
+        schema = self.make_schema()
+        validity = schema["properties"]["scores"]["properties"]["Mathematical_Accuracy"]["properties"]["Validity"]
+        assert validity["type"] == ["integer", "null"]
+        assert validity["minimum"] == 1
+        assert validity["maximum"] == 4
+
+    def test_non_math_scores_not_nullable(self):
+        schema = self.make_schema()
+        feedback = schema["properties"]["scores"]["properties"]["Pedagogical_Quality"]["properties"]["Feedback"]
+        assert feedback["type"] == "integer"
+
+    def test_keys_match_pseudo_schema(self):
+        """Both schema builders must agree on category/criterion keys, since
+        the prompt text and the API enforcement describe the same output."""
+        pseudo = render_to_valid_json(build_output_schema_from_rubric(json.dumps(make_rubric())))
+        strict = self.make_schema()
+        assert set(strict["properties"]["scores"]["properties"].keys()) == set(pseudo["scores"].keys())
+        for cat in pseudo["scores"]:
+            assert set(strict["properties"]["scores"]["properties"][cat]["properties"].keys()) == set(pseudo["scores"][cat].keys())
+
+    def test_relevance_block_fields(self):
+        schema = self.make_schema()
+        mar = schema["properties"]["mathematical_accuracy_relevance"]
+        assert set(mar["properties"].keys()) == {
+            "applicable", "explanation", "extracted_mathematical_content", "catastrophic_errors",
+        }
+        assert mar["properties"]["applicable"]["type"] == "boolean"
+
+    def test_a_valid_payload_passes_jsonschema_validation(self):
+        """Sanity: a payload shaped like VALID model output validates against the schema."""
+        jsonschema = pytest.importorskip("jsonschema")
+        schema = self.make_schema()
+        payload = {
+            "scores": {
+                "Mathematical_Accuracy": {"Validity": None, "Clarity_and_Labeling": 4},
+                "Pedagogical_Quality": {"Feedback": 3},
+                "Equity_and_Fairness": {"Feedback_tone": 2},
+            },
+            "explanations": {
+                "Mathematical_Accuracy": {"Validity": "n/a", "Clarity_and_Labeling": "clear"},
+                "Pedagogical_Quality": {"Feedback": "good"},
+                "Equity_and_Fairness": {"Feedback_tone": "warm"},
+            },
+            "mathematical_accuracy_relevance": {
+                "applicable": False,
+                "explanation": "no math content",
+                "extracted_mathematical_content": "",
+                "catastrophic_errors": "None",
+            },
+        }
+        jsonschema.validate(payload, schema)
+
+
+class TestNARatingKeys:
+    """Rubrics with a non-numeric 'N/A' rating key (seen in real team rubrics)
+    must not crash either builder; such criteria allow null."""
+
+    def make_na_rubric(self):
+        rubric = make_rubric()
+        rubric["rubrics"][1]["criteria"][0]["ratings"]["N/A"] = "not applicable"
+        return rubric
+
+    def test_pseudo_schema_handles_na_key(self):
+        schema = build_output_schema_from_rubric(json.dumps(self.make_na_rubric()))
+        assert '"Feedback": <1-4 or null>' in schema
+
+    def test_json_schema_handles_na_key(self):
+        from evaluation_pipeline.prompts import build_json_schema_from_rubric
+        schema = build_json_schema_from_rubric(json.dumps(self.make_na_rubric()))
+        feedback = schema["properties"]["scores"]["properties"]["Pedagogical_Quality"]["properties"]["Feedback"]
+        assert feedback["type"] == ["integer", "null"]
+        assert feedback["minimum"] == 1
+        assert feedback["maximum"] == 4
+
+    def test_all_na_criterion_raises(self):
+        from evaluation_pipeline.prompts import build_json_schema_from_rubric
+        rubric = make_rubric()
+        rubric["rubrics"][1]["criteria"][0]["ratings"] = {"N/A": "only"}
+        with pytest.raises(ValueError, match="no numeric rating keys"):
+            build_json_schema_from_rubric(json.dumps(rubric))

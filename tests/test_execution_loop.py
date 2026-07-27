@@ -40,11 +40,13 @@ class FakeClient:
 
     def __init__(self, responses=None, batch_results=None):
         self.calls = []
+        self.call_kwargs = []
         self._responses = list(responses) if responses else None
         self._batch_results = batch_results or []
 
     def call(self, prompt, service_tier="flex", **kwargs):
         self.calls.append(prompt)
+        self.call_kwargs.append(kwargs)
         if self._responses is not None:
             return self._responses.pop(0)
         return FakeResponse(json.dumps(VALID_EVAL))
@@ -63,6 +65,7 @@ class StubEvaluator:
         self.config = SimpleNamespace(
             run_id="testrun",
             model=SimpleNamespace(model_name="gpt-test", input_token_price=0.0),
+            api_settings=SimpleNamespace(use_structured_outputs=True),
             dirs=SimpleNamespace(
                 batch_processing=tmp_path,
                 batch_processing_results=tmp_path,
@@ -70,6 +73,9 @@ class StubEvaluator:
         )
         self.logger = logging.getLogger("testrun")
         self.client = client or FakeClient()
+        self.prompt_builder = SimpleNamespace(
+            output_json_schema={"type": "object", "properties": {}, "required": [], "additionalProperties": False}
+        )
         self.evaluations = defaultdict(list)
         self.dynamic_prompts = {}
         self.batch_file_path = None
@@ -180,6 +186,57 @@ def test_flex_raises_without_dynamic_prompts(tmp_path):
 
     with pytest.raises(ValueError, match="No dynamic prompts"):
         execution.flex_evaluate(ev, auto_approve=True)
+
+
+# ============================================================================
+# STRUCTURED OUTPUTS
+# ============================================================================
+
+def test_flex_passes_output_schema_to_client(tmp_path):
+    ev = StubEvaluator(tmp_path)
+    ev.dynamic_prompts = {"s1": make_prompt("p1")}
+
+    execution.flex_evaluate(ev, auto_approve=True)
+
+    assert all(
+        kw.get("output_schema") == ev.prompt_builder.output_json_schema
+        for kw in ev.client.call_kwargs
+    )
+
+
+def test_flex_omits_schema_when_structured_outputs_disabled(tmp_path):
+    ev = StubEvaluator(tmp_path)
+    ev.config.api_settings.use_structured_outputs = False
+    ev.dynamic_prompts = {"s1": make_prompt("p1")}
+
+    execution.flex_evaluate(ev, auto_approve=True)
+
+    assert all(kw.get("output_schema") is None for kw in ev.client.call_kwargs)
+
+
+def test_batch_bodies_include_text_format_schema(tmp_path):
+    ev = StubEvaluator(tmp_path)
+    ev.dynamic_prompts = {"s1": make_prompt("p1")}
+
+    execution.prepare_batch_file(ev, auto_approve=True)
+
+    entries = [json.loads(l) for l in ev.batch_file_path.read_text(encoding="utf-8").strip().split("\n")]
+    for e in entries:
+        fmt = e["body"]["text"]["format"]
+        assert fmt["type"] == "json_schema"
+        assert fmt["strict"] is True
+        assert fmt["schema"] == ev.prompt_builder.output_json_schema
+
+
+def test_batch_bodies_omit_text_format_when_disabled(tmp_path):
+    ev = StubEvaluator(tmp_path)
+    ev.config.api_settings.use_structured_outputs = False
+    ev.dynamic_prompts = {"s1": make_prompt("p1")}
+
+    execution.prepare_batch_file(ev, auto_approve=True)
+
+    entries = [json.loads(l) for l in ev.batch_file_path.read_text(encoding="utf-8").strip().split("\n")]
+    assert all("text" not in e["body"] for e in entries)
 
 
 # ============================================================================

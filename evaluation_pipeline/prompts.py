@@ -16,6 +16,23 @@ import json
 import logging
 
 
+def _score_bounds(ratings: dict) -> tuple:
+    """
+    Min/max score from a criterion's rating keys, tolerating non-numeric
+    keys like "N/A" (some team rubrics include one).
+
+    Returns:
+        (min_score, max_score, has_na_rating) — has_na_rating is True when
+        any rating key is non-numeric, meaning null is a valid score.
+    """
+    numeric_keys = [k for k in ratings.keys() if str(k).lstrip("-").isdigit()]
+    if not numeric_keys:
+        raise ValueError(f"Criterion has no numeric rating keys: {list(ratings.keys())}")
+    has_na_rating = len(numeric_keys) < len(ratings)
+    sorted_keys = sorted(numeric_keys, key=int)
+    return int(sorted_keys[0]), int(sorted_keys[-1]), has_na_rating
+
+
 def build_output_schema_from_rubric(rubric_json_str: str) -> str:
     """
     Generate the JSON output schema example from the rubric JSON.
@@ -48,11 +65,9 @@ def build_output_schema_from_rubric(rubric_json_str: str) -> str:
         expl_entries = []
         for crit_idx, crit in enumerate(category["criteria"]):
             crit_key = crit["criterion"].replace(" ", "_").replace("-", "_")
-            rating_keys = sorted(crit["ratings"].keys(), key=int)
-            min_score = int(rating_keys[0])
-            max_score = int(rating_keys[-1])
+            min_score, max_score, has_na_rating = _score_bounds(crit["ratings"])
 
-            if cat_key == "Mathematical_Accuracy":
+            if cat_key == "Mathematical_Accuracy" or has_na_rating:
                 placeholder = f"<{min_score}-{max_score} or null>"
             else:
                 placeholder = f"<{min_score}-{max_score}>"
@@ -88,6 +103,86 @@ def build_output_schema_from_rubric(rubric_json_str: str) -> str:
     "catastrophic_errors": "If there are any significant mathematical errors made by the AI, list them here with brief explanations. If none, state 'None'."
   }}
 }}"""
+
+def _strict_object(properties: dict) -> dict:
+    """JSON Schema object node meeting OpenAI strict-mode rules:
+    every property required, no additional properties."""
+    return {
+        "type": "object",
+        "properties": properties,
+        "required": list(properties.keys()),
+        "additionalProperties": False,
+    }
+
+
+def build_json_schema_from_rubric(rubric_json_str: str) -> dict:
+    """
+    Generate a strict JSON Schema from the rubric for API-enforced structured
+    outputs (Responses API `text.format` json_schema).
+
+    Mirrors build_output_schema_from_rubric: same category/criterion keys, same
+    score ranges, null allowed only for Mathematical_Accuracy scores.
+
+    Args:
+        rubric_json_str: Raw JSON string of the rubric.
+
+    Returns:
+        A JSON Schema dict suitable for strict structured outputs.
+    """
+    rubric = json.loads(rubric_json_str)
+
+    scores_props = {}
+    explanations_props = {}
+
+    for category in rubric["rubrics"]:
+        cat_key = category["name"].split(":")[0].strip().replace(" ", "_").replace("-", "_")
+
+        crit_score_props = {}
+        crit_expl_props = {}
+        for crit in category["criteria"]:
+            crit_key = crit["criterion"].replace(" ", "_").replace("-", "_")
+            min_score, max_score, has_na_rating = _score_bounds(crit["ratings"])
+
+            if cat_key == "Mathematical_Accuracy" or has_na_rating:
+                score_type = ["integer", "null"]
+            else:
+                score_type = "integer"
+
+            crit_score_props[crit_key] = {
+                "type": score_type,
+                "minimum": min_score,
+                "maximum": max_score,
+            }
+            crit_expl_props[crit_key] = {
+                "type": "string",
+                "description": "Brief explanation with specific evidence",
+            }
+
+        scores_props[cat_key] = _strict_object(crit_score_props)
+        explanations_props[cat_key] = _strict_object(crit_expl_props)
+
+    relevance_props = {
+        "applicable": {"type": "boolean"},
+        "explanation": {
+            "type": "string",
+            "description": "Specific analysis of whether AI output contains evaluable mathematical content",
+        },
+        "extracted_mathematical_content": {
+            "type": "string",
+            "description": "If applicable, extract any mathematical content from the AI's response for evaluation of accuracy by a Math engine.",
+        },
+        "catastrophic_errors": {
+            "type": "string",
+            "description": "If there are any significant mathematical errors made by the AI, list them here with brief explanations. If none, state 'None'.",
+        },
+    }
+
+    return _strict_object({
+        "scores": _strict_object(scores_props),
+        "explanations": _strict_object(explanations_props),
+        "mathematical_accuracy_relevance": _strict_object(relevance_props),
+    })
+
 
 # ============================================================================
 # RAG RETRIEVAL
@@ -170,6 +265,7 @@ class PromptBuilder:
             self.rubric_json = f.read()
 
         self.output_schema = build_output_schema_from_rubric(self.rubric_json)
+        self.output_json_schema = build_json_schema_from_rubric(self.rubric_json)
     
     def build_guideline_prompt(
         self, 
