@@ -47,62 +47,23 @@ Review the two provided evaluations and the original interaction data. Produce a
 
 ## Output Format
 
-Provide your adjudicated evaluation as a single JSON object with the same structure as the original evaluations:
+Provide your adjudicated evaluation as a single JSON object. The scores and explanations structure must match the rubric categories and criteria exactly:
 
 ```json
+{{OUTPUT_SCHEMA}}
+```
+
+Add the following additional field to your JSON output:
+```json
 {
-  "scores": {
-    "Mathematical_Accuracy": {
-      "Validity": <1-4 or null>,
-      "Clarity_and_Labeling": <1-4 or null>,
-      "Justification_and_Explanation": <1-4 or null>
-    },
-    "Pedagogical_Quality": {
-      "Problem_Solving_Strategies": <1-4>,
-      "Relevance": <1-4>,
-      "Scaffolded_Support": <1-4>,
-      "Clarity_of_Explanation": <1-4>,
-      "Feedback": <1-4>,
-      "Motivational_Engagement": <1-4>
-    },
-    "Equity_and_Fairness": {
-      "Language_neutrality": <1-2>,
-      "Feedback_tone": <1-2>,
-      "Cultural_relevance": <1-2>
-    }
-  },
-  "explanations": {
-    "Mathematical_Accuracy": {
-      "Validity": "Adjudication reasoning with specific evidence",
-      "Clarity_and_Labeling": "Justification for chosen score",
-      "Justification_and_Explanation": "Reasoning for final decision"
-    },
-    "Pedagogical_Quality": {
-      "Problem_Solving_Strategies": "Explanation for adjudicated score",
-      "Relevance": "Justification for final rating",
-      "Scaffolded_Support": "Reasoning with examples",
-      "Clarity_of_Explanation": "Explanation for chosen score",
-      "Feedback": "Justification for adjudication",
-      "Motivational_Engagement": "Assessment reasoning"
-    },
-    "Equity_and_Fairness": {
-      "Language_neutrality": "Adjudication explanation",
-      "Feedback_tone": "Justification for score",
-      "Cultural_relevance": "Final assessment reasoning"
-    }
-  },
-  "mathematical_accuracy_relevance": {
-    "applicable": <true/false>,
-    "explanation": "Adjudication reasoning for applicability decision",
-    "extracted_mathematical_content": "If applicable, extract any mathematical content from the AI's response",
-    "catastrophic_errors": "List any significant mathematical errors, or 'None'"
-  },
   "adjudication_notes": {
     "key_discrepancies_resolved": "Brief summary of main disagreements and how they were resolved",
     "evaluation_preferred": "If one evaluation was generally more accurate, note which (1 or 2) and why"
   }
 }
 ```
+
+**IMPORTANT:** The scores and explanations keys must exactly match the category and criterion names from the Evaluation Rubrics section below. Do NOT add criteria that are not in the rubric.
 
 ## Input Components
 

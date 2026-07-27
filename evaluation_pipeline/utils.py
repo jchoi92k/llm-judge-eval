@@ -150,8 +150,9 @@ def try_parse_evaluation(eval_text: str) -> Tuple[bool, Optional[Dict], str]:
     json_content = extract_json_from_string(eval_text)
     try:
         parsed = json.loads(json_content)
+        _coerce_scores_to_numeric(parsed)
         return True, parsed, ""
-    
+
     except json.JSONDecodeError as e:
         error_msg = f"JSON decode error: {str(e)}"
 
@@ -159,16 +160,44 @@ def try_parse_evaluation(eval_text: str) -> Tuple[bool, Optional[Dict], str]:
         try:
             fixed_content = json_content.replace("'", '"')
             parsed = json.loads(fixed_content)
+            _coerce_scores_to_numeric(parsed)
             return True, parsed, f"Fixed by replacing single quotes"
         except:
             pass
         try:
             fixed_content = re.sub(r',\s*([}\]])', r'\1', json_content)
             parsed = json.loads(fixed_content)
+            _coerce_scores_to_numeric(parsed)
             return True, parsed, f"Fixed by removing trailing commas"
         except:
             pass
         return False, None, error_msg
+
+
+def _coerce_scores_to_numeric(parsed: Dict) -> None:
+    """Coerce string scores to int/float in-place. Handles LLMs returning '3' instead of 3."""
+    scores = parsed.get("scores")
+    if not isinstance(scores, dict):
+        return
+    for category, subcats in scores.items():
+        if not isinstance(subcats, dict):
+            continue
+        for key, val in subcats.items():
+            if isinstance(val, str):
+                try:
+                    subcats[key] = int(val)
+                except ValueError:
+                    try:
+                        subcats[key] = float(val)
+                    except ValueError:
+                        pass  # leave as-is if not numeric
+
+    # Normalize mathematical_accuracy_relevance.applicable to Python bool
+    mar = parsed.get("mathematical_accuracy_relevance")
+    if isinstance(mar, dict) and "applicable" in mar:
+        val = mar["applicable"]
+        if isinstance(val, str):
+            mar["applicable"] = val.strip().lower() == "true"
 
 def extract_text_from_prompts(prompt: List[Dict[str, Any]]) -> str:
     """Extract and concatenate all text parts from a prompt"""
@@ -185,8 +214,16 @@ def extract_text_from_prompts(prompt: List[Dict[str, Any]]) -> str:
 def needs_adjudication(eval1: Dict, eval2: Dict) -> Tuple[bool, str]:
     """Check if two evaluations need adjudication."""
     # Check mathematical_accuracy_relevance flag discrepancy
-    flag1 = eval1.get('mathematical_accuracy_relevance', {}).get('applicable')
-    flag2 = eval2.get('mathematical_accuracy_relevance', {}).get('applicable')
+    # Normalize to Python bool: handles True/False, "true"/"false", "True"/"False"
+    def _to_bool(val):
+        if isinstance(val, bool):
+            return val
+        if isinstance(val, str):
+            return val.strip().lower() == "true"
+        return val
+
+    flag1 = _to_bool(eval1.get('mathematical_accuracy_relevance', {}).get('applicable'))
+    flag2 = _to_bool(eval2.get('mathematical_accuracy_relevance', {}).get('applicable'))
     if flag1 != flag2:
         return True, "Discrepancy in mathematical_accuracy_relevance flags"
 
@@ -204,8 +241,11 @@ def needs_adjudication(eval1: Dict, eval2: Dict) -> Tuple[bool, str]:
             val2 = cat2.get(subcategory, val1)
             
             if val1 is not None and val2 is not None:
-                if abs(val1 - val2) >= 2:
-                    return True, f"Score discrepancy >= 2 in {category} for {subcategory}"
+                try:
+                    if abs(int(val1) - int(val2)) >= 2:
+                        return True, f"Score discrepancy >= 2 in {category} for {subcategory}"
+                except (ValueError, TypeError):
+                    pass
 
     return False, ""
 
@@ -290,18 +330,56 @@ def flush_logs():
     print()
 
 
+def count_images_in_prompt(prompt: List[Dict[str, Any]]) -> int:
+    """
+    Count the number of images in a prompt structure.
+
+    Args:
+        prompt: A prompt as a list of message dicts with content parts.
+
+    Returns:
+        Number of image content parts found.
+    """
+    count = 0
+    for message in prompt:
+        content = message.get("content", [])
+        if isinstance(content, list):
+            for part in content:
+                if isinstance(part, dict) and part.get("type") == "input_image":
+                    count += 1
+    return count
+
+
+def estimate_image_tokens(n_images: int, tokens_per_image: int = 1100) -> int:
+    """
+    Estimate the total tokens consumed by images in an API call.
+
+    OpenAI charges image tokens based on resolution and detail level.
+    At high detail, a typical image uses ~765-1100 tokens (depending on size).
+    Default of 1100 is a conservative estimate for whiteboard/diagram images.
+
+    Args:
+        n_images: Number of images in the prompt.
+        tokens_per_image: Estimated tokens per image (default 1100).
+
+    Returns:
+        Estimated total image tokens.
+    """
+    return n_images * tokens_per_image
+
+
 def find_prefix(all_prompts: List[List[Dict[str, Any]]]) -> Tuple[str, str]:
     """
     Find the longest common prefix among all prompts and return it along with the remaining text.
-    
+
     Args:
         all_prompts: List of prompts, where each prompt is a list of dictionaries with text content.
-        
+
     Returns:
         A tuple containing the common prefix string and the remaining text string.
     """
     all_texts = [extract_text_from_prompts(prompt) for prompt in all_prompts]
-    
+
     # Find common prefix among all text versions
     cached_prefix = ""
     if all_texts:
@@ -312,7 +390,7 @@ def find_prefix(all_prompts: List[List[Dict[str, Any]]]) -> Tuple[str, str]:
             else:
                 break
         cached_prefix = "".join(prefix)
-    
+
     # Estimate cost per prompt; estimate using first prompt as sample instead of running tiktoken on all texts
     sample_text = all_texts[0] if all_texts else ""
     uncached_text = sample_text.replace(cached_prefix, '', 1)  # Remove only first occurrence

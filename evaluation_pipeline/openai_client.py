@@ -183,18 +183,24 @@ class OpenAIClient:
         
         return batch_id
     
-    def check_batch_status(self, batch_id: str) -> str:
+    def check_batch_status(self, batch_id: str) -> dict:
         """
         Check the status of a batch job.
-        
+
         Args:
             batch_id: Batch job ID
-            
+
         Returns:
-            Status string ("validating", "in_progress", "completed", "failed", "cancelled")
+            Dict with 'status' string and 'request_counts' (completed, failed, total)
         """
         batch = self.client.batches.retrieve(batch_id)
-        return batch.status
+        counts = batch.request_counts
+        return {
+            "status": batch.status,
+            "completed": counts.completed if counts else 0,
+            "failed": counts.failed if counts else 0,
+            "total": counts.total if counts else 0,
+        }
     
     def retrieve_batch_results(self, batch_id: str) -> List[Dict[str, Any]]:
         """

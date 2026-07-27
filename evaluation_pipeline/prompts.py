@@ -12,7 +12,82 @@ import pandas as pd
 
 from .config import Config
 from . import utils
+import json
 import logging
+
+
+def build_output_schema_from_rubric(rubric_json_str: str) -> str:
+    """
+    Generate the JSON output schema example from the rubric JSON.
+
+    Reads the rubric's categories and criteria to produce a schema that matches
+    the actual rubric structure, instead of using a hardcoded schema.
+
+    Uses unquoted placeholders (e.g., <1-4>) to signal to the LLM that values
+    should be integers, not strings. This matches the original template style.
+
+    Args:
+        rubric_json_str: Raw JSON string of the rubric.
+
+    Returns:
+        A pseudo-JSON string with unquoted placeholders for score values.
+    """
+    rubric = json.loads(rubric_json_str)
+
+    # Build scores and explanations sections as raw text lines
+    scores_lines = []
+    explanations_lines = []
+
+    categories = rubric["rubrics"]
+    for cat_idx, category in enumerate(categories):
+        cat_name = category["name"]
+        cat_key = cat_name.split(":")[0].strip().replace(" ", "_").replace("-", "_")
+
+        # Scores block for this category
+        score_entries = []
+        expl_entries = []
+        for crit_idx, crit in enumerate(category["criteria"]):
+            crit_key = crit["criterion"].replace(" ", "_").replace("-", "_")
+            rating_keys = sorted(crit["ratings"].keys(), key=int)
+            min_score = int(rating_keys[0])
+            max_score = int(rating_keys[-1])
+
+            if cat_key == "Mathematical_Accuracy":
+                placeholder = f"<{min_score}-{max_score} or null>"
+            else:
+                placeholder = f"<{min_score}-{max_score}>"
+
+            comma = "," if crit_idx < len(category["criteria"]) - 1 else ""
+            score_entries.append(f'      "{crit_key}": {placeholder}{comma}')
+            expl_entries.append(f'      "{crit_key}": "Brief explanation with specific evidence"{comma}')
+
+        cat_comma = "," if cat_idx < len(categories) - 1 else ""
+        scores_lines.append(f'    "{cat_key}": {{')
+        scores_lines.extend(score_entries)
+        scores_lines.append(f'    }}{cat_comma}')
+
+        explanations_lines.append(f'    "{cat_key}": {{')
+        explanations_lines.extend(expl_entries)
+        explanations_lines.append(f'    }}{cat_comma}')
+
+    scores_block = "\n".join(scores_lines)
+    explanations_block = "\n".join(explanations_lines)
+
+    return f"""\
+{{
+  "scores": {{
+{scores_block}
+  }},
+  "explanations": {{
+{explanations_block}
+  }},
+  "mathematical_accuracy_relevance": {{
+    "applicable": <true/false>,
+    "explanation": "Specific analysis of whether AI output contains evaluable mathematical content",
+    "extracted_mathematical_content": "If applicable, extract any mathematical content from the AI's response for evaluation of accuracy by a Math engine.",
+    "catastrophic_errors": "If there are any significant mathematical errors made by the AI, list them here with brief explanations. If none, state 'None'."
+  }}
+}}"""
 
 # ============================================================================
 # RAG RETRIEVAL
@@ -93,6 +168,8 @@ class PromptBuilder:
         
         with open(self.config.file_paths.evaluation_rubric, 'r', encoding='utf-8') as f:
             self.rubric_json = f.read()
+
+        self.output_schema = build_output_schema_from_rubric(self.rubric_json)
     
     def build_guideline_prompt(
         self, 
@@ -187,6 +264,7 @@ class PromptBuilder:
             ROW_DATA=row_string,
             COLUMN_EXPL=self.session_data_description,
             SPECIAL_CONSIDERATION=self.tool_specific_considerations,
+            OUTPUT_SCHEMA=self.output_schema,
         )
         
         # Get image data
@@ -235,6 +313,7 @@ class PromptBuilder:
             SPECIAL_CONSIDERATION=self.tool_specific_considerations,
             EVALUATION_1=json.dumps(evaluation_1, indent=2),
             EVALUATION_2=json.dumps(evaluation_2, indent=2),
+            OUTPUT_SCHEMA=self.output_schema,
         )
         
         # Get image data

@@ -21,58 +21,13 @@ Evaluate the AI tutoring tool's performance in the provided interaction data. Fo
 
 ## Output Format
 
-Provide your evaluation as a single JSON object with this exact structure:
+Provide your evaluation as a single JSON object with this exact structure (categories and criteria are derived from the rubric provided below):
 
 ```json
-{
-  "scores": {
-    "Mathematical_Accuracy": {
-      "Validity": <1-4 or null>,
-      "Clarity_and_Labeling": <1-4 or null>,
-      "Justification_and_Explanation": <1-4 or null>
-    },
-    "Pedagogical_Quality": {
-      "Problem_Solving_Strategies": <1-4>,
-      "Relevance": <1-4>,
-      "Scaffolded_Support": <1-4>,
-      "Clarity_of_Explanation": <1-4>,
-      "Feedback": <1-4>,
-      "Motivational_Engagement": <1-4>
-    },
-    "Equity_and_Fairness": {
-      "Language_neutrality": <1-2>,
-      "Feedback_tone": <1-2>,
-      "Cultural_relevance": <1-2>
-    }
-  },
-  "explanations": {
-    "Mathematical_Accuracy": {
-      "Validity": "Brief explanation with specific evidence",
-      "Clarity_and_Labeling": "Concise justification with examples",
-      "Justification_and_Explanation": "Brief reasoning with evidence"
-    },
-    "Pedagogical_Quality": {
-      "Problem_Solving_Strategies": "Brief explanation with evidence",
-      "Relevance": "Concise justification",
-      "Scaffolded_Support": "Brief reasoning with examples",
-      "Clarity_of_Explanation": "Concise explanation",
-      "Feedback": "Brief justification",
-      "Motivational_Engagement": "Assessment based on student responses when available"
-    },
-    "Equity_and_Fairness": {
-      "Language_neutrality": "Brief explanation",
-      "Feedback_tone": "Concise justification",
-      "Cultural_relevance": "Brief assessment"
-    }
-  },
-  "mathematical_accuracy_relevance": {
-    "applicable": <true/false>,
-    "explanation": "Specific analysis of whether AI output contains evaluable mathematical content",
-    "extracted_mathematical_content": "If applicable, extract any mathematical content from the AI's response for evaluation of accuracy by a Math engine.",
-    "catastrophic_errors": "If there are any significant mathematical errors made by the AI, (for example, incorrect calculations such as 2+2=5, or misidentifying a square as a triangle), list them here with brief explanations. If none, state 'None'."
-  }
-}
+{{OUTPUT_SCHEMA}}
 ```
+
+**IMPORTANT:** The scores and explanations keys must exactly match the category and criterion names from the Evaluation Rubrics section below. Do NOT add criteria that are not in the rubric.
 
 ## Evaluation Guidelines
 

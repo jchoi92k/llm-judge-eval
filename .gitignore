@@ -1,36 +1,36 @@
-# Environment
-.env
+# Allowlist-style gitignore: ignore everything at the root by default,
+# then explicitly re-include only the files intended for the public repo.
+# Local-only material (tool packages, cycle data, analysis notebooks,
+# reports, caches) is ignored without needing per-item patterns.
 
-# Directories
-/data/
-/outputs/
-/rubrics/
-/notebooks/
-/alter/
+# Ignore everything at the repo root
+/*
+
+# --- Allowed: repo meta ---
+!/.gitignore
+!/.gitattributes
+!/.env.example
+
+# --- Allowed: docs ---
+!/README.md
+!/CONFIG.md
+!/TROUBLESHOOTING.md
+
+# --- Allowed: templates and dependencies ---
+!/config.toml.example
+!/requirements.txt
+!/run_evaluation.example.ipynb
+
+# --- Allowed: code and shared inputs ---
+!/evaluation_pipeline/
+!/inputs/
+
+# Session data stays local even though inputs/ is allowed
 /inputs/session_data/
-/logs/
-/misc/
-/Second Benchmark Data Sets v1/
 
-# Python
-*.pyc
+# --- Always ignore, anywhere (including inside allowed dirs) ---
+.env
 __pycache__/
+*.pyc
 *.py[cod]
-
-# Tool-specific config files
-config_*.toml
-
-# Data preprocessing notebooks
-data_preprocessing_*.ipynb
-
-# Evaluation notebooks
-run_evaluation_*.ipynb
-
-# Tool-specific files (altermath, goblins, snorkl, stepup, thinkverse)
-*_files/prompt_components/
-*_files/rubrics/
-*_files/source_package_data/
-*_files/session_data/
-
-# Utility modules
-*_utils/*.py
+.ipynb_checkpoints/

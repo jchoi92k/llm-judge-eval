@@ -1,0 +1,74 @@
+# Evaluation Guideline Calibration — Error Analysis
+
+You are an expert in educational assessment calibration. Your task is to analyze disagreements between human raters and an LLM evaluation system, identify systematic patterns, and recommend specific amendments to the evaluation guidelines to improve alignment.
+
+## Context
+
+An LLM evaluation pipeline assessed AI tutoring sessions using generated evaluation guidelines and a rubric. A small set of these sessions (N={{ n_sessions }}) was independently scored by human expert reviewers. You are analyzing the disagreements to improve the evaluation guidelines.
+
+**Important**: This is a small-N sniff test ({{ n_sessions }} sessions). Focus on identifying clear, systematic patterns rather than drawing statistical conclusions. Look for consistent directional biases and recurring misinterpretations rather than isolated disagreements.
+
+## Input Materials
+
+### Current Evaluation Guidelines
+{{ guidelines }}
+
+### Evaluation Rubric
+{{ rubric }}
+
+### Tool Description
+{{ tool_description }}
+
+### Agreement Metrics Summary
+{{ metrics_summary }}
+
+### Detailed Score Comparison (Human vs LLM)
+{{ comparison_table }}
+
+{% if llm_explanations %}
+### LLM Evaluation Explanations (for sessions with largest disagreements)
+{{ llm_explanations }}
+{% endif %}
+
+## Analysis Tasks
+
+### 1. Pattern Identification (200-300 words)
+
+Examine the comparison data and identify:
+- **Directional biases**: Does the LLM consistently score higher or lower than humans on specific criteria? Note the magnitude and consistency.
+- **Criterion-specific patterns**: Which criteria show the most disagreement? Are there criteria where the LLM and humans are well-calibrated?
+- **Domain-level patterns**: Do entire domains (Mathematical Accuracy, Pedagogical Quality, Equity and Fairness) show systematic drift?
+- **Scale usage patterns**: Does the LLM avoid extreme scores (ceiling/floor effects) that humans use? Does it cluster around the middle of the scale?
+
+Focus only on patterns that appear across multiple sessions, not isolated cases.
+
+### 2. Root Cause Analysis (200-300 words)
+
+For each systematic pattern identified above:
+- **What in the current guidelines might cause this misalignment?** Be specific — quote or reference particular guideline language.
+- **What information might the LLM be missing or misinterpreting?** Consider whether the guidelines give sufficient anchoring examples for each score level.
+- **Are there rubric criteria that are inherently harder for an LLM to assess?** (e.g., motivational engagement requires inferring student affect from text)
+
+### 3. Guideline Amendment Recommendations (300-400 words)
+
+Provide **specific, actionable amendments** to the evaluation guidelines. For each recommendation:
+
+1. **What to change**: Quote the current guideline language (if applicable) and provide the revised language
+2. **Why**: Which disagreement pattern this addresses
+3. **Expected impact**: Which criteria should improve and in what direction
+
+Organize recommendations by priority:
+- **High priority**: Amendments addressing systematic biases affecting multiple criteria
+- **Medium priority**: Amendments for criterion-specific calibration issues
+- **Low priority**: Minor clarifications that may help edge cases
+
+### 4. Criteria Requiring Extra Caution (100-150 words)
+
+List any criteria where:
+- Human-LLM agreement is inherently limited and users should weight human judgment more heavily
+- The LLM shows a consistent blind spot that guidelines alone may not fix
+- Additional human review samples would most improve calibration
+
+## Output Format
+
+Provide your analysis as structured text with clear headers matching the sections above. Be specific and evidence-based — reference actual score comparisons from the data provided. Avoid generic advice; every recommendation should be traceable to a specific pattern in the comparison data.

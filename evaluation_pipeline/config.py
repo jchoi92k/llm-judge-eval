@@ -75,6 +75,7 @@ class FilePaths(BaseModel):
     evaluation_rubric: Path
     session_data: Path
     human_evaluation: Path
+    human_evaluation_curated: Optional[Path] = None
     
     # Templates
     evaluation_guidelines_template: Path
@@ -93,8 +94,10 @@ class FilePaths(BaseModel):
         """Validate that all files exist."""
         missing_files = []
         for field_name, file_path in self.model_dump().items():
-            # Don't check session_data or human_evaluation existence here
-            if field_name in ['session_data', 'human_evaluation']:
+            # Don't check session_data, human_evaluation, or optional paths here
+            if field_name in ['session_data', 'human_evaluation', 'human_evaluation_curated']:
+                continue
+            if file_path is None:
                 continue
             if not file_path.exists():
                 missing_files.append(f"{field_name}: {file_path}")
@@ -196,9 +199,12 @@ class Config(BaseModel):
         if df['session_id'].isnull().any() or (df['session_id'] == '').any():
             raise ValueError("session_id column contains null or empty values")
         
-        # Validate image_data_base64 if it exists
+        # Validate image_data_base64 if it exists and has non-null values
         if 'image_data_base64' in df.columns:
             non_null_values = df['image_data_base64'].dropna()
+            if len(non_null_values) == 0:
+                print("  image_data_base64 column exists but all values are null — skipping image validation")
+                return
             sample_size = min(10, max(1, len(non_null_values) // 10))
             sample_items = non_null_values.sample(n=sample_size, random_state=42)
 
