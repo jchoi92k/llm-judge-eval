@@ -35,6 +35,16 @@ def _output_schema(evaluator):
 # FLEX EVALUATION (Direct API calls)
 # ============================================================================
 
+def _record_failure(evaluator, session_id, stage, reason, detail):
+    """Track a skipped evaluation so it can be surfaced later (failures_summary)."""
+    evaluator.failures.append({
+        "session_id": session_id,
+        "stage": stage,
+        "reason": reason,
+        "detail": detail,
+    })
+
+
 def _call_and_record(evaluator, session_id, prompt, service_tier, context):
     """
     Run one evaluation call: call the API, parse the output, append to
@@ -53,6 +63,7 @@ def _call_and_record(evaluator, session_id, prompt, service_tier, context):
 
     if not success:
         evaluator.logger.error(f"Failed to parse {context} for {session_id}: {error_msg}")
+        _record_failure(evaluator, session_id, context, "parse_failure", error_msg)
         return False
 
     evaluator.evaluations[session_id].append([parsed_eval, response])
@@ -106,6 +117,8 @@ def flex_evaluate(evaluator, service_tier: str = "flex", adjudication: bool = Fa
     else:
         evaluator.logger.info(f"Evaluation mode: using {n_runs} runs per session")
 
+    failures_before = len(evaluator.failures)
+
     # Run evaluations
     for session_id, prompt in tqdm(evaluator.dynamic_prompts.items(), desc="Evaluating sessions"):
         if adjudication:
@@ -130,6 +143,13 @@ def flex_evaluate(evaluator, service_tier: str = "flex", adjudication: bool = Fa
 
         # Save after each session
         evaluator._save_evaluations()
+
+    new_failures = len(evaluator.failures) - failures_before
+    if new_failures:
+        evaluator.logger.warning(
+            f"{new_failures} evaluation call(s) failed and were skipped this run — "
+            f"run failures_summary() for details"
+        )
 
     evaluator.logger.info("Flex evaluation complete")
     return evaluator
@@ -332,6 +352,7 @@ def retrieve_batch_results(evaluator, batch_id_override: Optional[str] = None):
             custom_id = result.get('custom_id', '')
             if not custom_id:
                 evaluator.logger.warning("Missing custom_id in batch result")
+                _record_failure(evaluator, None, "batch", "missing_custom_id", "Batch result had no custom_id")
                 failed_count += 1
                 continue
 
@@ -339,6 +360,7 @@ def retrieve_batch_results(evaluator, batch_id_override: Optional[str] = None):
                 session_id = custom_id_map.get(custom_id)
                 if session_id is None:
                     evaluator.logger.warning(f"custom_id {custom_id} not found in batch mapping")
+                    _record_failure(evaluator, None, "batch", "unmapped_custom_id", custom_id)
                     failed_count += 1
                     continue
             else:
@@ -347,6 +369,7 @@ def retrieve_batch_results(evaluator, batch_id_override: Optional[str] = None):
 
                 if session_idx >= len(session_ids):
                     evaluator.logger.warning(f"Session index {session_idx} out of range (max: {len(session_ids)-1})")
+                    _record_failure(evaluator, None, "batch", "session_index_out_of_range", custom_id)
                     failed_count += 1
                     continue
 
@@ -375,19 +398,26 @@ def retrieve_batch_results(evaluator, batch_id_override: Optional[str] = None):
                     processed_count += 1
                 else:
                     evaluator.logger.error(f"Failed to parse evaluation for {session_id}: {error_msg}")
+                    _record_failure(evaluator, session_id, "batch", "parse_failure", error_msg)
                     failed_count += 1
             else:
                 evaluator.logger.warning(f"No evaluation text found for session {session_id}")
+                _record_failure(evaluator, session_id, "batch", "no_output_text", custom_id)
                 failed_count += 1
 
         except Exception as e:
             evaluator.logger.error(f"Error processing batch result: {e}")
+            _record_failure(evaluator, None, "batch", "processing_error", str(e))
             failed_count += 1
             continue
 
     # Save processed evaluations
     evaluator._save_evaluations()
     evaluator.logger.info(f"Batch results processed and saved: {processed_count} successful, {failed_count} failed")
+    if failed_count:
+        evaluator.logger.warning(
+            f"{failed_count} batch result(s) were skipped — run failures_summary() for details"
+        )
 
 
 def cancel_batch(evaluator):

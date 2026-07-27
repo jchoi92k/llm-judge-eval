@@ -78,6 +78,7 @@ class StubEvaluator:
         )
         self.evaluations = defaultdict(list)
         self.dynamic_prompts = {}
+        self.failures = []
         self.batch_file_path = None
         self.batch_id = None
         self.save_count = 0
@@ -186,6 +187,115 @@ def test_flex_raises_without_dynamic_prompts(tmp_path):
 
     with pytest.raises(ValueError, match="No dynamic prompts"):
         execution.flex_evaluate(ev, auto_approve=True)
+
+
+# ============================================================================
+# FAILURES TRACKING
+# ============================================================================
+
+def test_flex_parse_failure_recorded_in_failures(tmp_path):
+    client = FakeClient(responses=[
+        FakeResponse("not json {{{"),
+        FakeResponse(json.dumps(VALID_EVAL)),
+    ])
+    ev = StubEvaluator(tmp_path, client=client)
+    ev.dynamic_prompts = {"s1": make_prompt("p1")}
+
+    execution.flex_evaluate(ev, auto_approve=True)
+
+    assert len(ev.failures) == 1
+    failure = ev.failures[0]
+    assert failure["session_id"] == "s1"
+    assert failure["reason"] == "parse_failure"
+    assert "evaluation run" in failure["stage"]
+
+
+def test_flex_success_records_no_failures(tmp_path):
+    ev = StubEvaluator(tmp_path)
+    ev.dynamic_prompts = {"s1": make_prompt("p1")}
+
+    execution.flex_evaluate(ev, auto_approve=True)
+
+    assert ev.failures == []
+
+
+def test_adjudication_parse_failure_recorded(tmp_path):
+    client = FakeClient(responses=[FakeResponse("garbage")])
+    ev = StubEvaluator(tmp_path, client=client)
+    ev.dynamic_prompts = {"s1": make_prompt("p1")}
+
+    execution.flex_evaluate(ev, adjudication=True, auto_approve=True)
+
+    assert len(ev.failures) == 1
+    assert ev.failures[0]["stage"] == "adjudication"
+
+
+def test_batch_parse_failure_recorded_with_session(tmp_path):
+    ev = StubEvaluator(tmp_path)
+    ev.dynamic_prompts = {"s1": make_prompt("p1")}
+    execution.prepare_batch_file(ev, auto_approve=True)
+
+    entries = [json.loads(l) for l in ev.batch_file_path.read_text(encoding="utf-8").strip().split("\n")]
+    results = [batch_result(entries[0]["custom_id"])]
+    bad = batch_result(entries[1]["custom_id"])
+    bad["response"]["body"]["output"][0]["content"][0]["text"] = "garbage {{{"
+    results.append(bad)
+    ev.client._batch_results = results
+    ev.batch_id = "batch_123"
+
+    execution.retrieve_batch_results(ev)
+
+    assert len(ev.failures) == 1
+    assert ev.failures[0] == {
+        "session_id": "s1",
+        "stage": "batch",
+        "reason": "parse_failure",
+        "detail": ev.failures[0]["detail"],  # error message text not pinned
+    }
+
+
+def test_batch_unmapped_custom_id_recorded(tmp_path):
+    ev = StubEvaluator(tmp_path)
+    ev.dynamic_prompts = {"s1": make_prompt("p1")}
+    execution.prepare_batch_file(ev, auto_approve=True)
+
+    ev.client._batch_results = [batch_result("someone_elses_custom_id_99")]
+    ev.batch_id = "batch_123"
+
+    execution.retrieve_batch_results(ev)
+
+    assert len(ev.failures) == 1
+    assert ev.failures[0]["reason"] == "unmapped_custom_id"
+    assert ev.failures[0]["session_id"] is None
+
+
+def test_failures_summary_prints_and_returns(tmp_path, capsys):
+    from evaluation_pipeline import reporting
+
+    ev = StubEvaluator(tmp_path)
+    ev.failures = [
+        {"session_id": "s1", "stage": "evaluation run 1/2", "reason": "parse_failure", "detail": "bad json"},
+        {"session_id": None, "stage": "batch", "reason": "missing_custom_id", "detail": "no id"},
+    ]
+
+    returned = reporting.failures_summary(ev)
+
+    out = capsys.readouterr().out
+    assert "2 total" in out
+    assert "parse_failure: 1" in out
+    assert "missing_custom_id: 1" in out
+    assert "s1" in out
+    assert returned == ev.failures
+
+
+def test_failures_summary_empty(tmp_path, capsys):
+    from evaluation_pipeline import reporting
+
+    ev = StubEvaluator(tmp_path)
+    returned = reporting.failures_summary(ev)
+
+    assert "No recorded failures" in capsys.readouterr().out
+    assert returned == []
 
 
 # ============================================================================

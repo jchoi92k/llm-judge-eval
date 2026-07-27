@@ -246,6 +246,45 @@ def sanity_check_prompts(evaluator, n_examples: int = 3):
     print(f"\n{'='*70}")
 
 
+def failures_summary(evaluator) -> list:
+    """
+    Print a summary of evaluations skipped during this session's runs
+    (parse failures, batch retrieval issues) and return the raw entries.
+    """
+    failures = evaluator.failures
+
+    if not failures:
+        print("No recorded failures — every evaluation call this session was parsed and stored.")
+        return failures
+
+    print(f"{'='*70}")
+    print(f"SKIPPED EVALUATIONS — {len(failures)} total (in-memory, this session)")
+    print(f"{'='*70}\n")
+
+    # Group by reason
+    by_reason = {}
+    for f in failures:
+        by_reason.setdefault(f["reason"], []).append(f)
+
+    for reason, entries in sorted(by_reason.items(), key=lambda kv: -len(kv[1])):
+        print(f"  {reason}: {len(entries)}")
+        for f in entries:
+            sid = f["session_id"]
+            sid_display = f"{str(sid)[:24]}..." if sid is not None and len(str(sid)) > 24 else (sid if sid is not None else "(unknown session)")
+            detail = str(f["detail"])
+            detail_display = f"{detail[:60]}..." if len(detail) > 60 else detail
+            print(f"    [{f['stage']}] {sid_display}: {detail_display}")
+        print()
+
+    # Sessions affected (excluding unknowns)
+    affected = sorted({str(f["session_id"]) for f in failures if f["session_id"] is not None})
+    if affected:
+        print(f"  Affected sessions ({len(affected)}): re-run flex_evaluate() or the batch flow")
+        print(f"  to fill missing evaluations; check_evaluation_status() shows what's incomplete.")
+
+    return failures
+
+
 def report_actual_cost(evaluator, all_runs: bool = False) -> Dict[str, Any]:
     """Report actual token usage and cost from completed evaluations."""
     results = []

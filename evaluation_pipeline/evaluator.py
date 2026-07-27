@@ -58,6 +58,10 @@ class Evaluator:
         self.guidelines: Dict[str, str] = {}
         self.dynamic_prompts: Dict[str, List] = {}
 
+        # Failures skipped during evaluation runs (parse errors, batch issues).
+        # Diagnostic, in-memory only; appended across runs in this session.
+        self.failures: List[Dict] = []
+
         # Batch processing components
         self.batch_file_path: Optional[Path] = None
         self.batch_id: Optional[str] = None
@@ -471,6 +475,14 @@ class Evaluator:
             Dictionary with evaluation status information
         """
         return scoring.check_evaluation_status(self)
+
+    def failures_summary(self) -> list:
+        """
+        Print a summary of evaluations that were skipped during this session's
+        runs (parse failures, batch retrieval issues) and return the raw
+        failure entries. In-memory only; cleared when the Evaluator is recreated.
+        """
+        return reporting.failures_summary(self)
 
     def report_actual_cost(self, all_runs: bool = False) -> Dict[str, Any]:
         """
