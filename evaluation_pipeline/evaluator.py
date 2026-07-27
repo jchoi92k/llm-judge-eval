@@ -1,5 +1,6 @@
 # evaluation_pipeline/evaluator.py
 
+import json
 import logging
 import pickle
 from collections import defaultdict
@@ -126,13 +127,34 @@ class Evaluator:
         return self
 
     def _load_existing_evaluations(self):
-        """Load existing evaluations from disk if available."""
-        eval_file_path = self.config.dirs.evaluation_results / f"{self.config.run_id}_evaluations.pkl"
-        if eval_file_path.exists():
-            self.logger.info(f"Loading existing evaluations from {eval_file_path}")
-            with open(eval_file_path, "rb") as f:
-                self.evaluations = pickle.load(f)
+        """
+        Load existing evaluations from disk if available.
+
+        Prefers the JSON checkpoint ({run_id}_evaluations.json). A legacy
+        pickle checkpoint ({run_id}_evaluations.pkl) is migrated automatically:
+        loaded once, converted, and re-saved as JSON; the .pkl file is left
+        untouched as a backup.
+        """
+        json_path = self.config.dirs.evaluation_results / f"{self.config.run_id}_evaluations.json"
+        pkl_path = self.config.dirs.evaluation_results / f"{self.config.run_id}_evaluations.pkl"
+
+        if json_path.exists():
+            self.logger.info(f"Loading existing evaluations from {json_path}")
+            with open(json_path, "r", encoding="utf-8") as f:
+                self.evaluations = utils.payload_to_evaluations(json.load(f))
             self.logger.info(f"Loaded evaluations for {len(self.evaluations)} sessions")
+        elif pkl_path.exists():
+            self.logger.info(f"Migrating legacy pickle checkpoint {pkl_path} to JSON")
+            with open(pkl_path, "rb") as f:
+                legacy = pickle.load(f)
+            # Round-trip through the JSON payload so in-memory responses are
+            # plain dicts, identical to what a JSON load would produce.
+            self.evaluations = utils.payload_to_evaluations(utils.evaluations_to_payload(legacy))
+            self._save_evaluations()
+            self.logger.info(
+                f"Migrated evaluations for {len(self.evaluations)} sessions to {json_path} "
+                f"(original .pkl kept as backup)"
+            )
         return self
 
     def _load_existing_guidelines(self):
@@ -198,19 +220,25 @@ class Evaluator:
         return self
 
     def _save_evaluations(self):
-        """Save evaluations to disk. Path defined by config."""
+        """Save evaluations to disk as JSON. Path defined by config."""
         if not self.evaluations:
             self.logger.warning("No evaluations to save")
             return
 
-        eval_file_path = self.config.dirs.evaluation_results / f"{self.config.run_id}_evaluations.pkl"
+        eval_file_path = self.config.dirs.evaluation_results / f"{self.config.run_id}_evaluations.json"
 
         # Ensure directory exists
         eval_file_path.parent.mkdir(parents=True, exist_ok=True)
 
         try:
-            with open(eval_file_path, "wb") as f:
-                pickle.dump(self.evaluations, f)
+            payload = utils.evaluations_to_payload(self.evaluations)
+            # Write to a temp file then replace, so an interrupted save
+            # (checkpoints are written after every session) can't leave a
+            # truncated checkpoint behind.
+            tmp_path = eval_file_path.with_name(eval_file_path.name + ".tmp")
+            with open(tmp_path, "w", encoding="utf-8") as f:
+                json.dump(payload, f, ensure_ascii=False, default=str)
+            tmp_path.replace(eval_file_path)
             self.logger.info(f"Saved evaluations to {eval_file_path}")
         except Exception as e:
             self.logger.error(f"Failed to save evaluations: {e}")

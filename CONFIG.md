@@ -207,7 +207,7 @@ Run 3: n_samples=10, session_data.csv (101 rows, added one)
 ### Output File Naming
 
 All outputs affixed with run_id with the exception of guidelines:
-- `abc123def456_evaluations.pkl`
+- `abc123def456_evaluations.json` (legacy `.pkl` checkpoints are migrated to JSON automatically on load; the `.pkl` file is kept as a backup)
 - `abc123def456_final_scores.json`
 - `logs/abc123def456.log`
 - `guideline_final.txt`

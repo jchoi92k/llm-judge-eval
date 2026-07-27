@@ -8,7 +8,6 @@ same as data.py). The Evaluator methods are one-line delegates to these.
 """
 
 import json
-import pickle
 import time
 from typing import Optional
 
@@ -327,10 +326,10 @@ def retrieve_batch_results(evaluator, batch_id_override: Optional[str] = None):
     evaluator.logger.info("Retrieving batch results...")
     results = evaluator.client.retrieve_batch_results(batch_id)
 
-    # Save raw results
-    output_filename = evaluator.config.dirs.batch_processing_results / f"batch_results_{evaluator.config.run_id}.pkl"
-    with open(output_filename, 'wb') as f:
-        pickle.dump({'results': results}, f)
+    # Save raw results (debugging artifact; nothing reads it back)
+    output_filename = evaluator.config.dirs.batch_processing_results / f"batch_results_{evaluator.config.run_id}.json"
+    with open(output_filename, 'w', encoding="utf-8") as f:
+        json.dump({'results': results}, f, ensure_ascii=False, default=str)
 
     # Load the custom_id → session_id sidecar mapping written by prepare_batch_file.
     # Legacy batches (created before the mapping existed) fall back to inferring

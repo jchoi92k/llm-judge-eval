@@ -8,8 +8,11 @@ Plain functions operating on an Evaluator instance (delegation pattern,
 same as data.py). The Evaluator methods are one-line delegates to these.
 """
 
+import json
 import pickle
 from typing import Any, Dict
+
+from . import utils
 
 
 def status_text(evaluator) -> str:
@@ -289,21 +292,35 @@ def report_actual_cost(evaluator, all_runs: bool = False) -> Dict[str, Any]:
     """Report actual token usage and cost from completed evaluations."""
     results = []
 
+    results_dir = evaluator.config.dirs.evaluation_results
     if all_runs:
-        pkl_files = sorted(evaluator.config.dirs.evaluation_results.glob("*_evaluations.pkl"))
+        candidates = sorted(results_dir.glob("*_evaluations.json")) + sorted(results_dir.glob("*_evaluations.pkl"))
     else:
-        pkl_files = [evaluator.config.dirs.evaluation_results / f"{evaluator.config.run_id}_evaluations.pkl"]
-        pkl_files = [p for p in pkl_files if p.exists()]
+        candidates = [
+            results_dir / f"{evaluator.config.run_id}_evaluations.json",
+            results_dir / f"{evaluator.config.run_id}_evaluations.pkl",
+        ]
+        candidates = [p for p in candidates if p.exists()]
 
-    if not pkl_files and evaluator.evaluations:
+    # Dedupe by run_id, preferring the JSON checkpoint over a legacy pickle
+    checkpoint_files = {}
+    for p in candidates:
+        run_id = p.stem.replace("_evaluations", "")
+        if run_id not in checkpoint_files:
+            checkpoint_files[run_id] = p
+
+    if not checkpoint_files and evaluator.evaluations:
         # Use in-memory evaluations
-        pkl_files = []
         evals_to_scan = [("current", evaluator.evaluations)]
     else:
         evals_to_scan = []
-        for p in pkl_files:
-            with open(p, "rb") as f:
-                evals_to_scan.append((p.stem.replace("_evaluations", ""), pickle.load(f)))
+        for run_id, p in sorted(checkpoint_files.items()):
+            if p.suffix == ".json":
+                with open(p, "r", encoding="utf-8") as f:
+                    evals_to_scan.append((run_id, utils.payload_to_evaluations(json.load(f))))
+            else:
+                with open(p, "rb") as f:
+                    evals_to_scan.append((run_id, pickle.load(f)))
 
     grand_input = 0
     grand_output = 0
@@ -322,12 +339,10 @@ def report_actual_cost(evaluator, all_runs: bool = False) -> Dict[str, Any]:
 
         for sid, runs in evals.items():
             for parsed_eval, response in runs:
-                if hasattr(response, "usage") and response.usage:
-                    u = response.usage
-                    total_input += u.input_tokens
-                    total_output += u.output_tokens
-                    if hasattr(u, "input_tokens_details") and u.input_tokens_details:
-                        total_cached += getattr(u.input_tokens_details, "cached_tokens", 0)
+                input_tokens, output_tokens, cached_tokens = utils.response_usage(response)
+                total_input += input_tokens
+                total_output += output_tokens
+                total_cached += cached_tokens
 
         uncached = total_input - total_cached
         cost = (

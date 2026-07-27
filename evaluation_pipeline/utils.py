@@ -8,6 +8,7 @@ import json
 import logging
 import re
 import sys
+from collections import defaultdict
 from typing import Any, Dict, List, Optional, Tuple
 
 import numpy as np
@@ -388,3 +389,107 @@ def find_prefix(all_prompts: List[List[Dict[str, Any]]]) -> Tuple[str, str]:
     uncached_text = sample_text.replace(cached_prefix, '', 1)  # Remove only first occurrence
 
     return cached_prefix, uncached_text
+
+# ============================================================================
+# CHECKPOINT SERIALIZATION (JSON evaluations persistence)
+# ============================================================================
+
+EVALUATIONS_FORMAT = "evaluations-v1"
+
+
+def serialize_response(response) -> Dict[str, Any]:
+    """
+    Convert an API response (OpenAI SDK object or plain dict) to a JSON-safe dict.
+
+    Args:
+        response: SDK Response object (pydantic), a dict (batch results), or
+            any other object (best-effort fallback).
+
+    Returns:
+        JSON-serializable dict representation of the response.
+    """
+    if isinstance(response, dict):
+        return json.loads(json.dumps(response, default=str))
+    if hasattr(response, "model_dump"):
+        return json.loads(json.dumps(response.model_dump(), default=str))
+    if hasattr(response, "__dict__"):
+        return json.loads(json.dumps(vars(response), default=str))
+    return {"repr": repr(response)}
+
+
+def _jsonify_session_id(session_id):
+    """Session id as a JSON-native scalar, preserving type where possible (numpy scalars unwrapped)."""
+    if isinstance(session_id, np.generic):
+        return session_id.item()
+    if isinstance(session_id, (str, int, float, bool)) or session_id is None:
+        return session_id
+    return str(session_id)
+
+
+def evaluations_to_payload(evaluations: Dict[Any, List]) -> Dict[str, Any]:
+    """
+    Convert the in-memory evaluations dict to the on-disk JSON payload.
+
+    Sessions are stored as a list of records (not a JSON object) so that
+    non-string session ids (e.g. integer ids) round-trip without being
+    coerced to strings by JSON object keys.
+
+    Args:
+        evaluations: {session_id: [[parsed_eval, response], ...]}
+
+    Returns:
+        {"format": "evaluations-v1", "sessions": [{"session_id": ..., "runs": [...]}]}
+    """
+    sessions = []
+    for session_id, runs in evaluations.items():
+        sessions.append({
+            "session_id": _jsonify_session_id(session_id),
+            "runs": [
+                {"parsed": parsed_eval, "response": serialize_response(response)}
+                for parsed_eval, response in runs
+            ],
+        })
+    return {"format": EVALUATIONS_FORMAT, "sessions": sessions}
+
+
+def payload_to_evaluations(payload: Dict[str, Any]) -> Dict[Any, List]:
+    """
+    Rebuild the in-memory evaluations dict from the on-disk JSON payload.
+
+    Returns:
+        defaultdict(list) of {session_id: [[parsed_eval, response_dict], ...]}
+    """
+    fmt = payload.get("format")
+    if fmt != EVALUATIONS_FORMAT:
+        raise ValueError(f"Unknown evaluations checkpoint format: {fmt!r}")
+    evaluations = defaultdict(list)
+    for session in payload.get("sessions", []):
+        evaluations[session["session_id"]] = [
+            [run["parsed"], run["response"]] for run in session["runs"]
+        ]
+    return evaluations
+
+
+def response_usage(response) -> Tuple[int, int, int]:
+    """
+    Extract (input_tokens, output_tokens, cached_tokens) from an API response,
+    whether it is an SDK object (attribute access) or a dict (loaded from a
+    JSON checkpoint or batch results). Missing fields count as 0.
+    """
+    if isinstance(response, dict):
+        usage = response.get("usage") or {}
+        details = usage.get("input_tokens_details") or {}
+        return (
+            usage.get("input_tokens", 0) or 0,
+            usage.get("output_tokens", 0) or 0,
+            details.get("cached_tokens", 0) or 0,
+        )
+    usage = getattr(response, "usage", None)
+    if not usage:
+        return 0, 0, 0
+    details = getattr(usage, "input_tokens_details", None)
+    return (
+        getattr(usage, "input_tokens", 0) or 0,
+        getattr(usage, "output_tokens", 0) or 0,
+        (getattr(details, "cached_tokens", 0) or 0) if details else 0,
+    )
